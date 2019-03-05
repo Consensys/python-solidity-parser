@@ -8,16 +8,33 @@ class Node(dict):
     """
     provide a dict interface and object attrib access
     """
+    ENABLE_LOC = False
 
-    def __init__(self, **kwargs):
+    def __init__(self, ctx, **kwargs):
         for k, v in kwargs.items():
             self[k] = v
+
+        if Node.ENABLE_LOC:
+            self["loc"] = Node._get_loc(ctx)
 
     def __getattr__(self, item):
         return self[item]  # raise exception if attribute does not exist
 
     def __setattr__(self, name, value):
         self[name] = value
+
+    @staticmethod
+    def _get_loc(ctx):
+        return {
+            'start': {
+                'line': ctx.start.line,
+                'column': ctx.start.column
+            },
+            'end': {
+                'line': ctx.stop.line,
+                'column': ctx.stop.column
+            }
+        }
 
 
 class AstVisitor(SolidityVisitor):
@@ -83,16 +100,19 @@ class AstVisitor(SolidityVisitor):
     # ********************************************************
 
     def visitSourceUnit(self, ctx):
-        return Node(type="SourceUnit",
+        return Node(ctx=ctx,
+                    type="SourceUnit",
                     children=self.visit(ctx.children[:-1]))  # skip EOF
 
     def visitEnumDefinition(self, ctx):
-        return Node(type="EnumDefinition",
+        return Node(ctx=ctx,
+                    type="EnumDefinition",
                     name=ctx.identifier().getText(),
                     members=self.visit(ctx.enumValue()))
 
     def visitEnumValue(self, ctx):
-        return Node(type="EnumValue",
+        return Node(ctx=ctx,
+                    type="EnumValue",
                     name=ctx.identifier().getText())
 
     def visitUsingForDeclaration(self, ctx: SolidityParser.UsingForDeclarationContext):
@@ -100,12 +120,14 @@ class AstVisitor(SolidityVisitor):
         if ctx.getChild(3) != '*':
             typename = self.visit(ctx.getChild(3))
 
-        return Node(name="UsingForDeclaration",
+        return Node(ctx=ctx,
+                    name="UsingForDeclaration",
                     typeName=typename,
                     libraryName=ctx.identifier().getText())
 
     def visitInheritanceSpecifier(self, ctx: SolidityParser.InheritanceSpecifierContext):
-        return Node(name="InheritanceSpecifier",
+        return Node(ctx=ctx,
+                    name="InheritanceSpecifier",
                     baseName=self.visit(ctx.userDefinedTypeName()),
                     arguments=self.visit(ctx.expression()))
 
@@ -133,7 +155,8 @@ class AstVisitor(SolidityVisitor):
         else:
             stateMutability = None
 
-        return Node(type="FunctionDefinition",
+        return Node(ctx=ctx,
+                    type="FunctionDefinition",
                     name=None,
                     parameters=parameters,
                     body=block,
@@ -166,7 +189,8 @@ class AstVisitor(SolidityVisitor):
         else:
             stateMutability = None
 
-        return Node(type="FunctionDefinition",
+        return Node(ctx=ctx,
+                    type="FunctionDefinition",
                     name=name,
                     parameters=parameters,
                     returnParameters=returnParameters,
@@ -181,7 +205,8 @@ class AstVisitor(SolidityVisitor):
 
     def visitParameterList(self, ctx: SolidityParser.ParameterListContext):
         parameters = [self.visit(p) for p in ctx.parameter()]
-        return Node(type="ParameterList",
+        return Node(ctx=ctx,
+                    type="ParameterList",
                     parameters=parameters)
 
     def visitParameter(self, ctx: SolidityParser.ParameterContext):
@@ -189,7 +214,8 @@ class AstVisitor(SolidityVisitor):
         storageLocation = ctx.storageLocation().getText() if ctx.storageLocation() else None
         name = ctx.identifier().getText() if ctx.identifier() else None
 
-        return Node(type="Parameter",
+        return Node(ctx=ctx,
+                    type="Parameter",
                     name=name,
                     storageLocation=storageLocation,
                     isStateVar=False,
@@ -204,12 +230,14 @@ class AstVisitor(SolidityVisitor):
         else:
             args = []
 
-        return Node(type='ModifierInvocation',
+        return Node(ctx=ctx,
+                    type='ModifierInvocation',
                     name=ctx.identifier().getText(),
                     arguments=args)
 
     def visitElementaryTypeNameExpression(self, ctx):
-        return Node(type='ElementaryTypeNameExpression',
+        return Node(ctx=ctx,
+                    type='ElementaryTypeNameExpression',
                     typeName=self.visit(ctx.elementaryTypeName()))
 
     def visitTypeName(self, ctx):
@@ -218,12 +246,14 @@ class AstVisitor(SolidityVisitor):
             if len(ctx.children) == 4:
                 length = self.visit(ctx.getChild(2))
 
-            return Node(type='ArrayTypeName',
+            return Node(ctx=ctx,
+                        type='ArrayTypeName',
                         baseTypeName=self.visit(ctx.getChild(0)),
                         length=length)
 
         if len(ctx.children) == 2:
-            return Node(type='ElementaryTypeName',
+            return Node(ctx=ctx,
+                        type='ElementaryTypeName',
                         name=ctx.getChild(0).getText(),
                         stateMutability=ctx.getChild(1).getText())
 
@@ -246,7 +276,8 @@ class AstVisitor(SolidityVisitor):
         if ctx.stateMutability(0):
             stateMutability = ctx.stateMutability(0).getText()
 
-        return Node(type='FunctionTypeName',
+        return Node(ctx=ctx,
+                    type='FunctionTypeName',
                     parameterTypes=parameterTypes,
                     returnTypes=returnTypes,
                     visibility=visibility,
@@ -266,13 +297,15 @@ class AstVisitor(SolidityVisitor):
                 args.push(self.visit(nameValue.expression()))
                 names.push(nameValue.identifier().getText())
 
-        return Node(type='FunctionCall',
+        return Node(ctx=ctx,
+                    type='FunctionCall',
                     expression=self.visit(ctx.expression()),
                     arguments=args,
                     names=names)
 
     def visitStructDefinition(self, ctx):
-        return Node(type='StructDefinition',
+        return Node(ctx=ctx,
+                    type='StructDefinition',
                     name=ctx.identifier().getText(),
                     members=self.visit(ctx.variableDeclaration()))
 
@@ -282,7 +315,8 @@ class AstVisitor(SolidityVisitor):
         if ctx.storageLocation():
             storageLocation = ctx.storageLocation().getText()
 
-        return Node(type='VariableDeclaration',
+        return Node(ctx=ctx,
+                    type='VariableDeclaration',
                     typeName=self.visit(ctx.typeName()),
                     name=ctx.identifier().getText(),
                     storageLocation=storageLocation)
@@ -295,7 +329,8 @@ class AstVisitor(SolidityVisitor):
         # if (ctx.storageLocation(0)):
         #    storageLocation = ctx.storageLocation(0).getText()
 
-        return Node(type='VariableDeclaration',
+        return Node(ctx=ctx,
+                    type='VariableDeclaration',
                     typeName=self.visit(ctx.typeName()),
                     name=ctx.identifier().getText(),
                     storageLocation=storageLocation,
@@ -308,7 +343,8 @@ class AstVisitor(SolidityVisitor):
         if ctx.storageLocation():
             storageLocation = ctx.storageLocation().getText()
 
-        return Node(type='VariableDeclaration',
+        return Node(ctx=ctx,
+                    type='VariableDeclaration',
                     typeName=self.visit(ctx.typeName()),
                     name=None,
                     storageLocation=storageLocation,
@@ -316,12 +352,14 @@ class AstVisitor(SolidityVisitor):
                     isIndexed=False)
 
     def visitWhileStatement(self, ctx):
-        return Node(type='WhileStatement',
+        return Node(ctx=ctx,
+                    type='WhileStatement',
                     condition=self.visit(ctx.expression()),
                     body=self.visit(ctx.statement()))
 
     def visitDoWhileStatement(self, ctx):
-        return Node(type='DoWhileStatement',
+        return Node(ctx=ctx,
+                    type='DoWhileStatement',
                     condition=self.visit(ctx.expression()),
                     body=self.visit(ctx.statement()))
 
@@ -333,25 +371,30 @@ class AstVisitor(SolidityVisitor):
         if len(ctx.statement()) > 1:
             FalseBody = self.visit(ctx.statement(1))
 
-        return Node(type='IfStatement',
+        return Node(ctx=ctx,
+                    type='IfStatement',
                     condition=self.visit(ctx.expression()),
                     TrueBody=TrueBody,
                     FalseBody=FalseBody)
 
     def visitUserDefinedTypeName(self, ctx):
-        return Node(type='UserDefinedTypeName',
+        return Node(ctx=ctx,
+                    type='UserDefinedTypeName',
                     namePath=ctx.getText())
 
     def visitElementaryTypeName(self, ctx):
-        return Node(type='ElementaryTypeName',
+        return Node(ctx=ctx,
+                    type='ElementaryTypeName',
                     name=ctx.getText())
 
     def visitBlock(self, ctx):
-        return Node(type='Block',
+        return Node(ctx=ctx,
+                    type='Block',
                     statements=self.visit(ctx.statement()))
 
     def visitExpressionStatement(self, ctx):
-        return Node(type='ExpressionStatement',
+        return Node(ctx=ctx,
+                    type='ExpressionStatement',
                     expression=self.visit(ctx.expression()))
 
     def visitNumberLiteral(self, ctx):
@@ -361,12 +404,14 @@ class AstVisitor(SolidityVisitor):
         if len(ctx.children) == 2:
             subdenomination = ctx.getChild(1).getText()
 
-        return Node(type='NumberLiteral',
+        return Node(ctx=ctx,
+                    type='NumberLiteral',
                     number=number,
                     subdenomination=subdenomination)
 
     def visitMapping(self, ctx):
-        return Node(type='Mapping',
+        return Node(ctx=ctx,
+                    type='Mapping',
                     keyType=self.visit(ctx.elementaryTypeName()),
                     valueType=self.visit(ctx.typeName()))
 
@@ -376,7 +421,8 @@ class AstVisitor(SolidityVisitor):
         if ctx.parameterList():
             parameters = self.visit(ctx.parameterList())
 
-        return Node(type='ModifierDefinition',
+        return Node(ctx=ctx,
+                    type='ModifierDefinition',
                     name=ctx.identifier().getText(),
                     parameters=parameters,
                     body=self.visit(ctx.block()))
@@ -396,31 +442,36 @@ class AstVisitor(SolidityVisitor):
         elif children_length == 2:
             op = ctx.getChild(0).getText()
             if op == 'new':
-                return Node(type='NewExpression',
+                return Node(ctx=ctx,
+                            type='NewExpression',
                             typeName=self.visit(ctx.typeName()))
 
             if op in ['+', '-', '++', '--', '!', '~', 'after', 'delete']:
-                return Node(type='UnaryOperation',
+                return Node(ctx=ctx,
+                            type='UnaryOperation',
                             operator=op,
                             subExpression=self.visit(ctx.getChild(1)),
                             isPrefix=True)
 
             op = ctx.getChild(1).getText()
             if op in ['++', '--']:
-                return Node(type='UnaryOperation',
+                return Node(ctx=ctx,
+                            type='UnaryOperation',
                             operator=op,
                             subExpression=self.visit(ctx.getChild(0)),
                             isPrefix=False)
         elif children_length == 3:
             if ctx.getChild(0).getText() == '(' and ctx.getChild(2).getText() == ')':
-                return Node(type='TupleExpression',
+                return Node(ctx=ctx,
+                            type='TupleExpression',
                             components=[self.visit(ctx.getChild(1))],
                             isArray=False)
 
             op = ctx.getChild(1).getText()
 
             if op == ',':
-                return Node(type='TupleExpression',
+                return Node(ctx=ctx,
+                            type='TupleExpression',
                             components=[
                                 self.visit(ctx.getChild(0)),
                                 self.visit(ctx.getChild(2))
@@ -431,7 +482,8 @@ class AstVisitor(SolidityVisitor):
             elif op == '.':
                 expression = self.visit(ctx.getChild(0))
                 memberName = ctx.getChild(2).getText()
-                return Node(type='MemberAccess',
+                return Node(ctx=ctx,
+                            type='MemberAccess',
                             expression=expression,
                             memberName=memberName)
 
@@ -469,7 +521,8 @@ class AstVisitor(SolidityVisitor):
             ]
 
             if op in binOps:
-                return Node(type='BinaryOperation',
+                return Node(ctx=ctx,
+                            type='BinaryOperation',
                             operator=op,
                             left=self.visit(ctx.getChild(0)),
                             right=self.visit(ctx.getChild(2)))
@@ -488,20 +541,23 @@ class AstVisitor(SolidityVisitor):
                         args.push(self.visit(nameValue.expression()))
                         names.push(nameValue.identifier().getText())
 
-                return Node(type='FunctionCall',
+                return Node(ctx=ctx,
+                            type='FunctionCall',
                             expression=self.visit(ctx.getChild(0)),
                             arguments=args,
                             names=names)
 
             if ctx.getChild(1).getText() == '[' and ctx.getChild(3).getText() == ']':
-                return Node(type='IndexAccess',
+                return Node(ctx=ctx,
+                            type='IndexAccess',
                             base=self.visit(ctx.getChild(0)),
                             index=self.visit(ctx.getChild(2)))
 
         elif children_length == 5:
             # ternary
             if ctx.getChild(1).getText() == '?' and ctx.getChild(3).getText() == ':':
-                return Node(type='Conditional',
+                return Node(ctx=ctx,
+                            type='Conditional',
                             condition=self.visit(ctx.getChild(0)),
                             TrueExpression=self.visit(ctx.getChild(2)),
                             FalseExpression=self.visit(ctx.getChild(4)))
@@ -532,6 +588,7 @@ class AstVisitor(SolidityVisitor):
             isDeclaredConst = True
 
         decl = self._createNode(
+            ctx=ctx,
             type='VariableDeclaration',
             typeName=type,
             name=name,
@@ -541,7 +598,8 @@ class AstVisitor(SolidityVisitor):
             isDeclaredConst=isDeclaredConst,
             isIndexed=False)
 
-        return Node(type='StateVariableDeclaration',
+        return Node(ctx=ctx,
+                    type='StateVariableDeclaration',
                     variables=[decl],
                     initialValue=expression)
 
@@ -551,7 +609,8 @@ class AstVisitor(SolidityVisitor):
         if conditionExpression:
             conditionExpression = conditionExpression.expression
 
-        return Node(type='ForStatement',
+        return Node(ctx=ctx,
+                    type='ForStatement',
                     initExpression=self.visit(ctx.simpleStatement()),
                     conditionExpression=conditionExpression,
                     loopExpression=Node(
@@ -562,43 +621,51 @@ class AstVisitor(SolidityVisitor):
 
     def visitPrimaryExpression(self, ctx):
         if ctx.BooleanLiteral():
-            return Node(type='BooleanLiteral',
+            return Node(ctx=ctx,
+                        type='BooleanLiteral',
                         value=ctx.BooleanLiteral().getText() == 'True')
 
         if ctx.HexLiteral():
-            return Node(type='HexLiteral',
+            return Node(ctx=ctx,
+                        type='HexLiteral',
                         value=ctx.HexLiteral().getText())
 
         if ctx.StringLiteral():
             text = ctx.getText()
 
-            return Node(type='StringLiteral',
+            return Node(ctx=ctx,
+                        type='StringLiteral',
                         value=text[1: len(text) - 1])
 
         if len(ctx.children) == 3 and ctx.getChild(1).getText() == '[' and ctx.getChild(2).getText() == ']':
             node = self.visit(ctx.getChild(0))
             if node.type == 'Identifier':
-                node = Node(type='UserDefinedTypeName',
+                node = Node(ctx=ctx,
+                            type='UserDefinedTypeName',
                             namePath=node.name)
             else:
-                node = Node(type='ElementaryTypeName',
+                node = Node(ctx=ctx,
+                            type='ElementaryTypeName',
                             name=ctx.getChild(0).getText())
 
-            return Node(type='ArrayTypeName',
+            return Node(ctx=ctx,
+                        type='ArrayTypeName',
                         baseTypeName=node,
                         length=None)
 
         return self.visit(ctx.getChild(0))
 
     def visitIdentifier(self, ctx):
-        return Node(type="Identifier",
+        return Node(ctx=ctx,
+                    type="Identifier",
                     name=ctx.getText())
 
     def visitTupleExpression(self, ctx):
         children = ctx.children[1:-1]
         components = [None if e is None else self.visit(e) for e in self._mapCommasToNulls(children)]
 
-        return Node(type='TupleExpression',
+        return Node(ctx=ctx,
+                    type='TupleExpression',
                     components=components,
                     isArray=ctx.getChild(0).getText() == '[')
 
@@ -610,7 +677,8 @@ class AstVisitor(SolidityVisitor):
             if iden == None:
                 result.append(None)
             else:
-                result.append(self._createNode(type="VariableDeclaration",
+                result.append(self._createNode(ctx=ctx,
+                                               type="VariableDeclaration",
                                                name=iden.getText(),
                                                isStateVar=False,
                                                isIndexed=False,
@@ -624,7 +692,8 @@ class AstVisitor(SolidityVisitor):
             if decl == None:
                 return None
 
-            result.append(self._createNode(type='VariableDeclaration',
+            result.append(self._createNode(ctx=ctx,
+                                           type='VariableDeclaration',
                                            name=decl.identifier().getText(),
                                            typeName=self.visit(decl.typeName()),
                                            isStateVar=False,
@@ -647,7 +716,8 @@ class AstVisitor(SolidityVisitor):
         if ctx.expression():
             initialValue = self.visit(ctx.expression())
 
-        return Node(type='VariableDeclarationStatement',
+        return Node(ctx=ctx,
+                    type='VariableDeclarationStatement',
                     variables=variables,
                     initialValue=initialValue)
 
@@ -671,13 +741,15 @@ class AstVisitor(SolidityVisitor):
         elif impDecLen == 5:
             unitAlias = ctx.getChild(3).getText()
 
-        return Node(type='ImportDirective',
+        return Node(ctx=ctx,
+                    type='ImportDirective',
                     path=pathString[1: len(pathString) - 1],
                     unitAlias=unitAlias,
                     symbolAliases=symbolAliases)
 
     def visitEventDefinition(self, ctx):
-        return Node(type='EventDefinition',
+        return Node(ctx=ctx,
+                    type='EventDefinition',
                     name=ctx.identifier().getText(),
                     parameters=self.visit(ctx.eventParameterList()),
                     isAnonymous=not not ctx.AnonymousKeyword())
@@ -690,14 +762,15 @@ class AstVisitor(SolidityVisitor):
             if paramCtx.identifier():
                 name = paramCtx.identifier().getText()
 
-            parameters.append(self._createNode(
+            parameters.append(self._createNode(ctx=ctx,
                 type='VariableDeclaration',
                 typeName=type,
                 name=name,
                 isStateVar=False,
                 isIndexed=not not paramCtx.IndexedKeyword()))
 
-        return Node(type='ParameterList',
+        return Node(ctx=ctx,
+                    type='ParameterList',
                     parameters=parameters)
 
     def visitInlineAssemblyStatement(self, ctx):
@@ -707,32 +780,38 @@ class AstVisitor(SolidityVisitor):
             language = ctx.StringLiteral().getText()
             language = language[1: len(language) - 1]
 
-        return Node(type='InLineAssemblyStatement',
+        return Node(ctx=ctx,
+                    type='InLineAssemblyStatement',
                     language=language,
                     body=self.visit(ctx.assemblyBlock()))
 
     def visitAssemblyBlock(self, ctx):
         operations = [self.visit(it) for it in ctx.assemblyItem()]
 
-        return Node(type='AssemblyBlock',
+        return Node(ctx=ctx,
+                    type='AssemblyBlock',
                     operations=operations)
 
     def visitAssemblyItem(self, ctx):
 
         if ctx.HexLiteral():
-            return Node(type='HexLiteral',
+            return Node(ctx=ctx,
+                        type='HexLiteral',
                         value=ctx.HexLiteral().getText())
 
         if ctx.StringLiteral():
             text = ctx.StringLiteral().getText()
-            return Node(type='StringLiteral',
+            return Node(ctx=ctx,
+                        type='StringLiteral',
                         value=text[1: len(text) - 1])
 
         if ctx.BreakKeyword():
-            return Node(type='Break')
+            return Node(ctx=ctx,
+                        type='Break')
 
         if ctx.ContinueKeyword():
-            return Node(type='Continue')
+            return Node(ctx=ctx,
+                        type='Continue')
 
         return self.visit(ctx.getChild(0))
 
@@ -743,7 +822,8 @@ class AstVisitor(SolidityVisitor):
         functionName = ctx.getChild(0).getText()
         args = [self.visit(arg) for arg in ctx.assemblyExpression()]
 
-        return Node(type='AssemblyExpression',
+        return Node(ctx=ctx,
+                    type='AssemblyExpression',
                     functionName=functionName,
                     arguments=args)
 
@@ -751,23 +831,28 @@ class AstVisitor(SolidityVisitor):
 
         if ctx.StringLiteral():
             text = ctx.getText()
-            return Node(type='StringLiteral',
+            return Node(ctx=ctx,
+                        type='StringLiteral',
                         value=text[1: len(text) - 1])
 
         if ctx.DecimalNumber():
-            return Node(type='DecimalNumber',
+            return Node(ctx=ctx,
+                        type='DecimalNumber',
                         value=ctx.getText())
 
         if ctx.HexNumber():
-            return Node(type='HexNumber',
+            return Node(ctx=ctx,
+                        type='HexNumber',
                         value=ctx.getText())
 
         if ctx.HexLiteral():
-            return Node(type='HexLiteral',
+            return Node(ctx=ctx,
+                        type='HexLiteral',
                         value=ctx.getText())
 
     def visitAssemblySwitch(self, ctx):
-        return Node(type='AssemblySwitch',
+        return Node(ctx=ctx,
+                    type='AssemblySwitch',
                     expression=self.visit(ctx.assemblyExpression()),
                     cases=[self.visit(c) for c in ctx.assemblyCase()])
 
@@ -778,11 +863,13 @@ class AstVisitor(SolidityVisitor):
             value = self.visit(ctx.assemblyLiteral())
 
         if value != None:
-            node = Node(type="AssemblyCase",
+            node = Node(ctx=ctx,
+                        type="AssemblyCase",
                         block=self.visit(ctx.assemblyBlock()),
                         value=value)
         else:
-            node = Node(type="AssemblyCase",
+            node = Node(ctx=ctx,
+                        type="AssemblyCase",
                         block=self.visit(ctx.assemblyBlock()),
                         default=True)
 
@@ -796,7 +883,8 @@ class AstVisitor(SolidityVisitor):
         else:
             names = self.visit(names.assemblyIdentifierList().identifier())
 
-        return Node(type='AssemblyLocalDefinition',
+        return Node(ctx=ctx,
+                    type='AssemblyLocalDefinition',
                     names=names,
                     expression=self.visit(ctx.assemblyExpression()))
 
@@ -804,7 +892,8 @@ class AstVisitor(SolidityVisitor):
         args = ctx.assemblyIdentifierList().identifier()
         returnArgs = ctx.assemblyFunctionReturns().assemblyIdentifierList().identifier()
 
-        return Node(type='AssemblyFunctionDefinition',
+        return Node(ctx=ctx,
+                    type='AssemblyFunctionDefinition',
                     name=ctx.identifier().getText(),
                     arguments=self.visit(args),
                     returnArguments=self.visit(returnArgs),
@@ -818,34 +907,40 @@ class AstVisitor(SolidityVisitor):
         else:
             names = self.visit(names.assemblyIdentifierList().identifier())
 
-        return Node(type='AssemblyAssignment',
+        return Node(ctx=ctx,
+                    type='AssemblyAssignment',
                     names=names,
                     expression=self.visit(ctx.assemblyExpression()))
 
     def visitLabelDefinition(self, ctx):
-        return Node(type='LabelDefinition',
+        return Node(ctx=ctx,
+                    type='LabelDefinition',
                     name=ctx.identifier().getText())
 
     def visitAssemblyStackAssignment(self, ctx):
-        return Node(type='AssemblyStackAssignment',
+        return Node(ctx=ctx,
+                    type='AssemblyStackAssignment',
                     name=ctx.identifier().getText())
 
     def visitAssemblyFor(self, ctx):
-        return Node(type='AssemblyFor',
+        return Node(ctx=ctx,
+                    type='AssemblyFor',
                     pre=self.visit(ctx.getChild(1)),
                     condition=self.visit(ctx.getChild(2)),
                     post=self.visit(ctx.getChild(3)),
                     body=self.visit(ctx.getChild(4)))
 
     def visitAssemblyIf(self, ctx):
-        return Node(type='AssemblyIf',
+        return Node(ctx=ctx,
+                    type='AssemblyIf',
                     condition=self.visit(ctx.assemblyExpression()),
                     body=self.visit(ctx.assemblyBlock()))
 
     ### /***************************************************
 
     def visitPragmaDirective(self, ctx):
-        return Node(type="PragmaDirective",
+        return Node(ctx=ctx,
+                    type="PragmaDirective",
                     name=ctx.pragmaName().getText(),
                     value=ctx.pragmaValue().getText())
 
@@ -868,7 +963,8 @@ class AstVisitor(SolidityVisitor):
         elif len(ctx.children) == 5:
             unit_alias = ctx.getChild(3).getText()
 
-        return Node(type="ImportDirective",
+        return Node(ctx=ctx,
+                    type="ImportDirective",
                     path=ctx.StringLiteral().getText().strip('"'),
                     symbolAliases=symbol_aliases,
                     unitAlias=unit_alias
@@ -876,14 +972,16 @@ class AstVisitor(SolidityVisitor):
 
     def visitContractDefinition(self, ctx):
         self._currentContract = ctx.identifier().getText()
-        return Node(type="ContractDefinition",
+        return Node(ctx=ctx,
+                    type="ContractDefinition",
                     name=ctx.identifier().getText(),
                     baseContracts=self.visit(ctx.inheritanceSpecifier()),
                     subNodes=self.visit(ctx.contractPart()),
                     kind=ctx.getChild(0).getText())
 
     def visitUserDefinedTypename(self, ctx):
-        return Node(type="UserDefinedTypename",
+        return Node(ctx=ctx,
+                    type="UserDefinedTypename",
                     name=ctx.getText())
 
     def visitReturnStatement(self, ctx):
@@ -893,7 +991,7 @@ class AstVisitor(SolidityVisitor):
         return ctx.getText()
 
 
-def parse(text, start="sourceUnit", strict=False):
+def parse(text, start="sourceUnit", loc=False, strict=False):
     from antlr4.InputStream import InputStream
     from antlr4 import FileStream, CommonTokenStream
 
@@ -907,9 +1005,11 @@ def parse(text, start="sourceUnit", strict=False):
     parser = SolidityParser(token_stream)
     ast = AstVisitor()
 
+    Node.ENABLE_LOC = loc
+
     return ast.visit(getattr(parser, start)())
 
 
-def parse_file(path, start="sourceUnit", strict=False):
+def parse_file(path, start="sourceUnit", loc=False, strict=False):
     with open(path, 'r') as f:
-        return parse(f.read(), start=start, strict=strict)
+        return parse(f.read(), start=start, loc=loc, strict=strict)

@@ -6,16 +6,18 @@ A Solidity parser for Python built on top of a robust ANTLR4 grammar
 ## Install
 
 ```
-#> pip3 install solidity_parser_antlr
-#> python3 -m solidity_parser_antlry <path_to_contract.sol>   # prettyprints tree
+#> pip3 install solidity_parser
+#> python3 -m solidity_parser <path_to_contract.sol>   # prettyprints tree
 ```
 
 ## HowTo
 
 ```python
 
-from solidity_parser_antlr import parser
+import sys
 import pprint
+
+from solidity_parser import parser
 
 sourceUnit = parser.parse_file(sys.argv[1])
 pprint.pprint(sourceUnit)
@@ -54,7 +56,7 @@ parse nodes can be accessed like dictionaries or object attributes. Nodes always
 
 ## Generate the parser
 
-Update the grammar in `./solidity-antlr4/Solidity.g4` and run the antlr generator script to create the parser classes in `solidity_parser_antlr/solidity_antlr4`.
+Update the grammar in `./solidity-antlr4/Solidity.g4` and run the antlr generator script to create the parser classes in `solidity_parser/solidity_antlr4`.
 ```
 #> bash script/antlr4.sh
 ```

@@ -11,7 +11,7 @@ def read(fname):
 setup(
     name="solidity-parser",
     version="0.0.1",
-    packages=["solidity_parser_antlr"],
+    packages=["solidity_parser"],
     author="tintinweb",
     author_email="tintinweb@oststrom.com",
     description=(
