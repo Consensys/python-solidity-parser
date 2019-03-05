@@ -11,7 +11,7 @@ publish to pypi w/o having to convert Readme.md to RST:
 
 '''
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def read(fname):
@@ -24,7 +24,7 @@ name = "solidity-parser"
 setup(
     name=name,
     version=version,
-    packages=[name.replace("-","_")],
+    packages=find_packages(),
     author="tintinweb",
     author_email="tintinweb@oststrom.com",
     description=(

@@ -7,9 +7,9 @@
 
 
 from antlr4 import *
-from solidity_antlr4.SolidityLexer import SolidityLexer
-from solidity_antlr4.SolidityParser import SolidityParser
-from solidity_antlr4.SolidityVisitor import SolidityVisitor
+from solidity_parser.solidity_antlr4.SolidityLexer import SolidityLexer
+from solidity_parser.solidity_antlr4.SolidityParser import SolidityParser
+from solidity_parser.solidity_antlr4.SolidityVisitor import SolidityVisitor
 
 
 class Node(dict):
@@ -1002,9 +1002,6 @@ class AstVisitor(SolidityVisitor):
 def parse(text, start="sourceUnit", loc=False, strict=False):
     from antlr4.InputStream import InputStream
     from antlr4 import FileStream, CommonTokenStream
-
-    from solidity_antlr4.SolidityLexer import SolidityLexer
-    from solidity_antlr4.SolidityParser import SolidityParser
 
     input_stream = InputStream(text)
 
