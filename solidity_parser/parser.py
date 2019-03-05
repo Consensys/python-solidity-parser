@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# part of https://github.com/ConsenSys/python-solidity-parser
+# derived from https://github.com/federicobond/solidity-parser-antlr/
+#
+
+
 from antlr4 import *
 from solidity_antlr4.SolidityLexer import SolidityLexer
 from solidity_antlr4.SolidityParser import SolidityParser
