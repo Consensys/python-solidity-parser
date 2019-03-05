@@ -3,6 +3,13 @@ A Solidity parser for Python built on top of a robust ANTLR4 grammar
 
 **ⓘ** This is a **python3** port of the [javascript antlr parser](https://github.com/federicobond/solidity-parser-antlr) maintained by [@federicobond](https://github.com/federicobond/). Interfaces are intentionally following the javascript impelementation and therefore not pep8 compliant.
 
+## Install
+
+```
+#> pip3 install solidity_parser_antlr
+#> python3 -m solidity_parser_antlry <path_to_contract.sol>   # prettyprints tree
+```
+
 ## HowTo
 
 ```python
