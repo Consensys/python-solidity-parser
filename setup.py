@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+'''
+
+deps (requires up2date version):
+    *) pip install --upgrade pip wheel setuptools twine
+publish to pypi w/o having to convert Readme.md to RST:
+    1) #> python setup.py sdist bdist_wheel
+    2) #> twine upload dist/*   #<specify bdist_wheel version to upload>; #optional --repository <testpypi> or  --repository-url <testpypi-url>
+
+'''
 import os
 from setuptools import setup
 
@@ -15,7 +24,7 @@ name = "solidity-parser"
 setup(
     name=name,
     version=version,
-    packages=[name],
+    packages=[name.replace("-","_")],
     author="tintinweb",
     author_email="tintinweb@oststrom.com",
     description=(
