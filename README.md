@@ -1,7 +1,7 @@
 # python-solidity-parser
 A Solidity parser for Python built on top of a robust ANTLR4 grammar
 
-**ⓘ** This is a **python3** port of the [javascript antlr parser](https://github.com/federicobond/solidity-parser-antlr) maintained by [@federicobond](https://github.com/federicobond/). Interfaces are intentionally following the javascript impelementation and therefore not pep8 compliant.
+**ⓘ** This is a **python3** port of the [javascript antlr parser](https://github.com/federicobond/solidity-parser-antlr) maintained by [@federicobond](https://github.com/federicobond/). Interfaces are intentionally following the javascript implementation and are therefore not pep8 compliant.
 
 ## Install
 
@@ -49,7 +49,7 @@ output:
 
 ### Nodes
 
-parse nodes can be accessed like dictionaries or object attributes. Nodes always carry a `type` field to denote the type of information provided. The first node is of type `sourceUnit`.
+Parse-tree nodes can be accessed both like dictionaries or via object attributes. Nodes always carry a `type` field to hint the type of AST node. The start node is always of type `sourceUnit`.
 
 
 
