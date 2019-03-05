@@ -54,7 +54,7 @@ parse nodes can be accessed like dictionaries or object attributes. Nodes always
 
 ## Generate the parser
 
-Update the grammar in `./solidity-antlr4/Solidity.g4` and the parser generator script to overwrite the autogenrated parser files in `solidity_parser_antlr/solidity_antlr4`.
+Update the grammar in `./solidity-antlr4/Solidity.g4` and run the antlr generator script to create the parser classes in `solidity_parser_antlr/solidity_antlr4`.
 ```
 #> bash script/antlr4.sh
 ```
