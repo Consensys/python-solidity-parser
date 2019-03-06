@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import parser
 import pprint
+from . import parser
 
 if __name__ == "__main__":
     if not len(sys.argv)>2 or sys.argv[1] not in ("parse","outline"):
