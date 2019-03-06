@@ -6,10 +6,58 @@ import parser
 import pprint
 
 if __name__ == "__main__":
-    if not len(sys.argv)>1:
-        print("\n- missing path to solidity file.\n")
-        print("#> python -m solidity_parser <solidity file>")
+    if not len(sys.argv)>2 or sys.argv[1] not in ("parse","outline"):
+        print("\n- missing subcommand or path to solidity file.\n")
+        print("#> python -m solidity_parser <subcommand> <solidity file>")
         sys.exit(1)
 
-    node = parser.parse_file(sys.argv[1])
-    pprint.pprint(node)
+    node = parser.parse_file(sys.argv[2])
+    if sys.argv[1]=="parse":
+        pprint.pprint(node)
+    elif sys.argv[1]=="outline":
+        level = 0
+        sourceUnitObject = parser.objectify(node)
+        print("=== pragmas ===")
+        level +=1
+        for p in sourceUnitObject.pragmas:
+            print(("\t" * level) + "* " + str(p))
+        level -=1
+        print("=== imports ===")
+        level +=1
+        for p in sourceUnitObject.imports:
+            print(("\t" * level) + "* " + str(p))
+        level = 0
+        for contract_name, contract_object in sourceUnitObject.contracts.items():
+            print("=== contract: " + contract_name)
+            level +=1
+            ## statevars
+            print(("\t" * level) + "=== Enums")
+            level += 2
+            for name in contract_object.enums.keys():
+                print(("\t" * level) + "* " + str(name))
+            level -= 2
+            ## structs
+            print(("\t" * level) + "=== Structs")
+            level += 2
+            for name in contract_object.structs.keys():
+                print(("\t" * level) + "* " + str(name))
+            level -= 2
+            ## statevars
+            print(("\t" * level) + "=== statevars" )
+            level +=2
+            for name in contract_object.stateVars.keys():
+                print(("\t" * level) + "* " + str(name) )
+            level -=2
+            ## modifiers
+            print(("\t" * level) + "=== modifiers")
+            level += 2
+            for name in contract_object.modifiers.keys():
+                print(("\t" * level) + "* " + str(name))
+            level -= 2
+            ## functions
+            print(("\t" * level) + "=== functions")
+            level += 2
+            for name in contract_object.functions.keys():
+                print(("\t" * level) + "* " + str(name))
+            level -= 2
+
