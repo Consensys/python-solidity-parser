@@ -304,8 +304,8 @@ class AstVisitor(SolidityVisitor):
 
         elif ctxArgs.nameValueList():
             for nameValue in ctxArgs.nameValueList().nameValue():
-                args.push(self.visit(nameValue.expression()))
-                names.push(nameValue.identifier().getText())
+                args.append(self.visit(nameValue.expression()))
+                names.append(nameValue.identifier().getText())
 
         return Node(ctx=ctx,
                     type='FunctionCall',
@@ -548,8 +548,8 @@ class AstVisitor(SolidityVisitor):
                     args = [self.visit(a) for a in ctxArgs.expressionList().expression()]
                 elif ctxArgs.nameValueList():
                     for nameValue in ctxArgs.nameValueList().nameValue():
-                        args.push(self.visit(nameValue.expression()))
-                        names.push(nameValue.identifier().getText())
+                        args.append(self.visit(nameValue.expression()))
+                        names.append(nameValue.identifier().getText())
 
                 return Node(ctx=ctx,
                             type='FunctionCall',
@@ -623,7 +623,7 @@ class AstVisitor(SolidityVisitor):
                     type='ForStatement',
                     initExpression=self.visit(ctx.simpleStatement()),
                     conditionExpression=conditionExpression,
-                    loopExpression=Node(
+                    loopExpression=Node(ctx=ctx,
                         type='ExpressionStatement',
                         expression=self.visit(ctx.expression())),
                     body=self.visit(ctx.statement())
