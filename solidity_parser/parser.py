@@ -313,6 +313,11 @@ class AstVisitor(SolidityVisitor):
                     arguments=args,
                     names=names)
 
+    def visitEmitStatement(self, ctx):
+        return Node(ctx=ctx,
+                    type='EmitStatement',
+                    eventCall=self.visit(ctx.getChild(1)))
+
     def visitStructDefinition(self, ctx):
         return Node(ctx=ctx,
                     type='StructDefinition',
