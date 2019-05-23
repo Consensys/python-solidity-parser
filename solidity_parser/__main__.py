@@ -30,6 +30,8 @@ if __name__ == "__main__":
         for contract_name, contract_object in sourceUnitObject.contracts.items():
             print("=== contract: " + contract_name)
             level +=1
+
+            print(("\t" * level) + "=== Inherited Contrracts: " + ','.join([bc.baseName.namePath for bc in  contract_object._node.baseContracts]))
             ## statevars
             print(("\t" * level) + "=== Enums")
             level += 2
