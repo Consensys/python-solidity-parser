@@ -59,7 +59,12 @@ if __name__ == "__main__":
             ## functions
             print(("\t" * level) + "=== functions")
             level += 2
-            for name in contract_object.functions.keys():
-                print(("\t" * level) + "* " + str(name))
+            for name, funcObj in contract_object.functions.items():
+                txtAttribs = []
+                if funcObj.visibility:
+                    txtAttribs.append(funcObj.visibility)
+                if funcObj.stateMutability:
+                    txtAttribs.append(funcObj.stateMutability)
+                print(("\t" * level) + "* " + str(name) + "\t\t (" + ','.join(txtAttribs)+ ")")
             level -= 2
 

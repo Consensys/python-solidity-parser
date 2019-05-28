@@ -1146,6 +1146,9 @@ def objectify(start_node):
 
                 def __init__(self, node):
                     self._node = node
+                    if(node.type=="FunctionDefinition"):
+                        self.visibility = node.visibility
+                        self.stateMutability = node.stateMutability
                     self.arguments = {}
                     self.returns = {}
                     self.declarations = {}
