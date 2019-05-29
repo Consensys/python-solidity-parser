@@ -9,6 +9,10 @@ if __name__ == "__main__":
     if not len(sys.argv)>2 or sys.argv[1] not in ("parse","outline"):
         print("\n- missing subcommand or path to solidity file.\n")
         print("#> python -m solidity_parser <subcommand> <solidity file>")
+        print("")
+        print("\t subcommands:")
+        print("\t\t parse   ... print the parsetree for the sourceUnit")
+        print("\t\t outline ... print a high level outline of the sourceUnit")
         sys.exit(1)
 
     node = parser.parse_file(sys.argv[2])

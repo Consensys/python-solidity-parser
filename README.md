@@ -67,6 +67,7 @@ sourceUnitObject.imports  # []
 sourceUnitObject.pragmas  # []
 sourceUnitObject.contracts.keys()  # get all contract names
 sourceUnitObject.contracts["contractName"].functions.keys()  # get all functions in contract: "contractName"
+sourceUnitObject.contracts["contractName"].functions["myFunction"].visibility  # get "myFunction"s visibility (or stateMutability)
 ```
 
 
