@@ -59,6 +59,8 @@ contract SimpleAuction {
 
     function(uint a, uint b) public {}
 
+    function(SimpleAuction a) public {}
+
     /// Bid on the auction with the value sent
     /// together with this transaction.
     /// The value will only be refunded if the
