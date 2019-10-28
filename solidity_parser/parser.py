@@ -639,7 +639,7 @@ class AstVisitor(SolidityVisitor):
         if ctx.BooleanLiteral():
             return Node(ctx=ctx,
                         type='BooleanLiteral',
-                        value=ctx.BooleanLiteral().getText() == 'True')
+                        value=ctx.BooleanLiteral().getText() == 'true')
 
         if ctx.HexLiteral():
             return Node(ctx=ctx,
