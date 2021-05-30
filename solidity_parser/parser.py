@@ -6,6 +6,7 @@
 #
 
 
+from uuid import uuid4
 from antlr4 import *
 from solidity_parser.solidity_antlr4.SolidityLexer import SolidityLexer
 from solidity_parser.solidity_antlr4.SolidityParser import SolidityParser
@@ -583,7 +584,7 @@ class AstVisitor(SolidityVisitor):
     def visitStateVariableDeclaration(self, ctx):
         type = self.visit(ctx.typeName())
         iden = ctx.identifier()
-        name = iden.getText()
+        name = iden.getText() if iden else str(uuid4())
 
         expression = None
 
