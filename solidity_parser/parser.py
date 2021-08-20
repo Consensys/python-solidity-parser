@@ -1007,7 +1007,7 @@ class AstVisitor(SolidityVisitor):
         return ctx.getText()
 
 
-def parse(text, start="sourceUnit", loc=False, strict=False):
+def parse(text, start="sourceUnit", loc=False):
     from antlr4.InputStream import InputStream
     from antlr4 import FileStream, CommonTokenStream
 
@@ -1023,9 +1023,9 @@ def parse(text, start="sourceUnit", loc=False, strict=False):
     return ast.visit(getattr(parser, start)())
 
 
-def parse_file(path, start="sourceUnit", loc=False, strict=False):
+def parse_file(path, start="sourceUnit", loc=False):
     with open(path, 'r') as f:
-        return parse(f.read(), start=start, loc=loc, strict=strict)
+        return parse(f.read(), start=start, loc=loc)
 
 
 def visit(node, callback_object):
