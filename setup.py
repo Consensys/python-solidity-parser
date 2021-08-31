@@ -36,7 +36,7 @@ setup(
     long_description=read("README.md") if os.path.isfile("README.md") else "",
     long_description_content_type='text/markdown',
     #python setup.py register -r https://testpypi.python.org/pypi
-    install_requires=["antlr4-python3-runtime"],
+    install_requires=["antlr4-python3-runtime=="4.7.2""],
     #test_suite="nose.collector",
     #tests_require=["nose"],
 )
