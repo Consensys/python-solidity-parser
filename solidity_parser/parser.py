@@ -6,7 +6,6 @@
 #
 
 
-from os import fdopen
 from antlr4 import *
 from solidity_parser.solidity_antlr4.SolidityLexer import SolidityLexer
 from solidity_parser.solidity_antlr4.SolidityParser import SolidityParser
@@ -1039,7 +1038,7 @@ def parse(text, start="sourceUnit", loc=False, strict=False):
 
 
 def parse_file(path, start="sourceUnit", loc=False, strict=False):
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding="utf-8") as f:
         return parse(f.read(), start=start, loc=loc, strict=strict)
 
 
