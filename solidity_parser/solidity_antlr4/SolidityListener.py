@@ -1,4 +1,4 @@
-# Generated from solidity-antlr4/Solidity.g4 by ANTLR 4.7.2
+# Generated from solidity-antlr4/Solidity.g4 by ANTLR 4.9.3
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .SolidityParser import SolidityParser
@@ -89,6 +89,15 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SolidityParser#importPath.
+    def enterImportPath(self, ctx:SolidityParser.ImportPathContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#importPath.
+    def exitImportPath(self, ctx:SolidityParser.ImportPathContext):
+        pass
+
+
     # Enter a parse tree produced by SolidityParser#contractDefinition.
     def enterContractDefinition(self, ctx:SolidityParser.ContractDefinitionContext):
         pass
@@ -125,6 +134,33 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SolidityParser#fileLevelConstant.
+    def enterFileLevelConstant(self, ctx:SolidityParser.FileLevelConstantContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#fileLevelConstant.
+    def exitFileLevelConstant(self, ctx:SolidityParser.FileLevelConstantContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#customErrorDefinition.
+    def enterCustomErrorDefinition(self, ctx:SolidityParser.CustomErrorDefinitionContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#customErrorDefinition.
+    def exitCustomErrorDefinition(self, ctx:SolidityParser.CustomErrorDefinitionContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#typeDefinition.
+    def enterTypeDefinition(self, ctx:SolidityParser.TypeDefinitionContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#typeDefinition.
+    def exitTypeDefinition(self, ctx:SolidityParser.TypeDefinitionContext):
+        pass
+
+
     # Enter a parse tree produced by SolidityParser#usingForDeclaration.
     def enterUsingForDeclaration(self, ctx:SolidityParser.UsingForDeclarationContext):
         pass
@@ -140,15 +176,6 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#structDefinition.
     def exitStructDefinition(self, ctx:SolidityParser.StructDefinitionContext):
-        pass
-
-
-    # Enter a parse tree produced by SolidityParser#constructorDefinition.
-    def enterConstructorDefinition(self, ctx:SolidityParser.ConstructorDefinitionContext):
-        pass
-
-    # Exit a parse tree produced by SolidityParser#constructorDefinition.
-    def exitConstructorDefinition(self, ctx:SolidityParser.ConstructorDefinitionContext):
         pass
 
 
@@ -176,6 +203,15 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#functionDefinition.
     def exitFunctionDefinition(self, ctx:SolidityParser.FunctionDefinitionContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#functionDescriptor.
+    def enterFunctionDescriptor(self, ctx:SolidityParser.FunctionDescriptorContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#functionDescriptor.
+    def exitFunctionDescriptor(self, ctx:SolidityParser.FunctionDescriptorContext):
         pass
 
 
@@ -305,6 +341,15 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SolidityParser#mappingKey.
+    def enterMappingKey(self, ctx:SolidityParser.MappingKeyContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#mappingKey.
+    def exitMappingKey(self, ctx:SolidityParser.MappingKeyContext):
+        pass
+
+
     # Enter a parse tree produced by SolidityParser#mapping.
     def enterMapping(self, ctx:SolidityParser.MappingContext):
         pass
@@ -377,6 +422,24 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SolidityParser#tryStatement.
+    def enterTryStatement(self, ctx:SolidityParser.TryStatementContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#tryStatement.
+    def exitTryStatement(self, ctx:SolidityParser.TryStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#catchClause.
+    def enterCatchClause(self, ctx:SolidityParser.CatchClauseContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#catchClause.
+    def exitCatchClause(self, ctx:SolidityParser.CatchClauseContext):
+        pass
+
+
     # Enter a parse tree produced by SolidityParser#whileStatement.
     def enterWhileStatement(self, ctx:SolidityParser.WhileStatementContext):
         pass
@@ -392,6 +455,15 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#simpleStatement.
     def exitSimpleStatement(self, ctx:SolidityParser.SimpleStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#uncheckedStatement.
+    def enterUncheckedStatement(self, ctx:SolidityParser.UncheckedStatementContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#uncheckedStatement.
+    def exitUncheckedStatement(self, ctx:SolidityParser.UncheckedStatementContext):
         pass
 
 
@@ -464,6 +536,15 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#emitStatement.
     def exitEmitStatement(self, ctx:SolidityParser.EmitStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#revertStatement.
+    def enterRevertStatement(self, ctx:SolidityParser.RevertStatementContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#revertStatement.
+    def exitRevertStatement(self, ctx:SolidityParser.RevertStatementContext):
         pass
 
 
@@ -590,6 +671,15 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#assemblyExpression.
     def exitAssemblyExpression(self, ctx:SolidityParser.AssemblyExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#assemblyMember.
+    def enterAssemblyMember(self, ctx:SolidityParser.AssemblyMemberContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#assemblyMember.
+    def exitAssemblyMember(self, ctx:SolidityParser.AssemblyMemberContext):
         pass
 
 
@@ -737,12 +827,12 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by SolidityParser#elementaryTypeNameExpression.
-    def enterElementaryTypeNameExpression(self, ctx:SolidityParser.ElementaryTypeNameExpressionContext):
+    # Enter a parse tree produced by SolidityParser#typeNameExpression.
+    def enterTypeNameExpression(self, ctx:SolidityParser.TypeNameExpressionContext):
         pass
 
-    # Exit a parse tree produced by SolidityParser#elementaryTypeNameExpression.
-    def exitElementaryTypeNameExpression(self, ctx:SolidityParser.ElementaryTypeNameExpressionContext):
+    # Exit a parse tree produced by SolidityParser#typeNameExpression.
+    def exitTypeNameExpression(self, ctx:SolidityParser.TypeNameExpressionContext):
         pass
 
 
@@ -764,3 +854,32 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SolidityParser#hexLiteral.
+    def enterHexLiteral(self, ctx:SolidityParser.HexLiteralContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#hexLiteral.
+    def exitHexLiteral(self, ctx:SolidityParser.HexLiteralContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#overrideSpecifier.
+    def enterOverrideSpecifier(self, ctx:SolidityParser.OverrideSpecifierContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#overrideSpecifier.
+    def exitOverrideSpecifier(self, ctx:SolidityParser.OverrideSpecifierContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#stringLiteral.
+    def enterStringLiteral(self, ctx:SolidityParser.StringLiteralContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#stringLiteral.
+    def exitStringLiteral(self, ctx:SolidityParser.StringLiteralContext):
+        pass
+
+
+
+del SolidityParser

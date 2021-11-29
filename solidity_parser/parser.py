@@ -124,6 +124,27 @@ class AstVisitor(SolidityVisitor):
                     type="EnumValue",
                     name=ctx.identifier().getText())
 
+    def visitTypeDefinition(self, ctx):
+        return Node(ctx=ctx,
+                    type="TypeDefinition",
+                    typeKeyword=ctx.TypeKeyword().getText(),
+                    elementaryTypeName=self.visit(ctx.elementaryTypeName()))
+
+
+    def visitCustomErrorDefinition(self, ctx):
+        return Node(ctx=ctx,
+                    type="CustomErrorDefinition",
+                    name=self.visit(ctx.identifier()),
+                    parameterList=self.visit(ctx.parameterList()))
+
+    def visitFileLevelConstant(self, ctx):
+        return Node(ctx=ctx,
+                    type="FileLevelConstant",
+                    name=self.visit(ctx.identifier()),
+                    typeName=self.visit(ctx.typeName()),
+                    ConstantKeyword=self.visit(ctx.ConstantKeyword()))
+
+
     def visitUsingForDeclaration(self, ctx: SolidityParser.UsingForDeclarationContext):
         typename = None
         if ctx.getChild(3) != '*':
@@ -138,45 +159,29 @@ class AstVisitor(SolidityVisitor):
         return Node(ctx=ctx,
                     type="InheritanceSpecifier",
                     baseName=self.visit(ctx.userDefinedTypeName()),
-                    arguments=self.visit(ctx.expression()))
+                    arguments=self.visit(ctx.expressionList()))
 
     def visitContractPart(self, ctx: SolidityParser.ContractPartContext):
         return self.visit(ctx.children[0])
 
-    def visitConstructorDefinition(self, ctx: SolidityParser.ConstructorDefinitionContext):
-        parameters = self.visit(ctx.parameterList())
-        block = self.visit(ctx.block()) if ctx.block() else []
-        modifiers = [self.visit(i) for i in ctx.modifierList().modifierInvocation()]
 
-        if ctx.modifierList().ExternalKeyword(0):
-            visibility = "external"
-        elif ctx.modifierList().InternalKeyword(0):
-            visibility = "internal"
-        elif ctx.modifierList().PublicKeyword(0):
-            visibility = "public"
-        elif ctx.modifierList().PrivateKeyword(0):
-            visibility = "private"
+    def visitFunctionDefinition(self, ctx: SolidityParser.FunctionDefinitionContext):
+        isConstructor = isFallback =isReceive = False
+
+        fd = ctx.functionDescriptor()
+        if fd.ConstructorKeyword():
+            name = fd.ConstructorKeyword().getText()
+            isConstructor = True
+        elif fd.FallbackKeyword():
+            name = fd.FallbackKeyword().getText()
+            isFallback = True
+        elif fd.ReceiveKeyword():
+            name = fd.ReceiveKeyword().getText()
+            isReceive = True
+        elif fd.identifier():
+            name = fd.identifier().getText()
         else:
-            visibility = 'default'
-
-        if ctx.modifierList().stateMutability(0):
-            stateMutability = ctx.modifierList().stateMutability(0).getText()
-        else:
-            stateMutability = None
-
-        return Node(ctx=ctx,
-                    type="FunctionDefinition",
-                    name=None,
-                    parameters=parameters,
-                    returnParameters=None,
-                    body=block,
-                    visibility=visibility,
-                    modifiers=modifiers,
-                    isConstructor=True,
-                    stateMutability=stateMutability)
-
-    def visitFunctionDefinition(self, ctx: SolidityParser.ConstructorDefinitionContext):
-        name = ctx.identifier().getText() if ctx.identifier() else ""
+            raise Exception("unexpected function descriptor")
 
         parameters = self.visit(ctx.parameterList())
         returnParameters = self.visit(ctx.returnParameters()) if ctx.returnParameters() else []
@@ -207,7 +212,9 @@ class AstVisitor(SolidityVisitor):
                     body=block,
                     visibility=visibility,
                     modifiers=modifiers,
-                    isConstructor=name == self._currentContract,
+                    isConstructor=isConstructor,
+                    isFallback=isFallback,
+                    isReceive=isReceive,
                     stateMutability=stateMutability)
 
     def visitReturnParameters(self, ctx: SolidityParser.ReturnParametersContext):
@@ -319,6 +326,10 @@ class AstVisitor(SolidityVisitor):
                     type='EmitStatement',
                     eventCall=self.visit(ctx.getChild(1)))
 
+    def visitThrowStatement(self, ctx):
+        return Node(ctx=ctx,
+                    type='ThrowStatement')
+
     def visitStructDefinition(self, ctx):
         return Node(ctx=ctx,
                     type='StructDefinition',
@@ -393,6 +404,21 @@ class AstVisitor(SolidityVisitor):
                     TrueBody=TrueBody,
                     FalseBody=FalseBody)
 
+    def visitTryStatement(self, ctx):
+        return Node(ctx=ctx,
+                    type='TryStatement',
+                    expression=self.visit(ctx.expression()),
+                    block=self.visit(ctx.block()),
+                    returnParameters=self.visit(ctx.returnParameters()),
+                    catchClause=self.visit(ctx.catchClause()))
+
+    def visitCatchClause(self, ctx):
+        return Node(ctx=ctx,
+                    type='CatchClause',
+                    identifier=self.visit(ctx.identifier()),
+                    parameterList=self.visit(ctx.parameterList()),
+                    block=self.visit(ctx.block()))
+
     def visitUserDefinedTypeName(self, ctx):
         return Node(ctx=ctx,
                     type='UserDefinedTypeName',
@@ -428,7 +454,7 @@ class AstVisitor(SolidityVisitor):
     def visitMapping(self, ctx):
         return Node(ctx=ctx,
                     type='Mapping',
-                    keyType=self.visit(ctx.elementaryTypeName()),
+                    keyType=self.visit(ctx.mappingKey()),
                     valueType=self.visit(ctx.typeName()))
 
     def visitModifierDefinition(self, ctx):
@@ -448,6 +474,16 @@ class AstVisitor(SolidityVisitor):
 
     def visitSimpleStatement(self, ctx):
         return self.visit(ctx.getChild(0))
+
+    def visitUncheckedStatement(self, ctx):
+        return Node(ctx=ctx,
+                    type='UncheckedStatement',
+                    body=self.visit(ctx.block())) 
+
+    def visitRevertStatement(self, ctx):
+        return Node(ctx=ctx,
+                    type='RevertStatement',
+                    functionCall=self.visit(ctx.functionCall()))
 
     def visitExpression(self, ctx):
 
@@ -641,16 +677,15 @@ class AstVisitor(SolidityVisitor):
                         type='BooleanLiteral',
                         value=ctx.BooleanLiteral().getText() == 'true')
 
-        if ctx.HexLiteral():
+        if ctx.hexLiteral():
             return Node(ctx=ctx,
-                        type='HexLiteral',
-                        value=ctx.HexLiteral().getText())
+                        type='hexLiteral',
+                        value=ctx.hexLiteral().getText())
 
-        if ctx.StringLiteral():
+        if ctx.stringLiteral():
             text = ctx.getText()
-
             return Node(ctx=ctx,
-                        type='StringLiteral',
+                        type='stringLiteral',
                         value=text[1: len(text) - 1])
 
         if len(ctx.children) == 3 and ctx.getChild(1).getText() == '[' and ctx.getChild(2).getText() == ']':
@@ -737,32 +772,6 @@ class AstVisitor(SolidityVisitor):
                     variables=variables,
                     initialValue=initialValue)
 
-    def visitImportDirective(self, ctx):
-        pathString = ctx.StringLiteral().getText()
-        unitAlias = None
-        symbolAliases = None
-
-        impDecLen = len(ctx.importDeclaration())
-        if impDecLen > 0:
-            symbolAliases = []
-            for decl in ctx.importDeclaration():
-                symbol = decl.identifier(0).getText()
-                alias = None
-                if decl.identifier(1):
-                    alias = decl.identifier(1).getText()
-
-                symbolAliases.append([symbol, alias])
-        elif impDecLen == 7:
-            unitAlias = ctx.getChild(3).getText()
-        elif impDecLen == 5:
-            unitAlias = ctx.getChild(3).getText()
-
-        return Node(ctx=ctx,
-                    type='ImportDirective',
-                    path=pathString[1: len(pathString) - 1],
-                    unitAlias=unitAlias,
-                    symbolAliases=symbolAliases)
-
     def visitEventDefinition(self, ctx):
         return Node(ctx=ctx,
                     type='EventDefinition',
@@ -792,8 +801,8 @@ class AstVisitor(SolidityVisitor):
     def visitInlineAssemblyStatement(self, ctx):
         language = None
 
-        if ctx.StringLiteral():
-            language = ctx.StringLiteral().getText()
+        if ctx.StringLiteralFragment():
+            language = ctx.StringLiteralFragment().getText()
             language = language[1: len(language) - 1]
 
         return Node(ctx=ctx,
@@ -810,13 +819,13 @@ class AstVisitor(SolidityVisitor):
 
     def visitAssemblyItem(self, ctx):
 
-        if ctx.HexLiteral():
+        if ctx.hexLiteral():
             return Node(ctx=ctx,
                         type='HexLiteral',
-                        value=ctx.HexLiteral().getText())
+                        value=ctx.hexLiteral().getText())
 
-        if ctx.StringLiteral():
-            text = ctx.StringLiteral().getText()
+        if ctx.stringLiteral():
+            text = ctx.stringLiteral().getText()
             return Node(ctx=ctx,
                         type='StringLiteral',
                         value=text[1: len(text) - 1])
@@ -834,6 +843,11 @@ class AstVisitor(SolidityVisitor):
     def visitAssemblyExpression(self, ctx):
         return self.visit(ctx.getChild(0))
 
+    def visitAssemblyMember(self, ctx):
+        return Node(ctx=ctx,
+                    type='AssemblyMember',
+                    name=ctx.identifier().getText())
+
     def visitAssemblyCall(self, ctx):
         functionName = ctx.getChild(0).getText()
         args = [self.visit(arg) for arg in ctx.assemblyExpression()]
@@ -845,7 +859,7 @@ class AstVisitor(SolidityVisitor):
 
     def visitAssemblyLiteral(self, ctx):
 
-        if ctx.StringLiteral():
+        if ctx.stringLiteral():
             text = ctx.getText()
             return Node(ctx=ctx,
                         type='StringLiteral',
@@ -861,7 +875,7 @@ class AstVisitor(SolidityVisitor):
                         type='HexNumber',
                         value=ctx.getText())
 
-        if ctx.HexLiteral():
+        if ctx.hexLiteral():
             return Node(ctx=ctx,
                         type='HexLiteral',
                         value=ctx.getText())
@@ -981,7 +995,7 @@ class AstVisitor(SolidityVisitor):
 
         return Node(ctx=ctx,
                     type="ImportDirective",
-                    path=ctx.StringLiteral().getText().strip('"'),
+                    path=ctx.importPath().getText().strip('"'),
                     symbolAliases=symbol_aliases,
                     unitAlias=unit_alias
                     )
@@ -1024,7 +1038,7 @@ def parse(text, start="sourceUnit", loc=False, strict=False):
 
 
 def parse_file(path, start="sourceUnit", loc=False, strict=False):
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding="utf-8") as f:
         return parse(f.read(), start=start, loc=loc, strict=strict)
 
 
@@ -1106,10 +1120,6 @@ def objectify(start_node):
             self.structs[_node.name]=_node
             self.names[_node.name]=_node
 
-        def visitConstructorDefinition(self, _node):
-            self.constructor = _node
-
-
         def visitStateVariableDeclaration(self, _node):
 
             class VarDecVisitor(object):
@@ -1150,10 +1160,15 @@ def objectify(start_node):
                     if(node.type=="FunctionDefinition"):
                         self.visibility = node.visibility
                         self.stateMutability = node.stateMutability
+                        self.isConstructor = node.isConstructor
+                        self.isFallback = node.isFallback
+                        self.isReceive = node.isReceive
                     self.arguments = {}
                     self.returns = {}
                     self.declarations = {}
                     self.identifiers = []
+                    
+                    
 
             class FunctionArgumentVisitor(object):
 
@@ -1182,13 +1197,14 @@ def objectify(start_node):
                 def visitAssemblyCall(self, __node):
                     self.idents.append(__node)
 
-
             current_function = FunctionObject(_node)
             self.names[_node.name] = current_function
             if _definition_type=="ModifierDefinition":
                 self.modifiers[_node.name] = current_function
             else:
                 self.functions[_node.name] = current_function
+                if current_function.isConstructor:
+                    self.constructor = current_function
 
             ## get parameters
             funcargvisitor = FunctionArgumentVisitor()
