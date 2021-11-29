@@ -181,7 +181,7 @@ class AstVisitor(SolidityVisitor):
         elif fd.identifier():
             name = fd.identifier().getText()
         else:
-            raise Exception("unexpected function descriptor")
+            name = ctx.getText()
 
         parameters = self.visit(ctx.parameterList())
         returnParameters = self.visit(ctx.returnParameters()) if ctx.returnParameters() else []

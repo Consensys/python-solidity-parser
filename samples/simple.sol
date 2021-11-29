@@ -53,7 +53,7 @@ contract SimpleAuction {
         uint _biddingTime,
         address _beneficiary
     ) public {
-        beneficiary = _beneficiary;
+        beneficiary = payable(_beneficiary);
         auctionEnd = now + _biddingTime;
     }
 
