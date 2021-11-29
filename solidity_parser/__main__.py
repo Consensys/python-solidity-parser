@@ -15,7 +15,7 @@ if __name__ == "__main__":
         print("\t\t outline ... print a high level outline of the sourceUnit")
         sys.exit(1)
 
-    node = parser.parse_file(sys.argv[2])
+    node = parser.parse_file(sys.argv[2], loc=False)
     if sys.argv[1]=="parse":
         pprint.pprint(node)
     elif sys.argv[1]=="outline":
