@@ -614,7 +614,8 @@ class AstVisitor(SolidityVisitor):
                             TrueExpression=self.visit(ctx.getChild(2)),
                             FalseExpression=self.visit(ctx.getChild(4)))
 
-        raise Exception("unrecognized expression")
+        return self.visit(list(ctx.getChildren()))
+
 
     def visitStateVariableDeclaration(self, ctx):
         type = self.visit(ctx.typeName())
