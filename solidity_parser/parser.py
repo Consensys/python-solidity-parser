@@ -744,9 +744,11 @@ class AstVisitor(SolidityVisitor):
             if decl == None:
                 return None
 
+            ident = decl.identifier()
+            name = ident and ident.getText() or '_'
             result.append(self._createNode(ctx=ctx,
                                            type='VariableDeclaration',
-                                           name=decl.identifier().getText(),
+                                           name=name,
                                            typeName=self.visit(decl.typeName()),
                                            isStateVar=False,
                                            isIndexed=False,
