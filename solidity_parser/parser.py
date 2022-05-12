@@ -690,6 +690,10 @@ class AstVisitor(SolidityVisitor):
         if ctx.ConstantKeyword(0):
             isDeclaredConst = True
 
+        isDeclaredImmutable = False
+        if ctx.ImmutableKeyword(0):
+            isDeclaredImmutable = True
+
         decl = self._createNode(
             ctx=ctx,
             type='VariableDeclaration',
@@ -699,6 +703,7 @@ class AstVisitor(SolidityVisitor):
             visibility=visibility,
             isStateVar=True,
             isDeclaredConst=isDeclaredConst,
+            isDeclaredImmutable=isDeclaredImmutable,
             isIndexed=False)
 
         return Node(ctx=ctx,
@@ -712,13 +717,15 @@ class AstVisitor(SolidityVisitor):
         if conditionExpression:
             conditionExpression = conditionExpression.expression
 
+        loopExpression = Node(ctx=ctx,
+            type='ExpressionStatement',
+            expression=self.visit(ctx.expression())) if ctx.expression() else None
+
         return Node(ctx=ctx,
                     type='ForStatement',
                     initExpression=self.visit(ctx.simpleStatement()),
                     conditionExpression=conditionExpression,
-                    loopExpression=Node(ctx=ctx,
-                        type='ExpressionStatement',
-                        expression=self.visit(ctx.expression())),
+                    loopExpression=loopExpression,
                     body=self.visit(ctx.statement())
                     )
 
@@ -794,10 +801,16 @@ class AstVisitor(SolidityVisitor):
             if decl is None:
                 result.append(None)
             else:
+                storageLocation = None
+
+                if decl.storageLocation():
+                    storageLocation = decl.storageLocation().getText()
+
                 result.append(self._createNode(ctx=ctx,
                                                type='VariableDeclaration',
                                                name=decl.identifier().getText(),
                                                typeName=self.visit(decl.typeName()),
+                                               storageLocation=storageLocation,
                                                isStateVar=False,
                                                isIndexed=False,
                                                decl=decl))
