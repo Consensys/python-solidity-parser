@@ -848,9 +848,14 @@ class AstVisitor(SolidityVisitor):
         return self.visit(ctx.getChild(0))
 
     def visitAssemblyMember(self, ctx):
+        if type(ctx.identifier()) == list:
+            # handle the case, eg. x.slot
+            name = ctx.identifier()[0].getText()
+        else:
+            name = ctx.identifier().getText()
         return Node(ctx=ctx,
                     type='AssemblyMember',
-                    name=ctx.identifier().getText())
+                    name=name)
 
     def visitAssemblyCall(self, ctx):
         functionName = ctx.getChild(0).getText()
