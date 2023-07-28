@@ -181,7 +181,8 @@ class AstVisitor(SolidityVisitor):
         elif fd.identifier():
             name = fd.identifier().getText()
         else:
-            name = ctx.getText()
+            name = '' # handle old style fallback function: function(){ ... }
+            isFallback = True
 
         parameters = self.visit(ctx.parameterList())
         returnParameters = self.visit(ctx.returnParameters()) if ctx.returnParameters() else []
@@ -744,9 +745,11 @@ class AstVisitor(SolidityVisitor):
             if decl == None:
                 return None
 
+            ident = decl.identifier()
+            name = ident and ident.getText() or '_'
             result.append(self._createNode(ctx=ctx,
                                            type='VariableDeclaration',
-                                           name=decl.identifier().getText(),
+                                           name=name,
                                            typeName=self.visit(decl.typeName()),
                                            isStateVar=False,
                                            isIndexed=False,
@@ -845,9 +848,14 @@ class AstVisitor(SolidityVisitor):
         return self.visit(ctx.getChild(0))
 
     def visitAssemblyMember(self, ctx):
+        if type(ctx.identifier()) == list:
+            # handle the case, eg. x.slot
+            name = ctx.identifier()[0].getText()
+        else:
+            name = ctx.identifier().getText()
         return Node(ctx=ctx,
                     type='AssemblyMember',
-                    name=ctx.identifier().getText())
+                    name=name)
 
     def visitAssemblyCall(self, ctx):
         functionName = ctx.getChild(0).getText()

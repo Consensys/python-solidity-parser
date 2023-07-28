@@ -1,4 +1,4 @@
-# Generated from solidity-antlr4/Solidity.g4 by ANTLR 4.9.3
+# Generated from solidity-antlr4/Solidity.g4 by ANTLR 4.7.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .SolidityParser import SolidityParser
@@ -96,6 +96,21 @@ class SolidityVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SolidityParser#usingForDeclaration.
     def visitUsingForDeclaration(self, ctx:SolidityParser.UsingForDeclarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SolidityParser#usingForObject.
+    def visitUsingForObject(self, ctx:SolidityParser.UsingForObjectContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SolidityParser#usingForObjectDirective.
+    def visitUsingForObjectDirective(self, ctx:SolidityParser.UsingForObjectDirectiveContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SolidityParser#userDefinableOperators.
+    def visitUserDefinableOperators(self, ctx:SolidityParser.UserDefinableOperatorsContext):
         return self.visitChildren(ctx)
 
 
@@ -204,6 +219,16 @@ class SolidityVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SolidityParser#mappingKeyName.
+    def visitMappingKeyName(self, ctx:SolidityParser.MappingKeyNameContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SolidityParser#mappingValueName.
+    def visitMappingValueName(self, ctx:SolidityParser.MappingValueNameContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SolidityParser#functionTypeName.
     def visitFunctionTypeName(self, ctx:SolidityParser.FunctionTypeNameContext):
         return self.visitChildren(ctx)
@@ -271,6 +296,11 @@ class SolidityVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SolidityParser#inlineAssemblyStatement.
     def visitInlineAssemblyStatement(self, ctx:SolidityParser.InlineAssemblyStatementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SolidityParser#inlineAssemblyStatementFlag.
+    def visitInlineAssemblyStatementFlag(self, ctx:SolidityParser.InlineAssemblyStatementFlagContext):
         return self.visitChildren(ctx)
 
 
@@ -454,18 +484,8 @@ class SolidityVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by SolidityParser#subAssembly.
-    def visitSubAssembly(self, ctx:SolidityParser.SubAssemblyContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by SolidityParser#tupleExpression.
     def visitTupleExpression(self, ctx:SolidityParser.TupleExpressionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SolidityParser#typeNameExpression.
-    def visitTypeNameExpression(self, ctx:SolidityParser.TypeNameExpressionContext):
         return self.visitChildren(ctx)
 
 

@@ -1,4 +1,4 @@
-# Generated from solidity-antlr4/Solidity.g4 by ANTLR 4.9.3
+# Generated from solidity-antlr4/Solidity.g4 by ANTLR 4.7.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .SolidityParser import SolidityParser
@@ -167,6 +167,33 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#usingForDeclaration.
     def exitUsingForDeclaration(self, ctx:SolidityParser.UsingForDeclarationContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#usingForObject.
+    def enterUsingForObject(self, ctx:SolidityParser.UsingForObjectContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#usingForObject.
+    def exitUsingForObject(self, ctx:SolidityParser.UsingForObjectContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#usingForObjectDirective.
+    def enterUsingForObjectDirective(self, ctx:SolidityParser.UsingForObjectDirectiveContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#usingForObjectDirective.
+    def exitUsingForObjectDirective(self, ctx:SolidityParser.UsingForObjectDirectiveContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#userDefinableOperators.
+    def enterUserDefinableOperators(self, ctx:SolidityParser.UserDefinableOperatorsContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#userDefinableOperators.
+    def exitUserDefinableOperators(self, ctx:SolidityParser.UserDefinableOperatorsContext):
         pass
 
 
@@ -359,6 +386,24 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SolidityParser#mappingKeyName.
+    def enterMappingKeyName(self, ctx:SolidityParser.MappingKeyNameContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#mappingKeyName.
+    def exitMappingKeyName(self, ctx:SolidityParser.MappingKeyNameContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#mappingValueName.
+    def enterMappingValueName(self, ctx:SolidityParser.MappingValueNameContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#mappingValueName.
+    def exitMappingValueName(self, ctx:SolidityParser.MappingValueNameContext):
+        pass
+
+
     # Enter a parse tree produced by SolidityParser#functionTypeName.
     def enterFunctionTypeName(self, ctx:SolidityParser.FunctionTypeNameContext):
         pass
@@ -482,6 +527,15 @@ class SolidityListener(ParseTreeListener):
 
     # Exit a parse tree produced by SolidityParser#inlineAssemblyStatement.
     def exitInlineAssemblyStatement(self, ctx:SolidityParser.InlineAssemblyStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by SolidityParser#inlineAssemblyStatementFlag.
+    def enterInlineAssemblyStatementFlag(self, ctx:SolidityParser.InlineAssemblyStatementFlagContext):
+        pass
+
+    # Exit a parse tree produced by SolidityParser#inlineAssemblyStatementFlag.
+    def exitInlineAssemblyStatementFlag(self, ctx:SolidityParser.InlineAssemblyStatementFlagContext):
         pass
 
 
@@ -809,30 +863,12 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by SolidityParser#subAssembly.
-    def enterSubAssembly(self, ctx:SolidityParser.SubAssemblyContext):
-        pass
-
-    # Exit a parse tree produced by SolidityParser#subAssembly.
-    def exitSubAssembly(self, ctx:SolidityParser.SubAssemblyContext):
-        pass
-
-
     # Enter a parse tree produced by SolidityParser#tupleExpression.
     def enterTupleExpression(self, ctx:SolidityParser.TupleExpressionContext):
         pass
 
     # Exit a parse tree produced by SolidityParser#tupleExpression.
     def exitTupleExpression(self, ctx:SolidityParser.TupleExpressionContext):
-        pass
-
-
-    # Enter a parse tree produced by SolidityParser#typeNameExpression.
-    def enterTypeNameExpression(self, ctx:SolidityParser.TypeNameExpressionContext):
-        pass
-
-    # Exit a parse tree produced by SolidityParser#typeNameExpression.
-    def exitTypeNameExpression(self, ctx:SolidityParser.TypeNameExpressionContext):
         pass
 
 
@@ -881,5 +917,3 @@ class SolidityListener(ParseTreeListener):
         pass
 
 
-
-del SolidityParser
