@@ -3,6 +3,13 @@ set -o errexit
 
 # antlr -Dlanguage=Python3 solidity-antlr4/Solidity.g4 -o src -visitor
 
+
+git submodule sync --recursive && git submodule update --init --recursive
+git submodule foreach --recursive git clean -ffdx
+git submodule update --remote --rebase solidity-antlr4
+
+
+bash solidity-antlr4/build.sh 
 sleep 1
 
 [ ! -f ./solidity-antlr4/antlr4.jar ] && { echo "ANTLR4 Jar does not exist."; exit 1; }

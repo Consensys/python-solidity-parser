@@ -14,8 +14,8 @@ def serializedATN():
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
         buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
-        buf.write('\4\37\t\37\4 \t \4!\t!\4"\t"\4#\t#\4$\t$\4%\t%\4&\t')
-        buf.write("&\4'\t'\4(\t(\4)\t)\4*\t*\4+\t+\4,\t,\4-\t-\4.\t.\4")
+        buf.write("\4\37\t\37\4 \t \4!\t!\4\"\t\"\4#\t#\4$\t$\4%\t%\4&\t")
+        buf.write("&\4\'\t\'\4(\t(\4)\t)\4*\t*\4+\t+\4,\t,\4-\t-\4.\t.\4")
         buf.write("/\t/\4\60\t\60\4\61\t\61\4\62\t\62\4\63\t\63\4\64\t\64")
         buf.write("\4\65\t\65\4\66\t\66\4\67\t\67\48\t8\49\t9\4:\t:\4;\t")
         buf.write(";\4<\t<\4=\t=\4>\t>\4?\t?\4@\t@\4A\tA\4B\tB\4C\tC\4D\t")
@@ -55,12 +55,12 @@ def serializedATN():
         buf.write("\35\16\35\u01e9\13\35\3\36\3\36\3\36\3\36\5\36\u01ef\n")
         buf.write("\36\3\36\3\36\3\37\3\37\3 \3 \3 \3 \5 \u01f9\n \3 \3 ")
         buf.write("\7 \u01fd\n \f \16 \u0200\13 \3 \3 \3!\3!\3!\3!\7!\u0208")
-        buf.write('\n!\f!\16!\u020b\13!\5!\u020d\n!\3!\3!\3"\3"\5"\u0213')
-        buf.write('\n"\3"\5"\u0216\n"\3#\3#\3#\3#\7#\u021c\n#\f#\16#')
+        buf.write("\n!\f!\16!\u020b\13!\5!\u020d\n!\3!\3!\3\"\3\"\5\"\u0213")
+        buf.write("\n\"\3\"\5\"\u0216\n\"\3#\3#\3#\3#\7#\u021c\n#\f#\16#")
         buf.write("\u021f\13#\5#\u0221\n#\3#\3#\3$\3$\5$\u0227\n$\3$\5$\u022a")
         buf.write("\n$\3%\3%\3%\3%\7%\u0230\n%\f%\16%\u0233\13%\5%\u0235")
-        buf.write("\n%\3%\3%\3&\3&\5&\u023b\n&\3'\3'\5'\u023f\n'\3'")
-        buf.write("\3'\3(\3(\3(\3(\3(\3(\3(\5(\u024a\n(\3(\3(\3(\5(\u024f")
+        buf.write("\n%\3%\3%\3&\3&\5&\u023b\n&\3\'\3\'\5\'\u023f\n\'\3\'")
+        buf.write("\3\'\3(\3(\3(\3(\3(\3(\3(\5(\u024a\n(\3(\3(\3(\5(\u024f")
         buf.write("\n(\3(\7(\u0252\n(\f(\16(\u0255\13(\3)\3)\3)\7)\u025a")
         buf.write("\n)\f)\16)\u025d\13)\3*\3*\5*\u0261\n*\3+\3+\3+\3+\5+")
         buf.write("\u0267\n+\3+\3+\3+\5+\u026c\n+\3+\3+\3,\3,\3-\3-\3.\3")
@@ -106,21 +106,21 @@ def serializedATN():
         buf.write("\na\3a\5a\u0473\na\3b\3b\5b\u0477\nb\3c\3c\3d\6d\u047c")
         buf.write("\nd\rd\16d\u047d\3e\3e\3e\3e\3e\7e\u0485\ne\fe\16e\u0488")
         buf.write("\13e\3e\3e\5e\u048c\ne\3f\6f\u048f\nf\rf\16f\u0490\3f")
-        buf.write('\2\4N\u008eg\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 "')
+        buf.write("\2\4N\u008eg\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"")
         buf.write("$&(*,.\60\62\64\668:<>@BDFHJLNPRTVXZ\\^`bdfhjlnprtvxz")
         buf.write("|~\u0080\u0082\u0084\u0086\u0088\u008a\u008c\u008e\u0090")
         buf.write("\u0092\u0094\u0096\u0098\u009a\u009c\u009e\u00a0\u00a2")
         buf.write("\u00a4\u00a6\u00a8\u00aa\u00ac\u00ae\u00b0\u00b2\u00b4")
         buf.write("\u00b6\u00b8\u00ba\u00bc\u00be\u00c0\u00c2\u00c4\u00c6")
         buf.write("\u00c8\u00ca\2\21\3\2\7\r\3\2\25\27\5\2\5\5\7\f\36%\3")
-        buf.write('\2\62\64\6\2ppww{{}}\5\2..ADcg\3\2EF\3\2 !\4\2\5\5"#')
+        buf.write("\2\62\64\6\2ppww{{}}\5\2..ADcg\3\2EF\3\2 !\4\2\5\5\"#")
         buf.write("\3\2LM\3\2\t\f\3\2$%\4\2\r\rPY\3\2ij\f\2\20\20\33\33.")
         buf.write(".\64\64@@aassww~\177\u0081\u0082\2\u0513\2\u00d8\3\2\2")
         buf.write("\2\4\u00dd\3\2\2\2\6\u00e2\3\2\2\2\b\u00e7\3\2\2\2\n\u00e9")
         buf.write("\3\2\2\2\f\u00f3\3\2\2\2\16\u00fd\3\2\2\2\20\u00ff\3\2")
         buf.write("\2\2\22\u0128\3\2\2\2\24\u012a\3\2\2\2\26\u012d\3\2\2")
         buf.write("\2\30\u0145\3\2\2\2\32\u0156\3\2\2\2\34\u0158\3\2\2\2")
-        buf.write('\36\u016b\3\2\2\2 \u0172\3\2\2\2"\u0177\3\2\2\2$\u017d')
+        buf.write("\36\u016b\3\2\2\2 \u0172\3\2\2\2\"\u0177\3\2\2\2$\u017d")
         buf.write("\3\2\2\2&\u0195\3\2\2\2(\u0197\3\2\2\2*\u019c\3\2\2\2")
         buf.write(",\u019e\3\2\2\2.\u01af\3\2\2\2\60\u01bf\3\2\2\2\62\u01c7")
         buf.write("\3\2\2\2\64\u01d8\3\2\2\2\66\u01da\3\2\2\28\u01e7\3\2")
@@ -150,7 +150,7 @@ def serializedATN():
         buf.write("\3\2\2\2\u00ca\u048e\3\2\2\2\u00cc\u00d7\5\4\3\2\u00cd")
         buf.write("\u00d7\5\22\n\2\u00ce\u00d7\5\26\f\2\u00cf\u00d7\5> \2")
         buf.write("\u00d0\u00d7\5,\27\2\u00d1\u00d7\5\62\32\2\u00d2\u00d7")
-        buf.write('\5\36\20\2\u00d3\u00d7\5 \21\2\u00d4\u00d7\5"\22\2\u00d5')
+        buf.write("\5\36\20\2\u00d3\u00d7\5 \21\2\u00d4\u00d7\5\"\22\2\u00d5")
         buf.write("\u00d7\5$\23\2\u00d6\u00cc\3\2\2\2\u00d6\u00cd\3\2\2\2")
         buf.write("\u00d6\u00ce\3\2\2\2\u00d6\u00cf\3\2\2\2\u00d6\u00d0\3")
         buf.write("\2\2\2\u00d6\u00d1\3\2\2\2\u00d6\u00d2\3\2\2\2\u00d6\u00d3")
@@ -209,7 +209,7 @@ def serializedATN():
         buf.write("\2\2\2\u014d\u0157\5\34\17\2\u014e\u0157\5$\23\2\u014f")
         buf.write("\u0157\5,\27\2\u0150\u0157\5.\30\2\u0151\u0157\5\62\32")
         buf.write("\2\u0152\u0157\5:\36\2\u0153\u0157\5> \2\u0154\u0157\5")
-        buf.write(' \21\2\u0155\u0157\5"\22\2\u0156\u014d\3\2\2\2\u0156')
+        buf.write(" \21\2\u0155\u0157\5\"\22\2\u0156\u014d\3\2\2\2\u0156")
         buf.write("\u014e\3\2\2\2\u0156\u014f\3\2\2\2\u0156\u0150\3\2\2\2")
         buf.write("\u0156\u0151\3\2\2\2\u0156\u0152\3\2\2\2\u0156\u0153\3")
         buf.write("\2\2\2\u0156\u0154\3\2\2\2\u0156\u0155\3\2\2\2\u0157\33")
@@ -239,17 +239,17 @@ def serializedATN():
         buf.write("\3\2\2\2\u018f\u0192\3\2\2\2\u0190\u018e\3\2\2\2\u0190")
         buf.write("\u0191\3\2\2\2\u0191\u0193\3\2\2\2\u0192\u0190\3\2\2\2")
         buf.write("\u0193\u0194\7\23\2\2\u0194\u0196\3\2\2\2\u0195\u0189")
-        buf.write("\3\2\2\2\u0195\u018a\3\2\2\2\u0196'\3\2\2\2\u0197\u019a")
+        buf.write("\3\2\2\2\u0195\u018a\3\2\2\2\u0196\'\3\2\2\2\u0197\u019a")
         buf.write("\5P)\2\u0198\u0199\7\16\2\2\u0199\u019b\5*\26\2\u019a")
         buf.write("\u0198\3\2\2\2\u019a\u019b\3\2\2\2\u019b)\3\2\2\2\u019c")
         buf.write("\u019d\t\4\2\2\u019d+\3\2\2\2\u019e\u019f\7&\2\2\u019f")
         buf.write("\u01a0\5\u00c4c\2\u01a0\u01ab\7\21\2\2\u01a1\u01a2\5L")
-        buf.write("'\2\u01a2\u01a8\7\4\2\2\u01a3\u01a4\5L'\2\u01a4\u01a5")
+        buf.write("\'\2\u01a2\u01a8\7\4\2\2\u01a3\u01a4\5L\'\2\u01a4\u01a5")
         buf.write("\7\4\2\2\u01a5\u01a7\3\2\2\2\u01a6\u01a3\3\2\2\2\u01a7")
         buf.write("\u01aa\3\2\2\2\u01a8\u01a6\3\2\2\2\u01a8\u01a9\3\2\2\2")
         buf.write("\u01a9\u01ac\3\2\2\2\u01aa\u01a8\3\2\2\2\u01ab\u01a1\3")
         buf.write("\2\2\2\u01ab\u01ac\3\2\2\2\u01ac\u01ad\3\2\2\2\u01ad\u01ae")
-        buf.write("\7\23\2\2\u01ae-\3\2\2\2\u01af\u01b0\7'\2\2\u01b0\u01b2")
+        buf.write("\7\23\2\2\u01ae-\3\2\2\2\u01af\u01b0\7\'\2\2\u01b0\u01b2")
         buf.write("\5\u00c4c\2\u01b1\u01b3\5@!\2\u01b2\u01b1\3\2\2\2\u01b2")
         buf.write("\u01b3\3\2\2\2\u01b3\u01b8\3\2\2\2\u01b4\u01b7\7z\2\2")
         buf.write("\u01b5\u01b7\5\u00c8e\2\u01b6\u01b4\3\2\2\2\u01b6\u01b5")
@@ -289,7 +289,7 @@ def serializedATN():
         buf.write("\u0200\3\2\2\2\u01fe\u01fc\3\2\2\2\u01fe\u01ff\3\2\2\2")
         buf.write("\u01ff\u0201\3\2\2\2\u0200\u01fe\3\2\2\2\u0201\u0202\7")
         buf.write("\23\2\2\u0202?\3\2\2\2\u0203\u020c\7\31\2\2\u0204\u0209")
-        buf.write('\5B"\2\u0205\u0206\7\22\2\2\u0206\u0208\5B"\2\u0207')
+        buf.write("\5B\"\2\u0205\u0206\7\22\2\2\u0206\u0208\5B\"\2\u0207")
         buf.write("\u0205\3\2\2\2\u0208\u020b\3\2\2\2\u0209\u0207\3\2\2\2")
         buf.write("\u0209\u020a\3\2\2\2\u020a\u020d\3\2\2\2\u020b\u0209\3")
         buf.write("\2\2\2\u020c\u0204\3\2\2\2\u020c\u020d\3\2\2\2\u020d\u020e")
@@ -402,14 +402,14 @@ def serializedATN():
         buf.write("\7\4\2\2\u0304\u0083\3\2\2\2\u0305\u0306\7@\2\2\u0306")
         buf.write("\u0307\5\u009aN\2\u0307\u0308\7\4\2\2\u0308\u0085\3\2")
         buf.write("\2\2\u0309\u030a\7A\2\2\u030a\u0311\5\u008aF\2\u030b\u0311")
-        buf.write("\5L'\2\u030c\u030d\7\31\2\2\u030d\u030e\5\u0088E\2\u030e")
+        buf.write("\5L\'\2\u030c\u030d\7\31\2\2\u030d\u030e\5\u0088E\2\u030e")
         buf.write("\u030f\7\32\2\2\u030f\u0311\3\2\2\2\u0310\u0309\3\2\2")
         buf.write("\2\u0310\u030b\3\2\2\2\u0310\u030c\3\2\2\2\u0311\u0314")
         buf.write("\3\2\2\2\u0312\u0313\7\r\2\2\u0313\u0315\5\u008eH\2\u0314")
         buf.write("\u0312\3\2\2\2\u0314\u0315\3\2\2\2\u0315\u0316\3\2\2\2")
         buf.write("\u0316\u0317\7\4\2\2\u0317\u0087\3\2\2\2\u0318\u031a\5")
-        buf.write("L'\2\u0319\u0318\3\2\2\2\u0319\u031a\3\2\2\2\u031a\u0321")
-        buf.write("\3\2\2\2\u031b\u031d\7\22\2\2\u031c\u031e\5L'\2\u031d")
+        buf.write("L\'\2\u0319\u0318\3\2\2\2\u0319\u031a\3\2\2\2\u031a\u0321")
+        buf.write("\3\2\2\2\u031b\u031d\7\22\2\2\u031c\u031e\5L\'\2\u031d")
         buf.write("\u031c\3\2\2\2\u031d\u031e\3\2\2\2\u031e\u0320\3\2\2\2")
         buf.write("\u031f\u031b\3\2\2\2\u0320\u0323\3\2\2\2\u0321\u031f\3")
         buf.write("\2\2\2\u0321\u0322\3\2\2\2\u0322\u0089\3\2\2\2\u0323\u0321")
@@ -606,282 +606,77 @@ def serializedATN():
         return buf.getvalue()
 
 
-class SolidityParser(Parser):
+class SolidityParser ( Parser ):
+
     grammarFileName = "Solidity.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
-    decisionsToDFA = [DFA(ds, i) for i, ds in enumerate(atn.decisionToState)]
+    decisionsToDFA = [ DFA(ds, i) for i, ds in enumerate(atn.decisionToState) ]
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [
-        "<INVALID>",
-        "'pragma'",
-        "';'",
-        "'*'",
-        "'||'",
-        "'^'",
-        "'~'",
-        "'>='",
-        "'>'",
-        "'<'",
-        "'<='",
-        "'='",
-        "'as'",
-        "'import'",
-        "'from'",
-        "'{'",
-        "','",
-        "'}'",
-        "'abstract'",
-        "'contract'",
-        "'interface'",
-        "'library'",
-        "'is'",
-        "'('",
-        "')'",
-        "'error'",
-        "'using'",
-        "'for'",
-        "'|'",
-        "'&'",
-        "'+'",
-        "'-'",
-        "'/'",
-        "'%'",
-        "'=='",
-        "'!='",
-        "'struct'",
-        "'modifier'",
-        "'function'",
-        "'returns'",
-        "'event'",
-        "'enum'",
-        "'['",
-        "']'",
-        "'address'",
-        "'.'",
-        "'mapping'",
-        "'=>'",
-        "'memory'",
-        "'storage'",
-        "'calldata'",
-        "'if'",
-        "'else'",
-        "'try'",
-        "'catch'",
-        "'while'",
-        "'unchecked'",
-        "'assembly'",
-        "'do'",
-        "'return'",
-        "'throw'",
-        "'emit'",
-        "'revert'",
-        "'var'",
-        "'bool'",
-        "'string'",
-        "'byte'",
-        "'++'",
-        "'--'",
-        "'new'",
-        "':'",
-        "'delete'",
-        "'!'",
-        "'**'",
-        "'<<'",
-        "'>>'",
-        "'&&'",
-        "'?'",
-        "'|='",
-        "'^='",
-        "'&='",
-        "'<<='",
-        "'>>='",
-        "'+='",
-        "'-='",
-        "'*='",
-        "'/='",
-        "'%='",
-        "'let'",
-        "':='",
-        "'=:'",
-        "'switch'",
-        "'case'",
-        "'default'",
-        "'->'",
-        "'callback'",
-        "'override'",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "'anonymous'",
-        "'break'",
-        "'constant'",
-        "'immutable'",
-        "'continue'",
-        "'leave'",
-        "'external'",
-        "'indexed'",
-        "'internal'",
-        "'payable'",
-        "'private'",
-        "'public'",
-        "'virtual'",
-        "'pure'",
-        "'type'",
-        "'view'",
-        "'global'",
-        "'constructor'",
-        "'fallback'",
-        "'receive'",
-    ]
+    literalNames = [ "<INVALID>", "'pragma'", "';'", "'*'", "'||'", "'^'", 
+                     "'~'", "'>='", "'>'", "'<'", "'<='", "'='", "'as'", 
+                     "'import'", "'from'", "'{'", "','", "'}'", "'abstract'", 
+                     "'contract'", "'interface'", "'library'", "'is'", "'('", 
+                     "')'", "'error'", "'using'", "'for'", "'|'", "'&'", 
+                     "'+'", "'-'", "'/'", "'%'", "'=='", "'!='", "'struct'", 
+                     "'modifier'", "'function'", "'returns'", "'event'", 
+                     "'enum'", "'['", "']'", "'address'", "'.'", "'mapping'", 
+                     "'=>'", "'memory'", "'storage'", "'calldata'", "'if'", 
+                     "'else'", "'try'", "'catch'", "'while'", "'unchecked'", 
+                     "'assembly'", "'do'", "'return'", "'throw'", "'emit'", 
+                     "'revert'", "'var'", "'bool'", "'string'", "'byte'", 
+                     "'++'", "'--'", "'new'", "':'", "'delete'", "'!'", 
+                     "'**'", "'<<'", "'>>'", "'&&'", "'?'", "'|='", "'^='", 
+                     "'&='", "'<<='", "'>>='", "'+='", "'-='", "'*='", "'/='", 
+                     "'%='", "'let'", "':='", "'=:'", "'switch'", "'case'", 
+                     "'default'", "'->'", "'callback'", "'override'", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "'anonymous'", "'break'", 
+                     "'constant'", "'immutable'", "'continue'", "'leave'", 
+                     "'external'", "'indexed'", "'internal'", "'payable'", 
+                     "'private'", "'public'", "'virtual'", "'pure'", "'type'", 
+                     "'view'", "'global'", "'constructor'", "'fallback'", 
+                     "'receive'" ]
 
-    symbolicNames = [
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "<INVALID>",
-        "Int",
-        "Uint",
-        "Byte",
-        "Fixed",
-        "Ufixed",
-        "BooleanLiteral",
-        "DecimalNumber",
-        "HexNumber",
-        "NumberUnit",
-        "HexLiteralFragment",
-        "ReservedKeyword",
-        "AnonymousKeyword",
-        "BreakKeyword",
-        "ConstantKeyword",
-        "ImmutableKeyword",
-        "ContinueKeyword",
-        "LeaveKeyword",
-        "ExternalKeyword",
-        "IndexedKeyword",
-        "InternalKeyword",
-        "PayableKeyword",
-        "PrivateKeyword",
-        "PublicKeyword",
-        "VirtualKeyword",
-        "PureKeyword",
-        "TypeKeyword",
-        "ViewKeyword",
-        "GlobalKeyword",
-        "ConstructorKeyword",
-        "FallbackKeyword",
-        "ReceiveKeyword",
-        "Identifier",
-        "StringLiteralFragment",
-        "VersionLiteral",
-        "WS",
-        "COMMENT",
-        "LINE_COMMENT",
-    ]
+    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "Int", "Uint", "Byte", "Fixed", "Ufixed", 
+                      "BooleanLiteral", "DecimalNumber", "HexNumber", "NumberUnit", 
+                      "HexLiteralFragment", "ReservedKeyword", "AnonymousKeyword", 
+                      "BreakKeyword", "ConstantKeyword", "ImmutableKeyword", 
+                      "ContinueKeyword", "LeaveKeyword", "ExternalKeyword", 
+                      "IndexedKeyword", "InternalKeyword", "PayableKeyword", 
+                      "PrivateKeyword", "PublicKeyword", "VirtualKeyword", 
+                      "PureKeyword", "TypeKeyword", "ViewKeyword", "GlobalKeyword", 
+                      "ConstructorKeyword", "FallbackKeyword", "ReceiveKeyword", 
+                      "Identifier", "StringLiteralFragment", "VersionLiteral", 
+                      "WS", "COMMENT", "LINE_COMMENT" ]
 
     RULE_sourceUnit = 0
     RULE_pragmaDirective = 1
@@ -985,429 +780,296 @@ class SolidityParser(Parser):
     RULE_overrideSpecifier = 99
     RULE_stringLiteral = 100
 
-    ruleNames = [
-        "sourceUnit",
-        "pragmaDirective",
-        "pragmaName",
-        "pragmaValue",
-        "version",
-        "versionOperator",
-        "versionConstraint",
-        "importDeclaration",
-        "importDirective",
-        "importPath",
-        "contractDefinition",
-        "inheritanceSpecifier",
-        "contractPart",
-        "stateVariableDeclaration",
-        "fileLevelConstant",
-        "customErrorDefinition",
-        "typeDefinition",
-        "usingForDeclaration",
-        "usingForObject",
-        "usingForObjectDirective",
-        "userDefinableOperators",
-        "structDefinition",
-        "modifierDefinition",
-        "modifierInvocation",
-        "functionDefinition",
-        "functionDescriptor",
-        "returnParameters",
-        "modifierList",
-        "eventDefinition",
-        "enumValue",
-        "enumDefinition",
-        "parameterList",
-        "parameter",
-        "eventParameterList",
-        "eventParameter",
-        "functionTypeParameterList",
-        "functionTypeParameter",
-        "variableDeclaration",
-        "typeName",
-        "userDefinedTypeName",
-        "mappingKey",
-        "mapping",
-        "mappingKeyName",
-        "mappingValueName",
-        "functionTypeName",
-        "storageLocation",
-        "stateMutability",
-        "block",
-        "statement",
-        "expressionStatement",
-        "ifStatement",
-        "tryStatement",
-        "catchClause",
-        "whileStatement",
-        "simpleStatement",
-        "uncheckedStatement",
-        "forStatement",
-        "inlineAssemblyStatement",
-        "inlineAssemblyStatementFlag",
-        "doWhileStatement",
-        "continueStatement",
-        "breakStatement",
-        "returnStatement",
-        "throwStatement",
-        "emitStatement",
-        "revertStatement",
-        "variableDeclarationStatement",
-        "variableDeclarationList",
-        "identifierList",
-        "elementaryTypeName",
-        "expression",
-        "primaryExpression",
-        "expressionList",
-        "nameValueList",
-        "nameValue",
-        "functionCallArguments",
-        "functionCall",
-        "assemblyBlock",
-        "assemblyItem",
-        "assemblyExpression",
-        "assemblyMember",
-        "assemblyCall",
-        "assemblyLocalDefinition",
-        "assemblyAssignment",
-        "assemblyIdentifierOrList",
-        "assemblyIdentifierList",
-        "assemblyStackAssignment",
-        "labelDefinition",
-        "assemblySwitch",
-        "assemblyCase",
-        "assemblyFunctionDefinition",
-        "assemblyFunctionReturns",
-        "assemblyFor",
-        "assemblyIf",
-        "assemblyLiteral",
-        "tupleExpression",
-        "numberLiteral",
-        "identifier",
-        "hexLiteral",
-        "overrideSpecifier",
-        "stringLiteral",
-    ]
+    ruleNames =  [ "sourceUnit", "pragmaDirective", "pragmaName", "pragmaValue", 
+                   "version", "versionOperator", "versionConstraint", "importDeclaration", 
+                   "importDirective", "importPath", "contractDefinition", 
+                   "inheritanceSpecifier", "contractPart", "stateVariableDeclaration", 
+                   "fileLevelConstant", "customErrorDefinition", "typeDefinition", 
+                   "usingForDeclaration", "usingForObject", "usingForObjectDirective", 
+                   "userDefinableOperators", "structDefinition", "modifierDefinition", 
+                   "modifierInvocation", "functionDefinition", "functionDescriptor", 
+                   "returnParameters", "modifierList", "eventDefinition", 
+                   "enumValue", "enumDefinition", "parameterList", "parameter", 
+                   "eventParameterList", "eventParameter", "functionTypeParameterList", 
+                   "functionTypeParameter", "variableDeclaration", "typeName", 
+                   "userDefinedTypeName", "mappingKey", "mapping", "mappingKeyName", 
+                   "mappingValueName", "functionTypeName", "storageLocation", 
+                   "stateMutability", "block", "statement", "expressionStatement", 
+                   "ifStatement", "tryStatement", "catchClause", "whileStatement", 
+                   "simpleStatement", "uncheckedStatement", "forStatement", 
+                   "inlineAssemblyStatement", "inlineAssemblyStatementFlag", 
+                   "doWhileStatement", "continueStatement", "breakStatement", 
+                   "returnStatement", "throwStatement", "emitStatement", 
+                   "revertStatement", "variableDeclarationStatement", "variableDeclarationList", 
+                   "identifierList", "elementaryTypeName", "expression", 
+                   "primaryExpression", "expressionList", "nameValueList", 
+                   "nameValue", "functionCallArguments", "functionCall", 
+                   "assemblyBlock", "assemblyItem", "assemblyExpression", 
+                   "assemblyMember", "assemblyCall", "assemblyLocalDefinition", 
+                   "assemblyAssignment", "assemblyIdentifierOrList", "assemblyIdentifierList", 
+                   "assemblyStackAssignment", "labelDefinition", "assemblySwitch", 
+                   "assemblyCase", "assemblyFunctionDefinition", "assemblyFunctionReturns", 
+                   "assemblyFor", "assemblyIf", "assemblyLiteral", "tupleExpression", 
+                   "numberLiteral", "identifier", "hexLiteral", "overrideSpecifier", 
+                   "stringLiteral" ]
 
     EOF = Token.EOF
-    T__0 = 1
-    T__1 = 2
-    T__2 = 3
-    T__3 = 4
-    T__4 = 5
-    T__5 = 6
-    T__6 = 7
-    T__7 = 8
-    T__8 = 9
-    T__9 = 10
-    T__10 = 11
-    T__11 = 12
-    T__12 = 13
-    T__13 = 14
-    T__14 = 15
-    T__15 = 16
-    T__16 = 17
-    T__17 = 18
-    T__18 = 19
-    T__19 = 20
-    T__20 = 21
-    T__21 = 22
-    T__22 = 23
-    T__23 = 24
-    T__24 = 25
-    T__25 = 26
-    T__26 = 27
-    T__27 = 28
-    T__28 = 29
-    T__29 = 30
-    T__30 = 31
-    T__31 = 32
-    T__32 = 33
-    T__33 = 34
-    T__34 = 35
-    T__35 = 36
-    T__36 = 37
-    T__37 = 38
-    T__38 = 39
-    T__39 = 40
-    T__40 = 41
-    T__41 = 42
-    T__42 = 43
-    T__43 = 44
-    T__44 = 45
-    T__45 = 46
-    T__46 = 47
-    T__47 = 48
-    T__48 = 49
-    T__49 = 50
-    T__50 = 51
-    T__51 = 52
-    T__52 = 53
-    T__53 = 54
-    T__54 = 55
-    T__55 = 56
-    T__56 = 57
-    T__57 = 58
-    T__58 = 59
-    T__59 = 60
-    T__60 = 61
-    T__61 = 62
-    T__62 = 63
-    T__63 = 64
-    T__64 = 65
-    T__65 = 66
-    T__66 = 67
-    T__67 = 68
-    T__68 = 69
-    T__69 = 70
-    T__70 = 71
-    T__71 = 72
-    T__72 = 73
-    T__73 = 74
-    T__74 = 75
-    T__75 = 76
-    T__76 = 77
-    T__77 = 78
-    T__78 = 79
-    T__79 = 80
-    T__80 = 81
-    T__81 = 82
-    T__82 = 83
-    T__83 = 84
-    T__84 = 85
-    T__85 = 86
-    T__86 = 87
-    T__87 = 88
-    T__88 = 89
-    T__89 = 90
-    T__90 = 91
-    T__91 = 92
-    T__92 = 93
-    T__93 = 94
-    T__94 = 95
-    T__95 = 96
-    Int = 97
-    Uint = 98
-    Byte = 99
-    Fixed = 100
-    Ufixed = 101
-    BooleanLiteral = 102
-    DecimalNumber = 103
-    HexNumber = 104
-    NumberUnit = 105
-    HexLiteralFragment = 106
-    ReservedKeyword = 107
-    AnonymousKeyword = 108
-    BreakKeyword = 109
-    ConstantKeyword = 110
-    ImmutableKeyword = 111
-    ContinueKeyword = 112
-    LeaveKeyword = 113
-    ExternalKeyword = 114
-    IndexedKeyword = 115
-    InternalKeyword = 116
-    PayableKeyword = 117
-    PrivateKeyword = 118
-    PublicKeyword = 119
-    VirtualKeyword = 120
-    PureKeyword = 121
-    TypeKeyword = 122
-    ViewKeyword = 123
-    GlobalKeyword = 124
-    ConstructorKeyword = 125
-    FallbackKeyword = 126
-    ReceiveKeyword = 127
-    Identifier = 128
-    StringLiteralFragment = 129
-    VersionLiteral = 130
-    WS = 131
-    COMMENT = 132
-    LINE_COMMENT = 133
+    T__0=1
+    T__1=2
+    T__2=3
+    T__3=4
+    T__4=5
+    T__5=6
+    T__6=7
+    T__7=8
+    T__8=9
+    T__9=10
+    T__10=11
+    T__11=12
+    T__12=13
+    T__13=14
+    T__14=15
+    T__15=16
+    T__16=17
+    T__17=18
+    T__18=19
+    T__19=20
+    T__20=21
+    T__21=22
+    T__22=23
+    T__23=24
+    T__24=25
+    T__25=26
+    T__26=27
+    T__27=28
+    T__28=29
+    T__29=30
+    T__30=31
+    T__31=32
+    T__32=33
+    T__33=34
+    T__34=35
+    T__35=36
+    T__36=37
+    T__37=38
+    T__38=39
+    T__39=40
+    T__40=41
+    T__41=42
+    T__42=43
+    T__43=44
+    T__44=45
+    T__45=46
+    T__46=47
+    T__47=48
+    T__48=49
+    T__49=50
+    T__50=51
+    T__51=52
+    T__52=53
+    T__53=54
+    T__54=55
+    T__55=56
+    T__56=57
+    T__57=58
+    T__58=59
+    T__59=60
+    T__60=61
+    T__61=62
+    T__62=63
+    T__63=64
+    T__64=65
+    T__65=66
+    T__66=67
+    T__67=68
+    T__68=69
+    T__69=70
+    T__70=71
+    T__71=72
+    T__72=73
+    T__73=74
+    T__74=75
+    T__75=76
+    T__76=77
+    T__77=78
+    T__78=79
+    T__79=80
+    T__80=81
+    T__81=82
+    T__82=83
+    T__83=84
+    T__84=85
+    T__85=86
+    T__86=87
+    T__87=88
+    T__88=89
+    T__89=90
+    T__90=91
+    T__91=92
+    T__92=93
+    T__93=94
+    T__94=95
+    T__95=96
+    Int=97
+    Uint=98
+    Byte=99
+    Fixed=100
+    Ufixed=101
+    BooleanLiteral=102
+    DecimalNumber=103
+    HexNumber=104
+    NumberUnit=105
+    HexLiteralFragment=106
+    ReservedKeyword=107
+    AnonymousKeyword=108
+    BreakKeyword=109
+    ConstantKeyword=110
+    ImmutableKeyword=111
+    ContinueKeyword=112
+    LeaveKeyword=113
+    ExternalKeyword=114
+    IndexedKeyword=115
+    InternalKeyword=116
+    PayableKeyword=117
+    PrivateKeyword=118
+    PublicKeyword=119
+    VirtualKeyword=120
+    PureKeyword=121
+    TypeKeyword=122
+    ViewKeyword=123
+    GlobalKeyword=124
+    ConstructorKeyword=125
+    FallbackKeyword=126
+    ReceiveKeyword=127
+    Identifier=128
+    StringLiteralFragment=129
+    VersionLiteral=130
+    WS=131
+    COMMENT=132
+    LINE_COMMENT=133
 
-    def __init__(self, input: TokenStream, output: TextIO = sys.stdout):
+    def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
         self.checkVersion("4.7.2")
-        self._interp = ParserATNSimulator(
-            self, self.atn, self.decisionsToDFA, self.sharedContextCache
-        )
+        self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
+
+
+
     class SourceUnitContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def EOF(self):
             return self.getToken(SolidityParser.EOF, 0)
 
-        def pragmaDirective(self, i: int = None):
+        def pragmaDirective(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.PragmaDirectiveContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.PragmaDirectiveContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.PragmaDirectiveContext,i)
 
-        def importDirective(self, i: int = None):
+
+        def importDirective(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.ImportDirectiveContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.ImportDirectiveContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.ImportDirectiveContext,i)
 
-        def contractDefinition(self, i: int = None):
+
+        def contractDefinition(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.ContractDefinitionContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.ContractDefinitionContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.ContractDefinitionContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.ContractDefinitionContext,i)
 
-        def enumDefinition(self, i: int = None):
+
+        def enumDefinition(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.EnumDefinitionContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.EnumDefinitionContext, i)
+                return self.getTypedRuleContext(SolidityParser.EnumDefinitionContext,i)
 
-        def structDefinition(self, i: int = None):
+
+        def structDefinition(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.StructDefinitionContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.StructDefinitionContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.StructDefinitionContext,i)
 
-        def functionDefinition(self, i: int = None):
+
+        def functionDefinition(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.FunctionDefinitionContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.FunctionDefinitionContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.FunctionDefinitionContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.FunctionDefinitionContext,i)
 
-        def fileLevelConstant(self, i: int = None):
+
+        def fileLevelConstant(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.FileLevelConstantContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.FileLevelConstantContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.FileLevelConstantContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.FileLevelConstantContext,i)
 
-        def customErrorDefinition(self, i: int = None):
+
+        def customErrorDefinition(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.CustomErrorDefinitionContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.CustomErrorDefinitionContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.CustomErrorDefinitionContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.CustomErrorDefinitionContext,i)
 
-        def typeDefinition(self, i: int = None):
+
+        def typeDefinition(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.TypeDefinitionContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.TypeDefinitionContext, i)
+                return self.getTypedRuleContext(SolidityParser.TypeDefinitionContext,i)
 
-        def usingForDeclaration(self, i: int = None):
+
+        def usingForDeclaration(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.UsingForDeclarationContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.UsingForDeclarationContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.UsingForDeclarationContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.UsingForDeclarationContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_sourceUnit
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterSourceUnit"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterSourceUnit" ):
                 listener.enterSourceUnit(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitSourceUnit"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitSourceUnit" ):
                 listener.exitSourceUnit(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitSourceUnit"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSourceUnit" ):
                 return visitor.visitSourceUnit(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def sourceUnit(self):
+
         localctx = SolidityParser.SourceUnitContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_sourceUnit)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 214
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (
-                (((_la - 1)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 1))
-                    & (
-                        (1 << (SolidityParser.T__0 - 1))
-                        | (1 << (SolidityParser.T__12 - 1))
-                        | (1 << (SolidityParser.T__13 - 1))
-                        | (1 << (SolidityParser.T__17 - 1))
-                        | (1 << (SolidityParser.T__18 - 1))
-                        | (1 << (SolidityParser.T__19 - 1))
-                        | (1 << (SolidityParser.T__20 - 1))
-                        | (1 << (SolidityParser.T__24 - 1))
-                        | (1 << (SolidityParser.T__25 - 1))
-                        | (1 << (SolidityParser.T__35 - 1))
-                        | (1 << (SolidityParser.T__37 - 1))
-                        | (1 << (SolidityParser.T__40 - 1))
-                        | (1 << (SolidityParser.T__43 - 1))
-                        | (1 << (SolidityParser.T__45 - 1))
-                        | (1 << (SolidityParser.T__49 - 1))
-                        | (1 << (SolidityParser.T__61 - 1))
-                        | (1 << (SolidityParser.T__62 - 1))
-                        | (1 << (SolidityParser.T__63 - 1))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 65)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 65))
-                    & (
-                        (1 << (SolidityParser.T__64 - 65))
-                        | (1 << (SolidityParser.T__65 - 65))
-                        | (1 << (SolidityParser.T__94 - 65))
-                        | (1 << (SolidityParser.Int - 65))
-                        | (1 << (SolidityParser.Uint - 65))
-                        | (1 << (SolidityParser.Byte - 65))
-                        | (1 << (SolidityParser.Fixed - 65))
-                        | (1 << (SolidityParser.Ufixed - 65))
-                        | (1 << (SolidityParser.LeaveKeyword - 65))
-                        | (1 << (SolidityParser.PayableKeyword - 65))
-                        | (1 << (SolidityParser.TypeKeyword - 65))
-                        | (1 << (SolidityParser.GlobalKeyword - 65))
-                        | (1 << (SolidityParser.ConstructorKeyword - 65))
-                        | (1 << (SolidityParser.FallbackKeyword - 65))
-                        | (1 << (SolidityParser.ReceiveKeyword - 65))
-                        | (1 << (SolidityParser.Identifier - 65))
-                    )
-                )
-                != 0
-            ):
+            while ((((_la - 1)) & ~0x3f) == 0 and ((1 << (_la - 1)) & ((1 << (SolidityParser.T__0 - 1)) | (1 << (SolidityParser.T__12 - 1)) | (1 << (SolidityParser.T__13 - 1)) | (1 << (SolidityParser.T__17 - 1)) | (1 << (SolidityParser.T__18 - 1)) | (1 << (SolidityParser.T__19 - 1)) | (1 << (SolidityParser.T__20 - 1)) | (1 << (SolidityParser.T__24 - 1)) | (1 << (SolidityParser.T__25 - 1)) | (1 << (SolidityParser.T__35 - 1)) | (1 << (SolidityParser.T__37 - 1)) | (1 << (SolidityParser.T__40 - 1)) | (1 << (SolidityParser.T__43 - 1)) | (1 << (SolidityParser.T__45 - 1)) | (1 << (SolidityParser.T__49 - 1)) | (1 << (SolidityParser.T__61 - 1)) | (1 << (SolidityParser.T__62 - 1)) | (1 << (SolidityParser.T__63 - 1)))) != 0) or ((((_la - 65)) & ~0x3f) == 0 and ((1 << (_la - 65)) & ((1 << (SolidityParser.T__64 - 65)) | (1 << (SolidityParser.T__65 - 65)) | (1 << (SolidityParser.T__94 - 65)) | (1 << (SolidityParser.Int - 65)) | (1 << (SolidityParser.Uint - 65)) | (1 << (SolidityParser.Byte - 65)) | (1 << (SolidityParser.Fixed - 65)) | (1 << (SolidityParser.Ufixed - 65)) | (1 << (SolidityParser.LeaveKeyword - 65)) | (1 << (SolidityParser.PayableKeyword - 65)) | (1 << (SolidityParser.TypeKeyword - 65)) | (1 << (SolidityParser.GlobalKeyword - 65)) | (1 << (SolidityParser.ConstructorKeyword - 65)) | (1 << (SolidityParser.FallbackKeyword - 65)) | (1 << (SolidityParser.ReceiveKeyword - 65)) | (1 << (SolidityParser.Identifier - 65)))) != 0):
                 self.state = 212
                 self._errHandler.sync(self)
-                la_ = self._interp.adaptivePredict(self._input, 0, self._ctx)
+                la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
                 if la_ == 1:
                     self.state = 202
                     self.pragmaDirective()
@@ -1458,6 +1120,7 @@ class SolidityParser(Parser):
                     self.usingForDeclaration()
                     pass
 
+
                 self.state = 216
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -1472,37 +1135,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class PragmaDirectiveContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def pragmaName(self):
-            return self.getTypedRuleContext(SolidityParser.PragmaNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.PragmaNameContext,0)
+
 
         def pragmaValue(self):
-            return self.getTypedRuleContext(SolidityParser.PragmaValueContext, 0)
+            return self.getTypedRuleContext(SolidityParser.PragmaValueContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_pragmaDirective
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterPragmaDirective"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPragmaDirective" ):
                 listener.enterPragmaDirective(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitPragmaDirective"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPragmaDirective" ):
                 listener.exitPragmaDirective(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitPragmaDirective"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPragmaDirective" ):
                 return visitor.visitPragmaDirective(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def pragmaDirective(self):
+
         localctx = SolidityParser.PragmaDirectiveContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_pragmaDirective)
         try:
@@ -1523,34 +1192,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class PragmaNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_pragmaName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterPragmaName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPragmaName" ):
                 listener.enterPragmaName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitPragmaName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPragmaName" ):
                 listener.exitPragmaName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitPragmaName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPragmaName" ):
                 return visitor.visitPragmaName(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def pragmaName(self):
+
         localctx = SolidityParser.PragmaNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_pragmaName)
         try:
@@ -1565,43 +1239,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class PragmaValueContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def version(self):
-            return self.getTypedRuleContext(SolidityParser.VersionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.VersionContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_pragmaValue
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterPragmaValue"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPragmaValue" ):
                 listener.enterPragmaValue(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitPragmaValue"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPragmaValue" ):
                 listener.exitPragmaValue(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitPragmaValue"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPragmaValue" ):
                 return visitor.visitPragmaValue(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def pragmaValue(self):
+
         localctx = SolidityParser.PragmaValueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_pragmaValue)
         try:
             self.state = 229
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 2, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 226
@@ -1620,6 +1300,7 @@ class SolidityParser(Parser):
                 self.expression(0)
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1628,44 +1309,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class VersionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def versionConstraint(self, i: int = None):
+        def versionConstraint(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.VersionConstraintContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.VersionConstraintContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.VersionConstraintContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.VersionConstraintContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_version
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterVersion"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVersion" ):
                 listener.enterVersion(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitVersion"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVersion" ):
                 listener.exitVersion(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitVersion"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVersion" ):
                 return visitor.visitVersion(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def version(self):
+
         localctx = SolidityParser.VersionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_version)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 231
@@ -1673,33 +1355,14 @@ class SolidityParser(Parser):
             self.state = 238
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (
-                (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__3)
-                            | (1 << SolidityParser.T__4)
-                            | (1 << SolidityParser.T__5)
-                            | (1 << SolidityParser.T__6)
-                            | (1 << SolidityParser.T__7)
-                            | (1 << SolidityParser.T__8)
-                            | (1 << SolidityParser.T__9)
-                            | (1 << SolidityParser.T__10)
-                        )
-                    )
-                    != 0
-                )
-                or _la == SolidityParser.DecimalNumber
-                or _la == SolidityParser.VersionLiteral
-            ):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__3) | (1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0) or _la==SolidityParser.DecimalNumber or _la==SolidityParser.VersionLiteral:
                 self.state = 233
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la == SolidityParser.T__3:
+                if _la==SolidityParser.T__3:
                     self.state = 232
                     self.match(SolidityParser.T__3)
+
 
                 self.state = 235
                 self.versionConstraint()
@@ -1715,56 +1378,44 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class VersionOperatorContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_versionOperator
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterVersionOperator"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVersionOperator" ):
                 listener.enterVersionOperator(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitVersionOperator"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVersionOperator" ):
                 listener.exitVersionOperator(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitVersionOperator"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVersionOperator" ):
                 return visitor.visitVersionOperator(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def versionOperator(self):
+
         localctx = SolidityParser.VersionOperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_versionOperator)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 241
             _la = self._input.LA(1)
-            if not (
-                (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__4)
-                            | (1 << SolidityParser.T__5)
-                            | (1 << SolidityParser.T__6)
-                            | (1 << SolidityParser.T__7)
-                            | (1 << SolidityParser.T__8)
-                            | (1 << SolidityParser.T__9)
-                            | (1 << SolidityParser.T__10)
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1777,10 +1428,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class VersionConstraintContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -1788,7 +1439,8 @@ class SolidityParser(Parser):
             return self.getToken(SolidityParser.VersionLiteral, 0)
 
         def versionOperator(self):
-            return self.getTypedRuleContext(SolidityParser.VersionOperatorContext, 0)
+            return self.getTypedRuleContext(SolidityParser.VersionOperatorContext,0)
+
 
         def DecimalNumber(self):
             return self.getToken(SolidityParser.DecimalNumber, 0)
@@ -1796,47 +1448,41 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_versionConstraint
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterVersionConstraint"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVersionConstraint" ):
                 listener.enterVersionConstraint(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitVersionConstraint"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVersionConstraint" ):
                 listener.exitVersionConstraint(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitVersionConstraint"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVersionConstraint" ):
                 return visitor.visitVersionConstraint(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def versionConstraint(self):
+
         localctx = SolidityParser.VersionConstraintContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_versionConstraint)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.state = 251
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 7, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 244
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((_la) & ~0x3F) == 0 and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__4)
-                        | (1 << SolidityParser.T__5)
-                        | (1 << SolidityParser.T__6)
-                        | (1 << SolidityParser.T__7)
-                        | (1 << SolidityParser.T__8)
-                        | (1 << SolidityParser.T__9)
-                        | (1 << SolidityParser.T__10)
-                    )
-                ) != 0:
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0):
                     self.state = 243
                     self.versionOperator()
+
 
                 self.state = 246
                 self.match(SolidityParser.VersionLiteral)
@@ -1847,24 +1493,15 @@ class SolidityParser(Parser):
                 self.state = 248
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((_la) & ~0x3F) == 0 and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__4)
-                        | (1 << SolidityParser.T__5)
-                        | (1 << SolidityParser.T__6)
-                        | (1 << SolidityParser.T__7)
-                        | (1 << SolidityParser.T__8)
-                        | (1 << SolidityParser.T__9)
-                        | (1 << SolidityParser.T__10)
-                    )
-                ) != 0:
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0):
                     self.state = 247
                     self.versionOperator()
+
 
                 self.state = 250
                 self.match(SolidityParser.DecimalNumber)
                 pass
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1874,40 +1511,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ImportDeclarationContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def identifier(self, i: int = None):
+        def identifier(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.IdentifierContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.IdentifierContext, i)
+                return self.getTypedRuleContext(SolidityParser.IdentifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_importDeclaration
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterImportDeclaration"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterImportDeclaration" ):
                 listener.enterImportDeclaration(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitImportDeclaration"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitImportDeclaration" ):
                 listener.exitImportDeclaration(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitImportDeclaration"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitImportDeclaration" ):
                 return visitor.visitImportDeclaration(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def importDeclaration(self):
+
         localctx = SolidityParser.ImportDeclarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_importDeclaration)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 253
@@ -1915,11 +1557,12 @@ class SolidityParser(Parser):
             self.state = 256
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__11:
+            if _la==SolidityParser.T__11:
                 self.state = 254
                 self.match(SolidityParser.T__11)
                 self.state = 255
                 self.identifier()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1929,57 +1572,60 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ImportDirectiveContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def importPath(self):
-            return self.getTypedRuleContext(SolidityParser.ImportPathContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ImportPathContext,0)
 
-        def identifier(self, i: int = None):
+
+        def identifier(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.IdentifierContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.IdentifierContext, i)
+                return self.getTypedRuleContext(SolidityParser.IdentifierContext,i)
 
-        def importDeclaration(self, i: int = None):
+
+        def importDeclaration(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.ImportDeclarationContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.ImportDeclarationContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.ImportDeclarationContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.ImportDeclarationContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_importDirective
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterImportDirective"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterImportDirective" ):
                 listener.enterImportDirective(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitImportDirective"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitImportDirective" ):
                 listener.exitImportDirective(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitImportDirective"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitImportDirective" ):
                 return visitor.visitImportDirective(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def importDirective(self):
+
         localctx = SolidityParser.ImportDirectiveContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_importDirective)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.state = 294
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 13, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 258
@@ -1989,11 +1635,12 @@ class SolidityParser(Parser):
                 self.state = 262
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la == SolidityParser.T__11:
+                if _la==SolidityParser.T__11:
                     self.state = 260
                     self.match(SolidityParser.T__11)
                     self.state = 261
                     self.identifier()
+
 
                 self.state = 264
                 self.match(SolidityParser.T__1)
@@ -2010,20 +1657,7 @@ class SolidityParser(Parser):
                     self.state = 267
                     self.match(SolidityParser.T__2)
                     pass
-                elif token in [
-                    SolidityParser.T__13,
-                    SolidityParser.T__24,
-                    SolidityParser.T__43,
-                    SolidityParser.T__49,
-                    SolidityParser.T__61,
-                    SolidityParser.T__94,
-                    SolidityParser.LeaveKeyword,
-                    SolidityParser.PayableKeyword,
-                    SolidityParser.GlobalKeyword,
-                    SolidityParser.ConstructorKeyword,
-                    SolidityParser.ReceiveKeyword,
-                    SolidityParser.Identifier,
-                ]:
+                elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__43, SolidityParser.T__49, SolidityParser.T__61, SolidityParser.T__94, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
                     self.state = 268
                     self.identifier()
                     pass
@@ -2033,11 +1667,12 @@ class SolidityParser(Parser):
                 self.state = 273
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la == SolidityParser.T__11:
+                if _la==SolidityParser.T__11:
                     self.state = 271
                     self.match(SolidityParser.T__11)
                     self.state = 272
                     self.identifier()
+
 
                 self.state = 275
                 self.match(SolidityParser.T__13)
@@ -2058,7 +1693,7 @@ class SolidityParser(Parser):
                 self.state = 286
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 282
                     self.match(SolidityParser.T__15)
                     self.state = 283
@@ -2077,6 +1712,7 @@ class SolidityParser(Parser):
                 self.match(SolidityParser.T__1)
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2085,10 +1721,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ImportPathContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -2098,21 +1734,25 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_importPath
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterImportPath"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterImportPath" ):
                 listener.enterImportPath(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitImportPath"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitImportPath" ):
                 listener.exitImportPath(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitImportPath"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitImportPath" ):
                 return visitor.visitImportPath(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def importPath(self):
+
         localctx = SolidityParser.ImportPathContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_importPath)
         try:
@@ -2127,78 +1767,69 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ContractDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
 
-        def inheritanceSpecifier(self, i: int = None):
+
+        def inheritanceSpecifier(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.InheritanceSpecifierContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.InheritanceSpecifierContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.InheritanceSpecifierContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.InheritanceSpecifierContext,i)
 
-        def contractPart(self, i: int = None):
+
+        def contractPart(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.ContractPartContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.ContractPartContext, i)
+                return self.getTypedRuleContext(SolidityParser.ContractPartContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_contractDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterContractDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterContractDefinition" ):
                 listener.enterContractDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitContractDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitContractDefinition" ):
                 listener.exitContractDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitContractDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitContractDefinition" ):
                 return visitor.visitContractDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def contractDefinition(self):
+
         localctx = SolidityParser.ContractDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_contractDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 299
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__17:
+            if _la==SolidityParser.T__17:
                 self.state = 298
                 self.match(SolidityParser.T__17)
 
+
             self.state = 301
             _la = self._input.LA(1)
-            if not (
-                (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__18)
-                            | (1 << SolidityParser.T__19)
-                            | (1 << SolidityParser.T__20)
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__18) | (1 << SolidityParser.T__19) | (1 << SolidityParser.T__20))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2208,7 +1839,7 @@ class SolidityParser(Parser):
             self.state = 312
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__21:
+            if _la==SolidityParser.T__21:
                 self.state = 303
                 self.match(SolidityParser.T__21)
                 self.state = 304
@@ -2216,7 +1847,7 @@ class SolidityParser(Parser):
                 self.state = 309
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 305
                     self.match(SolidityParser.T__15)
                     self.state = 306
@@ -2225,58 +1856,14 @@ class SolidityParser(Parser):
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
+
+
             self.state = 314
             self.match(SolidityParser.T__14)
             self.state = 318
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (
-                (((_la - 14)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 14))
-                    & (
-                        (1 << (SolidityParser.T__13 - 14))
-                        | (1 << (SolidityParser.T__24 - 14))
-                        | (1 << (SolidityParser.T__25 - 14))
-                        | (1 << (SolidityParser.T__35 - 14))
-                        | (1 << (SolidityParser.T__36 - 14))
-                        | (1 << (SolidityParser.T__37 - 14))
-                        | (1 << (SolidityParser.T__39 - 14))
-                        | (1 << (SolidityParser.T__40 - 14))
-                        | (1 << (SolidityParser.T__43 - 14))
-                        | (1 << (SolidityParser.T__45 - 14))
-                        | (1 << (SolidityParser.T__49 - 14))
-                        | (1 << (SolidityParser.T__61 - 14))
-                        | (1 << (SolidityParser.T__62 - 14))
-                        | (1 << (SolidityParser.T__63 - 14))
-                        | (1 << (SolidityParser.T__64 - 14))
-                        | (1 << (SolidityParser.T__65 - 14))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.Int - 95))
-                        | (1 << (SolidityParser.Uint - 95))
-                        | (1 << (SolidityParser.Byte - 95))
-                        | (1 << (SolidityParser.Fixed - 95))
-                        | (1 << (SolidityParser.Ufixed - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.TypeKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.FallbackKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            while ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__25 - 14)) | (1 << (SolidityParser.T__35 - 14)) | (1 << (SolidityParser.T__36 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__39 - 14)) | (1 << (SolidityParser.T__40 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.TypeKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.FallbackKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 315
                 self.contractPart()
                 self.state = 320
@@ -2293,44 +1880,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class InheritanceSpecifierContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def userDefinedTypeName(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UserDefinedTypeNameContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UserDefinedTypeNameContext,0)
+
 
         def expressionList(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_inheritanceSpecifier
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterInheritanceSpecifier"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInheritanceSpecifier" ):
                 listener.enterInheritanceSpecifier(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitInheritanceSpecifier"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInheritanceSpecifier" ):
                 listener.exitInheritanceSpecifier(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitInheritanceSpecifier"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitInheritanceSpecifier" ):
                 return visitor.visitInheritanceSpecifier(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def inheritanceSpecifier(self):
-        localctx = SolidityParser.InheritanceSpecifierContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.InheritanceSpecifierContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_inheritanceSpecifier)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 323
@@ -2338,73 +1927,20 @@ class SolidityParser(Parser):
             self.state = 329
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__22:
+            if _la==SolidityParser.T__22:
                 self.state = 324
                 self.match(SolidityParser.T__22)
                 self.state = 326
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    (((_la - 6)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 6))
-                        & (
-                            (1 << (SolidityParser.T__5 - 6))
-                            | (1 << (SolidityParser.T__13 - 6))
-                            | (1 << (SolidityParser.T__22 - 6))
-                            | (1 << (SolidityParser.T__24 - 6))
-                            | (1 << (SolidityParser.T__29 - 6))
-                            | (1 << (SolidityParser.T__30 - 6))
-                            | (1 << (SolidityParser.T__37 - 6))
-                            | (1 << (SolidityParser.T__41 - 6))
-                            | (1 << (SolidityParser.T__43 - 6))
-                            | (1 << (SolidityParser.T__45 - 6))
-                            | (1 << (SolidityParser.T__49 - 6))
-                            | (1 << (SolidityParser.T__61 - 6))
-                            | (1 << (SolidityParser.T__62 - 6))
-                            | (1 << (SolidityParser.T__63 - 6))
-                            | (1 << (SolidityParser.T__64 - 6))
-                            | (1 << (SolidityParser.T__65 - 6))
-                            | (1 << (SolidityParser.T__66 - 6))
-                            | (1 << (SolidityParser.T__67 - 6))
-                            | (1 << (SolidityParser.T__68 - 6))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 71)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 71))
-                        & (
-                            (1 << (SolidityParser.T__70 - 71))
-                            | (1 << (SolidityParser.T__71 - 71))
-                            | (1 << (SolidityParser.T__94 - 71))
-                            | (1 << (SolidityParser.Int - 71))
-                            | (1 << (SolidityParser.Uint - 71))
-                            | (1 << (SolidityParser.Byte - 71))
-                            | (1 << (SolidityParser.Fixed - 71))
-                            | (1 << (SolidityParser.Ufixed - 71))
-                            | (1 << (SolidityParser.BooleanLiteral - 71))
-                            | (1 << (SolidityParser.DecimalNumber - 71))
-                            | (1 << (SolidityParser.HexNumber - 71))
-                            | (1 << (SolidityParser.HexLiteralFragment - 71))
-                            | (1 << (SolidityParser.LeaveKeyword - 71))
-                            | (1 << (SolidityParser.PayableKeyword - 71))
-                            | (1 << (SolidityParser.TypeKeyword - 71))
-                            | (1 << (SolidityParser.GlobalKeyword - 71))
-                            | (1 << (SolidityParser.ConstructorKeyword - 71))
-                            | (1 << (SolidityParser.ReceiveKeyword - 71))
-                            | (1 << (SolidityParser.Identifier - 71))
-                            | (1 << (SolidityParser.StringLiteralFragment - 71))
-                        )
-                    )
-                    != 0
-                ):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                     self.state = 325
                     self.expressionList()
 
+
                 self.state = 328
                 self.match(SolidityParser.T__23)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -2414,70 +1950,77 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ContractPartContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def stateVariableDeclaration(self):
-            return self.getTypedRuleContext(
-                SolidityParser.StateVariableDeclarationContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.StateVariableDeclarationContext,0)
+
 
         def usingForDeclaration(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UsingForDeclarationContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UsingForDeclarationContext,0)
+
 
         def structDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.StructDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StructDefinitionContext,0)
+
 
         def modifierDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.ModifierDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ModifierDefinitionContext,0)
+
 
         def functionDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.FunctionDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.FunctionDefinitionContext,0)
+
 
         def eventDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.EventDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.EventDefinitionContext,0)
+
 
         def enumDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.EnumDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.EnumDefinitionContext,0)
+
 
         def customErrorDefinition(self):
-            return self.getTypedRuleContext(
-                SolidityParser.CustomErrorDefinitionContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.CustomErrorDefinitionContext,0)
+
 
         def typeDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.TypeDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeDefinitionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_contractPart
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterContractPart"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterContractPart" ):
                 listener.enterContractPart(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitContractPart"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitContractPart" ):
                 listener.exitContractPart(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitContractPart"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitContractPart" ):
                 return visitor.visitContractPart(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def contractPart(self):
+
         localctx = SolidityParser.ContractPartContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_contractPart)
         try:
             self.state = 340
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 20, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 331
@@ -2532,6 +2075,7 @@ class SolidityParser(Parser):
                 self.typeDefinition()
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2540,85 +2084,87 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class StateVariableDeclarationContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
 
-        def PublicKeyword(self, i: int = None):
+
+        def PublicKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.PublicKeyword)
             else:
                 return self.getToken(SolidityParser.PublicKeyword, i)
 
-        def InternalKeyword(self, i: int = None):
+        def InternalKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.InternalKeyword)
             else:
                 return self.getToken(SolidityParser.InternalKeyword, i)
 
-        def PrivateKeyword(self, i: int = None):
+        def PrivateKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.PrivateKeyword)
             else:
                 return self.getToken(SolidityParser.PrivateKeyword, i)
 
-        def ConstantKeyword(self, i: int = None):
+        def ConstantKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.ConstantKeyword)
             else:
                 return self.getToken(SolidityParser.ConstantKeyword, i)
 
-        def ImmutableKeyword(self, i: int = None):
+        def ImmutableKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.ImmutableKeyword)
             else:
                 return self.getToken(SolidityParser.ImmutableKeyword, i)
 
-        def overrideSpecifier(self, i: int = None):
+        def overrideSpecifier(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.OverrideSpecifierContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.OverrideSpecifierContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.OverrideSpecifierContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.OverrideSpecifierContext,i)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_stateVariableDeclaration
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterStateVariableDeclaration"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStateVariableDeclaration" ):
                 listener.enterStateVariableDeclaration(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitStateVariableDeclaration"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStateVariableDeclaration" ):
                 listener.exitStateVariableDeclaration(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitStateVariableDeclaration"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStateVariableDeclaration" ):
                 return visitor.visitStateVariableDeclaration(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def stateVariableDeclaration(self):
-        localctx = SolidityParser.StateVariableDeclarationContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.StateVariableDeclarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_stateVariableDeclaration)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 342
@@ -2626,17 +2172,7 @@ class SolidityParser(Parser):
             self.state = 351
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la - 96)) & ~0x3F) == 0 and (
-                (1 << (_la - 96))
-                & (
-                    (1 << (SolidityParser.T__95 - 96))
-                    | (1 << (SolidityParser.ConstantKeyword - 96))
-                    | (1 << (SolidityParser.ImmutableKeyword - 96))
-                    | (1 << (SolidityParser.InternalKeyword - 96))
-                    | (1 << (SolidityParser.PrivateKeyword - 96))
-                    | (1 << (SolidityParser.PublicKeyword - 96))
-                )
-            ) != 0:
+            while ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.ConstantKeyword - 96)) | (1 << (SolidityParser.ImmutableKeyword - 96)) | (1 << (SolidityParser.InternalKeyword - 96)) | (1 << (SolidityParser.PrivateKeyword - 96)) | (1 << (SolidityParser.PublicKeyword - 96)))) != 0):
                 self.state = 349
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
@@ -2676,11 +2212,12 @@ class SolidityParser(Parser):
             self.state = 357
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__10:
+            if _la==SolidityParser.T__10:
                 self.state = 355
                 self.match(SolidityParser.T__10)
                 self.state = 356
                 self.expression(0)
+
 
             self.state = 359
             self.match(SolidityParser.T__1)
@@ -2692,43 +2229,50 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FileLevelConstantContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def ConstantKeyword(self):
             return self.getToken(SolidityParser.ConstantKeyword, 0)
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_fileLevelConstant
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFileLevelConstant"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFileLevelConstant" ):
                 listener.enterFileLevelConstant(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFileLevelConstant"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFileLevelConstant" ):
                 listener.exitFileLevelConstant(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFileLevelConstant"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFileLevelConstant" ):
                 return visitor.visitFileLevelConstant(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def fileLevelConstant(self):
+
         localctx = SolidityParser.FileLevelConstantContext(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_fileLevelConstant)
         try:
@@ -2753,40 +2297,44 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class CustomErrorDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def parameterList(self):
-            return self.getTypedRuleContext(SolidityParser.ParameterListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ParameterListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_customErrorDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterCustomErrorDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCustomErrorDefinition" ):
                 listener.enterCustomErrorDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitCustomErrorDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCustomErrorDefinition" ):
                 listener.exitCustomErrorDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitCustomErrorDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCustomErrorDefinition" ):
                 return visitor.visitCustomErrorDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def customErrorDefinition(self):
-        localctx = SolidityParser.CustomErrorDefinitionContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.CustomErrorDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_customErrorDefinition)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -2806,10 +2354,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class TypeDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -2817,29 +2365,35 @@ class SolidityParser(Parser):
             return self.getToken(SolidityParser.TypeKeyword, 0)
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def elementaryTypeName(self):
-            return self.getTypedRuleContext(SolidityParser.ElementaryTypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ElementaryTypeNameContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_typeDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterTypeDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTypeDefinition" ):
                 listener.enterTypeDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitTypeDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTypeDefinition" ):
                 listener.exitTypeDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitTypeDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTypeDefinition" ):
                 return visitor.visitTypeDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def typeDefinition(self):
+
         localctx = SolidityParser.TypeDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_typeDefinition)
         try:
@@ -2862,18 +2416,20 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class UsingForDeclarationContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def usingForObject(self):
-            return self.getTypedRuleContext(SolidityParser.UsingForObjectContext, 0)
+            return self.getTypedRuleContext(SolidityParser.UsingForObjectContext,0)
+
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def GlobalKeyword(self):
             return self.getToken(SolidityParser.GlobalKeyword, 0)
@@ -2881,26 +2437,28 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_usingForDeclaration
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterUsingForDeclaration"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUsingForDeclaration" ):
                 listener.enterUsingForDeclaration(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitUsingForDeclaration"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUsingForDeclaration" ):
                 listener.exitUsingForDeclaration(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitUsingForDeclaration"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUsingForDeclaration" ):
                 return visitor.visitUsingForDeclaration(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def usingForDeclaration(self):
-        localctx = SolidityParser.UsingForDeclarationContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.UsingForDeclarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 34, self.RULE_usingForDeclaration)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 379
@@ -2916,31 +2474,7 @@ class SolidityParser(Parser):
                 self.state = 382
                 self.match(SolidityParser.T__2)
                 pass
-            elif token in [
-                SolidityParser.T__13,
-                SolidityParser.T__24,
-                SolidityParser.T__37,
-                SolidityParser.T__43,
-                SolidityParser.T__45,
-                SolidityParser.T__49,
-                SolidityParser.T__61,
-                SolidityParser.T__62,
-                SolidityParser.T__63,
-                SolidityParser.T__64,
-                SolidityParser.T__65,
-                SolidityParser.T__94,
-                SolidityParser.Int,
-                SolidityParser.Uint,
-                SolidityParser.Byte,
-                SolidityParser.Fixed,
-                SolidityParser.Ufixed,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-            ]:
+            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__37, SolidityParser.T__43, SolidityParser.T__45, SolidityParser.T__49, SolidityParser.T__61, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__94, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
                 self.state = 383
                 self.typeName(0)
                 pass
@@ -2950,9 +2484,10 @@ class SolidityParser(Parser):
             self.state = 387
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.GlobalKeyword:
+            if _la==SolidityParser.GlobalKeyword:
                 self.state = 386
                 self.match(SolidityParser.GlobalKeyword)
+
 
             self.state = 389
             self.match(SolidityParser.T__1)
@@ -2964,67 +2499,54 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class UsingForObjectContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def userDefinedTypeName(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UserDefinedTypeNameContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UserDefinedTypeNameContext,0)
 
-        def usingForObjectDirective(self, i: int = None):
+
+        def usingForObjectDirective(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.UsingForObjectDirectiveContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.UsingForObjectDirectiveContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.UsingForObjectDirectiveContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.UsingForObjectDirectiveContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_usingForObject
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterUsingForObject"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUsingForObject" ):
                 listener.enterUsingForObject(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitUsingForObject"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUsingForObject" ):
                 listener.exitUsingForObject(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitUsingForObject"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUsingForObject" ):
                 return visitor.visitUsingForObject(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def usingForObject(self):
+
         localctx = SolidityParser.UsingForObjectContext(self, self._ctx, self.state)
         self.enterRule(localctx, 36, self.RULE_usingForObject)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.state = 403
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [
-                SolidityParser.T__13,
-                SolidityParser.T__24,
-                SolidityParser.T__43,
-                SolidityParser.T__49,
-                SolidityParser.T__61,
-                SolidityParser.T__94,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-            ]:
+            if token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__43, SolidityParser.T__49, SolidityParser.T__61, SolidityParser.T__94, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 391
                 self.userDefinedTypeName()
@@ -3038,7 +2560,7 @@ class SolidityParser(Parser):
                 self.state = 398
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 394
                     self.match(SolidityParser.T__15)
                     self.state = 395
@@ -3061,46 +2583,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class UsingForObjectDirectiveContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def userDefinedTypeName(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UserDefinedTypeNameContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UserDefinedTypeNameContext,0)
+
 
         def userDefinableOperators(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UserDefinableOperatorsContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UserDefinableOperatorsContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_usingForObjectDirective
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterUsingForObjectDirective"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUsingForObjectDirective" ):
                 listener.enterUsingForObjectDirective(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitUsingForObjectDirective"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUsingForObjectDirective" ):
                 listener.exitUsingForObjectDirective(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitUsingForObjectDirective"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUsingForObjectDirective" ):
                 return visitor.visitUsingForObjectDirective(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def usingForObjectDirective(self):
-        localctx = SolidityParser.UsingForObjectDirectiveContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.UsingForObjectDirectiveContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_usingForObjectDirective)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 405
@@ -3108,11 +2630,12 @@ class SolidityParser(Parser):
             self.state = 408
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__11:
+            if _la==SolidityParser.T__11:
                 self.state = 406
                 self.match(SolidityParser.T__11)
                 self.state = 407
                 self.userDefinableOperators()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -3122,66 +2645,44 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class UserDefinableOperatorsContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_userDefinableOperators
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterUserDefinableOperators"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUserDefinableOperators" ):
                 listener.enterUserDefinableOperators(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitUserDefinableOperators"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUserDefinableOperators" ):
                 listener.exitUserDefinableOperators(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitUserDefinableOperators"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUserDefinableOperators" ):
                 return visitor.visitUserDefinableOperators(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def userDefinableOperators(self):
-        localctx = SolidityParser.UserDefinableOperatorsContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.UserDefinableOperatorsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_userDefinableOperators)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 410
             _la = self._input.LA(1)
-            if not (
-                (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__2)
-                            | (1 << SolidityParser.T__4)
-                            | (1 << SolidityParser.T__5)
-                            | (1 << SolidityParser.T__6)
-                            | (1 << SolidityParser.T__7)
-                            | (1 << SolidityParser.T__8)
-                            | (1 << SolidityParser.T__9)
-                            | (1 << SolidityParser.T__27)
-                            | (1 << SolidityParser.T__28)
-                            | (1 << SolidityParser.T__29)
-                            | (1 << SolidityParser.T__30)
-                            | (1 << SolidityParser.T__31)
-                            | (1 << SolidityParser.T__32)
-                            | (1 << SolidityParser.T__33)
-                            | (1 << SolidityParser.T__34)
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__2) | (1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__27) | (1 << SolidityParser.T__28) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__30) | (1 << SolidityParser.T__31) | (1 << SolidityParser.T__32) | (1 << SolidityParser.T__33) | (1 << SolidityParser.T__34))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -3194,47 +2695,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class StructDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
 
-        def variableDeclaration(self, i: int = None):
+
+        def variableDeclaration(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.VariableDeclarationContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.VariableDeclarationContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.VariableDeclarationContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.VariableDeclarationContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_structDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterStructDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStructDefinition" ):
                 listener.enterStructDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitStructDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStructDefinition" ):
                 listener.exitStructDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitStructDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStructDefinition" ):
                 return visitor.visitStructDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def structDefinition(self):
+
         localctx = SolidityParser.StructDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 42, self.RULE_structDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 412
@@ -3246,46 +2749,7 @@ class SolidityParser(Parser):
             self.state = 425
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 14)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 14))
-                    & (
-                        (1 << (SolidityParser.T__13 - 14))
-                        | (1 << (SolidityParser.T__24 - 14))
-                        | (1 << (SolidityParser.T__37 - 14))
-                        | (1 << (SolidityParser.T__43 - 14))
-                        | (1 << (SolidityParser.T__45 - 14))
-                        | (1 << (SolidityParser.T__49 - 14))
-                        | (1 << (SolidityParser.T__61 - 14))
-                        | (1 << (SolidityParser.T__62 - 14))
-                        | (1 << (SolidityParser.T__63 - 14))
-                        | (1 << (SolidityParser.T__64 - 14))
-                        | (1 << (SolidityParser.T__65 - 14))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.Int - 95))
-                        | (1 << (SolidityParser.Uint - 95))
-                        | (1 << (SolidityParser.Byte - 95))
-                        | (1 << (SolidityParser.Fixed - 95))
-                        | (1 << (SolidityParser.Ufixed - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 415
                 self.variableDeclaration()
                 self.state = 416
@@ -3293,46 +2757,7 @@ class SolidityParser(Parser):
                 self.state = 422
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while (
-                    (((_la - 14)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 14))
-                        & (
-                            (1 << (SolidityParser.T__13 - 14))
-                            | (1 << (SolidityParser.T__24 - 14))
-                            | (1 << (SolidityParser.T__37 - 14))
-                            | (1 << (SolidityParser.T__43 - 14))
-                            | (1 << (SolidityParser.T__45 - 14))
-                            | (1 << (SolidityParser.T__49 - 14))
-                            | (1 << (SolidityParser.T__61 - 14))
-                            | (1 << (SolidityParser.T__62 - 14))
-                            | (1 << (SolidityParser.T__63 - 14))
-                            | (1 << (SolidityParser.T__64 - 14))
-                            | (1 << (SolidityParser.T__65 - 14))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 95)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 95))
-                        & (
-                            (1 << (SolidityParser.T__94 - 95))
-                            | (1 << (SolidityParser.Int - 95))
-                            | (1 << (SolidityParser.Uint - 95))
-                            | (1 << (SolidityParser.Byte - 95))
-                            | (1 << (SolidityParser.Fixed - 95))
-                            | (1 << (SolidityParser.Ufixed - 95))
-                            | (1 << (SolidityParser.LeaveKeyword - 95))
-                            | (1 << (SolidityParser.PayableKeyword - 95))
-                            | (1 << (SolidityParser.GlobalKeyword - 95))
-                            | (1 << (SolidityParser.ConstructorKeyword - 95))
-                            | (1 << (SolidityParser.ReceiveKeyword - 95))
-                            | (1 << (SolidityParser.Identifier - 95))
-                        )
-                    )
-                    != 0
-                ):
+                while ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                     self.state = 417
                     self.variableDeclaration()
                     self.state = 418
@@ -3340,6 +2765,8 @@ class SolidityParser(Parser):
                     self.state = 424
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
+
+
 
             self.state = 427
             self.match(SolidityParser.T__16)
@@ -3351,59 +2778,63 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ModifierDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def block(self):
-            return self.getTypedRuleContext(SolidityParser.BlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BlockContext,0)
+
 
         def parameterList(self):
-            return self.getTypedRuleContext(SolidityParser.ParameterListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ParameterListContext,0)
 
-        def VirtualKeyword(self, i: int = None):
+
+        def VirtualKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.VirtualKeyword)
             else:
                 return self.getToken(SolidityParser.VirtualKeyword, i)
 
-        def overrideSpecifier(self, i: int = None):
+        def overrideSpecifier(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.OverrideSpecifierContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.OverrideSpecifierContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.OverrideSpecifierContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.OverrideSpecifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_modifierDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterModifierDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterModifierDefinition" ):
                 listener.enterModifierDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitModifierDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitModifierDefinition" ):
                 listener.exitModifierDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitModifierDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitModifierDefinition" ):
                 return visitor.visitModifierDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def modifierDefinition(self):
+
         localctx = SolidityParser.ModifierDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 44, self.RULE_modifierDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 429
@@ -3413,14 +2844,15 @@ class SolidityParser(Parser):
             self.state = 432
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__22:
+            if _la==SolidityParser.T__22:
                 self.state = 431
                 self.parameterList()
+
 
             self.state = 438
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la == SolidityParser.T__95 or _la == SolidityParser.VirtualKeyword:
+            while _la==SolidityParser.T__95 or _la==SolidityParser.VirtualKeyword:
                 self.state = 436
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
@@ -3461,40 +2893,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ModifierInvocationContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def expressionList(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_modifierInvocation
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterModifierInvocation"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterModifierInvocation" ):
                 listener.enterModifierInvocation(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitModifierInvocation"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitModifierInvocation" ):
                 listener.exitModifierInvocation(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitModifierInvocation"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitModifierInvocation" ):
                 return visitor.visitModifierInvocation(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def modifierInvocation(self):
+
         localctx = SolidityParser.ModifierInvocationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 46, self.RULE_modifierInvocation)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 445
@@ -3502,73 +2940,20 @@ class SolidityParser(Parser):
             self.state = 451
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__22:
+            if _la==SolidityParser.T__22:
                 self.state = 446
                 self.match(SolidityParser.T__22)
                 self.state = 448
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    (((_la - 6)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 6))
-                        & (
-                            (1 << (SolidityParser.T__5 - 6))
-                            | (1 << (SolidityParser.T__13 - 6))
-                            | (1 << (SolidityParser.T__22 - 6))
-                            | (1 << (SolidityParser.T__24 - 6))
-                            | (1 << (SolidityParser.T__29 - 6))
-                            | (1 << (SolidityParser.T__30 - 6))
-                            | (1 << (SolidityParser.T__37 - 6))
-                            | (1 << (SolidityParser.T__41 - 6))
-                            | (1 << (SolidityParser.T__43 - 6))
-                            | (1 << (SolidityParser.T__45 - 6))
-                            | (1 << (SolidityParser.T__49 - 6))
-                            | (1 << (SolidityParser.T__61 - 6))
-                            | (1 << (SolidityParser.T__62 - 6))
-                            | (1 << (SolidityParser.T__63 - 6))
-                            | (1 << (SolidityParser.T__64 - 6))
-                            | (1 << (SolidityParser.T__65 - 6))
-                            | (1 << (SolidityParser.T__66 - 6))
-                            | (1 << (SolidityParser.T__67 - 6))
-                            | (1 << (SolidityParser.T__68 - 6))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 71)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 71))
-                        & (
-                            (1 << (SolidityParser.T__70 - 71))
-                            | (1 << (SolidityParser.T__71 - 71))
-                            | (1 << (SolidityParser.T__94 - 71))
-                            | (1 << (SolidityParser.Int - 71))
-                            | (1 << (SolidityParser.Uint - 71))
-                            | (1 << (SolidityParser.Byte - 71))
-                            | (1 << (SolidityParser.Fixed - 71))
-                            | (1 << (SolidityParser.Ufixed - 71))
-                            | (1 << (SolidityParser.BooleanLiteral - 71))
-                            | (1 << (SolidityParser.DecimalNumber - 71))
-                            | (1 << (SolidityParser.HexNumber - 71))
-                            | (1 << (SolidityParser.HexLiteralFragment - 71))
-                            | (1 << (SolidityParser.LeaveKeyword - 71))
-                            | (1 << (SolidityParser.PayableKeyword - 71))
-                            | (1 << (SolidityParser.TypeKeyword - 71))
-                            | (1 << (SolidityParser.GlobalKeyword - 71))
-                            | (1 << (SolidityParser.ConstructorKeyword - 71))
-                            | (1 << (SolidityParser.ReceiveKeyword - 71))
-                            | (1 << (SolidityParser.Identifier - 71))
-                            | (1 << (SolidityParser.StringLiteralFragment - 71))
-                        )
-                    )
-                    != 0
-                ):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                     self.state = 447
                     self.expressionList()
 
+
                 self.state = 450
                 self.match(SolidityParser.T__23)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -3578,49 +2963,58 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def functionDescriptor(self):
-            return self.getTypedRuleContext(SolidityParser.FunctionDescriptorContext, 0)
+            return self.getTypedRuleContext(SolidityParser.FunctionDescriptorContext,0)
+
 
         def parameterList(self):
-            return self.getTypedRuleContext(SolidityParser.ParameterListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ParameterListContext,0)
+
 
         def modifierList(self):
-            return self.getTypedRuleContext(SolidityParser.ModifierListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ModifierListContext,0)
+
 
         def block(self):
-            return self.getTypedRuleContext(SolidityParser.BlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BlockContext,0)
+
 
         def returnParameters(self):
-            return self.getTypedRuleContext(SolidityParser.ReturnParametersContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ReturnParametersContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_functionDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionDefinition" ):
                 listener.enterFunctionDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionDefinition" ):
                 listener.exitFunctionDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionDefinition" ):
                 return visitor.visitFunctionDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionDefinition(self):
+
         localctx = SolidityParser.FunctionDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 48, self.RULE_functionDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 453
@@ -3632,9 +3026,10 @@ class SolidityParser(Parser):
             self.state = 457
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__38:
+            if _la==SolidityParser.T__38:
                 self.state = 456
                 self.returnParameters()
+
 
             self.state = 461
             self._errHandler.sync(self)
@@ -3658,15 +3053,16 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionDescriptorContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def ConstructorKeyword(self):
             return self.getToken(SolidityParser.ConstructorKeyword, 0)
@@ -3680,24 +3076,28 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_functionDescriptor
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionDescriptor"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionDescriptor" ):
                 listener.enterFunctionDescriptor(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionDescriptor"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionDescriptor" ):
                 listener.exitFunctionDescriptor(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionDescriptor"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionDescriptor" ):
                 return visitor.visitFunctionDescriptor(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionDescriptor(self):
+
         localctx = SolidityParser.FunctionDescriptorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 50, self.RULE_functionDescriptor)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.state = 470
             self._errHandler.sync(self)
@@ -3709,37 +3109,10 @@ class SolidityParser(Parser):
                 self.state = 465
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__13)
-                            | (1 << SolidityParser.T__24)
-                            | (1 << SolidityParser.T__43)
-                            | (1 << SolidityParser.T__49)
-                            | (1 << SolidityParser.T__61)
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 95)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 95))
-                        & (
-                            (1 << (SolidityParser.T__94 - 95))
-                            | (1 << (SolidityParser.LeaveKeyword - 95))
-                            | (1 << (SolidityParser.PayableKeyword - 95))
-                            | (1 << (SolidityParser.GlobalKeyword - 95))
-                            | (1 << (SolidityParser.ConstructorKeyword - 95))
-                            | (1 << (SolidityParser.ReceiveKeyword - 95))
-                            | (1 << (SolidityParser.Identifier - 95))
-                        )
-                    )
-                    != 0
-                ):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                     self.state = 464
                     self.identifier()
+
 
                 pass
             elif token in [SolidityParser.ConstructorKeyword]:
@@ -3768,34 +3141,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ReturnParametersContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def parameterList(self):
-            return self.getTypedRuleContext(SolidityParser.ParameterListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ParameterListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_returnParameters
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterReturnParameters"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterReturnParameters" ):
                 listener.enterReturnParameters(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitReturnParameters"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitReturnParameters" ):
                 listener.exitReturnParameters(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitReturnParameters"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitReturnParameters" ):
                 return visitor.visitReturnParameters(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def returnParameters(self):
+
         localctx = SolidityParser.ReturnParametersContext(self, self._ctx, self.state)
         self.enterRule(localctx, 52, self.RULE_returnParameters)
         try:
@@ -3812,138 +3190,98 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ModifierListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ExternalKeyword(self, i: int = None):
+        def ExternalKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.ExternalKeyword)
             else:
                 return self.getToken(SolidityParser.ExternalKeyword, i)
 
-        def PublicKeyword(self, i: int = None):
+        def PublicKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.PublicKeyword)
             else:
                 return self.getToken(SolidityParser.PublicKeyword, i)
 
-        def InternalKeyword(self, i: int = None):
+        def InternalKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.InternalKeyword)
             else:
                 return self.getToken(SolidityParser.InternalKeyword, i)
 
-        def PrivateKeyword(self, i: int = None):
+        def PrivateKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.PrivateKeyword)
             else:
                 return self.getToken(SolidityParser.PrivateKeyword, i)
 
-        def VirtualKeyword(self, i: int = None):
+        def VirtualKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.VirtualKeyword)
             else:
                 return self.getToken(SolidityParser.VirtualKeyword, i)
 
-        def stateMutability(self, i: int = None):
+        def stateMutability(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.StateMutabilityContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.StateMutabilityContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.StateMutabilityContext,i)
 
-        def modifierInvocation(self, i: int = None):
-            if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.ModifierInvocationContext
-                )
-            else:
-                return self.getTypedRuleContext(
-                    SolidityParser.ModifierInvocationContext, i
-                )
 
-        def overrideSpecifier(self, i: int = None):
+        def modifierInvocation(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.OverrideSpecifierContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.ModifierInvocationContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.OverrideSpecifierContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.ModifierInvocationContext,i)
+
+
+        def overrideSpecifier(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(SolidityParser.OverrideSpecifierContext)
+            else:
+                return self.getTypedRuleContext(SolidityParser.OverrideSpecifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_modifierList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterModifierList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterModifierList" ):
                 listener.enterModifierList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitModifierList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitModifierList" ):
                 listener.exitModifierList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitModifierList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitModifierList" ):
                 return visitor.visitModifierList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def modifierList(self):
+
         localctx = SolidityParser.ModifierListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 54, self.RULE_modifierList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 485
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.T__95 - 95))
-                        | (1 << (SolidityParser.ConstantKeyword - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.ExternalKeyword - 95))
-                        | (1 << (SolidityParser.InternalKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.PrivateKeyword - 95))
-                        | (1 << (SolidityParser.PublicKeyword - 95))
-                        | (1 << (SolidityParser.VirtualKeyword - 95))
-                        | (1 << (SolidityParser.PureKeyword - 95))
-                        | (1 << (SolidityParser.ViewKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.T__95 - 95)) | (1 << (SolidityParser.ConstantKeyword - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.ExternalKeyword - 95)) | (1 << (SolidityParser.InternalKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.PrivateKeyword - 95)) | (1 << (SolidityParser.PublicKeyword - 95)) | (1 << (SolidityParser.VirtualKeyword - 95)) | (1 << (SolidityParser.PureKeyword - 95)) | (1 << (SolidityParser.ViewKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 483
                 self._errHandler.sync(self)
-                la_ = self._interp.adaptivePredict(self._input, 41, self._ctx)
+                la_ = self._interp.adaptivePredict(self._input,41,self._ctx)
                 if la_ == 1:
                     self.state = 475
                     self.match(SolidityParser.ExternalKeyword)
@@ -3984,6 +3322,7 @@ class SolidityParser(Parser):
                     self.overrideSpecifier()
                     pass
 
+
                 self.state = 487
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -3996,18 +3335,20 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class EventDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def eventParameterList(self):
-            return self.getTypedRuleContext(SolidityParser.EventParameterListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.EventParameterListContext,0)
+
 
         def AnonymousKeyword(self):
             return self.getToken(SolidityParser.AnonymousKeyword, 0)
@@ -4015,24 +3356,28 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_eventDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterEventDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEventDefinition" ):
                 listener.enterEventDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitEventDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEventDefinition" ):
                 listener.exitEventDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitEventDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEventDefinition" ):
                 return visitor.visitEventDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def eventDefinition(self):
+
         localctx = SolidityParser.EventDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 56, self.RULE_eventDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 488
@@ -4044,9 +3389,10 @@ class SolidityParser(Parser):
             self.state = 492
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.AnonymousKeyword:
+            if _la==SolidityParser.AnonymousKeyword:
                 self.state = 491
                 self.match(SolidityParser.AnonymousKeyword)
+
 
             self.state = 494
             self.match(SolidityParser.T__1)
@@ -4058,34 +3404,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class EnumValueContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_enumValue
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterEnumValue"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEnumValue" ):
                 listener.enterEnumValue(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitEnumValue"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEnumValue" ):
                 listener.exitEnumValue(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitEnumValue"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEnumValue" ):
                 return visitor.visitEnumValue(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def enumValue(self):
+
         localctx = SolidityParser.EnumValueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 58, self.RULE_enumValue)
         try:
@@ -4100,43 +3451,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class EnumDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
 
-        def enumValue(self, i: int = None):
+
+        def enumValue(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.EnumValueContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.EnumValueContext, i)
+                return self.getTypedRuleContext(SolidityParser.EnumValueContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_enumDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterEnumDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEnumDefinition" ):
                 listener.enterEnumDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitEnumDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEnumDefinition" ):
                 listener.exitEnumDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitEnumDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEnumDefinition" ):
                 return visitor.visitEnumDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def enumDefinition(self):
+
         localctx = SolidityParser.EnumDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 60, self.RULE_enumDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 498
@@ -4148,42 +3505,15 @@ class SolidityParser(Parser):
             self.state = 502
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 501
                 self.enumValue()
+
 
             self.state = 508
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la == SolidityParser.T__15:
+            while _la==SolidityParser.T__15:
                 self.state = 504
                 self.match(SolidityParser.T__15)
                 self.state = 505
@@ -4202,40 +3532,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ParameterListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def parameter(self, i: int = None):
+        def parameter(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.ParameterContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.ParameterContext, i)
+                return self.getTypedRuleContext(SolidityParser.ParameterContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_parameterList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterParameterList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterParameterList" ):
                 listener.enterParameterList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitParameterList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitParameterList" ):
                 listener.exitParameterList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitParameterList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParameterList" ):
                 return visitor.visitParameterList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def parameterList(self):
+
         localctx = SolidityParser.ParameterListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 62, self.RULE_parameterList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 513
@@ -4243,52 +3578,13 @@ class SolidityParser(Parser):
             self.state = 522
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 14)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 14))
-                    & (
-                        (1 << (SolidityParser.T__13 - 14))
-                        | (1 << (SolidityParser.T__24 - 14))
-                        | (1 << (SolidityParser.T__37 - 14))
-                        | (1 << (SolidityParser.T__43 - 14))
-                        | (1 << (SolidityParser.T__45 - 14))
-                        | (1 << (SolidityParser.T__49 - 14))
-                        | (1 << (SolidityParser.T__61 - 14))
-                        | (1 << (SolidityParser.T__62 - 14))
-                        | (1 << (SolidityParser.T__63 - 14))
-                        | (1 << (SolidityParser.T__64 - 14))
-                        | (1 << (SolidityParser.T__65 - 14))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.Int - 95))
-                        | (1 << (SolidityParser.Uint - 95))
-                        | (1 << (SolidityParser.Byte - 95))
-                        | (1 << (SolidityParser.Fixed - 95))
-                        | (1 << (SolidityParser.Ufixed - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 514
                 self.parameter()
                 self.state = 519
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 515
                     self.match(SolidityParser.T__15)
                     self.state = 516
@@ -4296,6 +3592,8 @@ class SolidityParser(Parser):
                     self.state = 521
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
+
+
 
             self.state = 524
             self.match(SolidityParser.T__23)
@@ -4307,88 +3605,69 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ParameterContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def storageLocation(self):
-            return self.getTypedRuleContext(SolidityParser.StorageLocationContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StorageLocationContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_parameter
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterParameter"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterParameter" ):
                 listener.enterParameter(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitParameter"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitParameter" ):
                 listener.exitParameter(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitParameter"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParameter" ):
                 return visitor.visitParameter(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def parameter(self):
+
         localctx = SolidityParser.ParameterContext(self, self._ctx, self.state)
         self.enterRule(localctx, 64, self.RULE_parameter)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 526
             self.typeName(0)
             self.state = 528
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 48, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,48,self._ctx)
             if la_ == 1:
                 self.state = 527
                 self.storageLocation()
 
+
             self.state = 531
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 530
                 self.identifier()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -4398,40 +3677,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class EventParameterListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def eventParameter(self, i: int = None):
+        def eventParameter(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.EventParameterContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.EventParameterContext, i)
+                return self.getTypedRuleContext(SolidityParser.EventParameterContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_eventParameterList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterEventParameterList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEventParameterList" ):
                 listener.enterEventParameterList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitEventParameterList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEventParameterList" ):
                 listener.exitEventParameterList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitEventParameterList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEventParameterList" ):
                 return visitor.visitEventParameterList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def eventParameterList(self):
+
         localctx = SolidityParser.EventParameterListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 66, self.RULE_eventParameterList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 533
@@ -4439,52 +3723,13 @@ class SolidityParser(Parser):
             self.state = 542
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 14)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 14))
-                    & (
-                        (1 << (SolidityParser.T__13 - 14))
-                        | (1 << (SolidityParser.T__24 - 14))
-                        | (1 << (SolidityParser.T__37 - 14))
-                        | (1 << (SolidityParser.T__43 - 14))
-                        | (1 << (SolidityParser.T__45 - 14))
-                        | (1 << (SolidityParser.T__49 - 14))
-                        | (1 << (SolidityParser.T__61 - 14))
-                        | (1 << (SolidityParser.T__62 - 14))
-                        | (1 << (SolidityParser.T__63 - 14))
-                        | (1 << (SolidityParser.T__64 - 14))
-                        | (1 << (SolidityParser.T__65 - 14))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.Int - 95))
-                        | (1 << (SolidityParser.Uint - 95))
-                        | (1 << (SolidityParser.Byte - 95))
-                        | (1 << (SolidityParser.Fixed - 95))
-                        | (1 << (SolidityParser.Ufixed - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 534
                 self.eventParameter()
                 self.state = 539
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 535
                     self.match(SolidityParser.T__15)
                     self.state = 536
@@ -4492,6 +3737,8 @@ class SolidityParser(Parser):
                     self.state = 541
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
+
+
 
             self.state = 544
             self.match(SolidityParser.T__23)
@@ -4503,43 +3750,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class EventParameterContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def IndexedKeyword(self):
             return self.getToken(SolidityParser.IndexedKeyword, 0)
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_eventParameter
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterEventParameter"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEventParameter" ):
                 listener.enterEventParameter(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitEventParameter"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEventParameter" ):
                 listener.exitEventParameter(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitEventParameter"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEventParameter" ):
                 return visitor.visitEventParameter(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def eventParameter(self):
+
         localctx = SolidityParser.EventParameterContext(self, self._ctx, self.state)
         self.enterRule(localctx, 68, self.RULE_eventParameter)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 546
@@ -4547,44 +3800,18 @@ class SolidityParser(Parser):
             self.state = 548
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.IndexedKeyword:
+            if _la==SolidityParser.IndexedKeyword:
                 self.state = 547
                 self.match(SolidityParser.IndexedKeyword)
+
 
             self.state = 551
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 550
                 self.identifier()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -4594,46 +3821,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionTypeParameterListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def functionTypeParameter(self, i: int = None):
+        def functionTypeParameter(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.FunctionTypeParameterContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.FunctionTypeParameterContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.FunctionTypeParameterContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.FunctionTypeParameterContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_functionTypeParameterList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionTypeParameterList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionTypeParameterList" ):
                 listener.enterFunctionTypeParameterList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionTypeParameterList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionTypeParameterList" ):
                 listener.exitFunctionTypeParameterList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionTypeParameterList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionTypeParameterList" ):
                 return visitor.visitFunctionTypeParameterList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionTypeParameterList(self):
-        localctx = SolidityParser.FunctionTypeParameterListContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.FunctionTypeParameterListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 70, self.RULE_functionTypeParameterList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 553
@@ -4641,52 +3867,13 @@ class SolidityParser(Parser):
             self.state = 562
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 14)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 14))
-                    & (
-                        (1 << (SolidityParser.T__13 - 14))
-                        | (1 << (SolidityParser.T__24 - 14))
-                        | (1 << (SolidityParser.T__37 - 14))
-                        | (1 << (SolidityParser.T__43 - 14))
-                        | (1 << (SolidityParser.T__45 - 14))
-                        | (1 << (SolidityParser.T__49 - 14))
-                        | (1 << (SolidityParser.T__61 - 14))
-                        | (1 << (SolidityParser.T__62 - 14))
-                        | (1 << (SolidityParser.T__63 - 14))
-                        | (1 << (SolidityParser.T__64 - 14))
-                        | (1 << (SolidityParser.T__65 - 14))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.Int - 95))
-                        | (1 << (SolidityParser.Uint - 95))
-                        | (1 << (SolidityParser.Byte - 95))
-                        | (1 << (SolidityParser.Fixed - 95))
-                        | (1 << (SolidityParser.Ufixed - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 554
                 self.functionTypeParameter()
                 self.state = 559
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 555
                     self.match(SolidityParser.T__15)
                     self.state = 556
@@ -4694,6 +3881,8 @@ class SolidityParser(Parser):
                     self.state = 561
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
+
+
 
             self.state = 564
             self.match(SolidityParser.T__23)
@@ -4705,42 +3894,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionTypeParameterContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def storageLocation(self):
-            return self.getTypedRuleContext(SolidityParser.StorageLocationContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StorageLocationContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_functionTypeParameter
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionTypeParameter"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionTypeParameter" ):
                 listener.enterFunctionTypeParameter(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionTypeParameter"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionTypeParameter" ):
                 listener.exitFunctionTypeParameter(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionTypeParameter"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionTypeParameter" ):
                 return visitor.visitFunctionTypeParameter(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionTypeParameter(self):
-        localctx = SolidityParser.FunctionTypeParameterContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.FunctionTypeParameterContext(self, self._ctx, self.state)
         self.enterRule(localctx, 72, self.RULE_functionTypeParameter)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 566
@@ -4748,16 +3941,10 @@ class SolidityParser(Parser):
             self.state = 568
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if ((_la) & ~0x3F) == 0 and (
-                (1 << _la)
-                & (
-                    (1 << SolidityParser.T__47)
-                    | (1 << SolidityParser.T__48)
-                    | (1 << SolidityParser.T__49)
-                )
-            ) != 0:
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__47) | (1 << SolidityParser.T__48) | (1 << SolidityParser.T__49))) != 0):
                 self.state = 567
                 self.storageLocation()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -4767,43 +3954,48 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class VariableDeclarationContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def storageLocation(self):
-            return self.getTypedRuleContext(SolidityParser.StorageLocationContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StorageLocationContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_variableDeclaration
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterVariableDeclaration"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVariableDeclaration" ):
                 listener.enterVariableDeclaration(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitVariableDeclaration"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVariableDeclaration" ):
                 listener.exitVariableDeclaration(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitVariableDeclaration"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVariableDeclaration" ):
                 return visitor.visitVariableDeclaration(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def variableDeclaration(self):
-        localctx = SolidityParser.VariableDeclarationContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.VariableDeclarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 74, self.RULE_variableDeclaration)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -4811,10 +4003,11 @@ class SolidityParser(Parser):
             self.typeName(0)
             self.state = 572
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 57, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,57,self._ctx)
             if la_ == 1:
                 self.state = 571
                 self.storageLocation()
+
 
             self.state = 574
             self.identifier()
@@ -4826,66 +4019,72 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class TypeNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def elementaryTypeName(self):
-            return self.getTypedRuleContext(SolidityParser.ElementaryTypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ElementaryTypeNameContext,0)
+
 
         def userDefinedTypeName(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UserDefinedTypeNameContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UserDefinedTypeNameContext,0)
+
 
         def mapping(self):
-            return self.getTypedRuleContext(SolidityParser.MappingContext, 0)
+            return self.getTypedRuleContext(SolidityParser.MappingContext,0)
+
 
         def functionTypeName(self):
-            return self.getTypedRuleContext(SolidityParser.FunctionTypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.FunctionTypeNameContext,0)
+
 
         def PayableKeyword(self):
             return self.getToken(SolidityParser.PayableKeyword, 0)
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_typeName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterTypeName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTypeName" ):
                 listener.enterTypeName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitTypeName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTypeName" ):
                 listener.exitTypeName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitTypeName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTypeName" ):
                 return visitor.visitTypeName(self)
             else:
                 return visitor.visitChildren(self)
 
-    def typeName(self, _p: int = 0):
+
+
+    def typeName(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
         localctx = SolidityParser.TypeNameContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 76
         self.enterRecursionRule(localctx, 76, self.RULE_typeName, _p)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 583
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 58, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,58,self._ctx)
             if la_ == 1:
                 self.state = 577
                 self.elementaryTypeName()
@@ -4913,97 +4112,37 @@ class SolidityParser(Parser):
                 self.match(SolidityParser.PayableKeyword)
                 pass
 
+
             self._ctx.stop = self._input.LT(-1)
             self.state = 593
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input, 60, self._ctx)
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
-                if _alt == 1:
+            _alt = self._interp.adaptivePredict(self._input,60,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    localctx = SolidityParser.TypeNameContext(
-                        self, _parentctx, _parentState
-                    )
-                    self.pushNewRecursionContext(
-                        localctx, _startState, self.RULE_typeName
-                    )
+                    localctx = SolidityParser.TypeNameContext(self, _parentctx, _parentState)
+                    self.pushNewRecursionContext(localctx, _startState, self.RULE_typeName)
                     self.state = 585
                     if not self.precpred(self._ctx, 3):
                         from antlr4.error.Errors import FailedPredicateException
-
-                        raise FailedPredicateException(
-                            self, "self.precpred(self._ctx, 3)"
-                        )
+                        raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
                     self.state = 586
                     self.match(SolidityParser.T__41)
                     self.state = 588
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if (
-                        (((_la - 6)) & ~0x3F) == 0
-                        and (
-                            (1 << (_la - 6))
-                            & (
-                                (1 << (SolidityParser.T__5 - 6))
-                                | (1 << (SolidityParser.T__13 - 6))
-                                | (1 << (SolidityParser.T__22 - 6))
-                                | (1 << (SolidityParser.T__24 - 6))
-                                | (1 << (SolidityParser.T__29 - 6))
-                                | (1 << (SolidityParser.T__30 - 6))
-                                | (1 << (SolidityParser.T__37 - 6))
-                                | (1 << (SolidityParser.T__41 - 6))
-                                | (1 << (SolidityParser.T__43 - 6))
-                                | (1 << (SolidityParser.T__45 - 6))
-                                | (1 << (SolidityParser.T__49 - 6))
-                                | (1 << (SolidityParser.T__61 - 6))
-                                | (1 << (SolidityParser.T__62 - 6))
-                                | (1 << (SolidityParser.T__63 - 6))
-                                | (1 << (SolidityParser.T__64 - 6))
-                                | (1 << (SolidityParser.T__65 - 6))
-                                | (1 << (SolidityParser.T__66 - 6))
-                                | (1 << (SolidityParser.T__67 - 6))
-                                | (1 << (SolidityParser.T__68 - 6))
-                            )
-                        )
-                        != 0
-                    ) or (
-                        (((_la - 71)) & ~0x3F) == 0
-                        and (
-                            (1 << (_la - 71))
-                            & (
-                                (1 << (SolidityParser.T__70 - 71))
-                                | (1 << (SolidityParser.T__71 - 71))
-                                | (1 << (SolidityParser.T__94 - 71))
-                                | (1 << (SolidityParser.Int - 71))
-                                | (1 << (SolidityParser.Uint - 71))
-                                | (1 << (SolidityParser.Byte - 71))
-                                | (1 << (SolidityParser.Fixed - 71))
-                                | (1 << (SolidityParser.Ufixed - 71))
-                                | (1 << (SolidityParser.BooleanLiteral - 71))
-                                | (1 << (SolidityParser.DecimalNumber - 71))
-                                | (1 << (SolidityParser.HexNumber - 71))
-                                | (1 << (SolidityParser.HexLiteralFragment - 71))
-                                | (1 << (SolidityParser.LeaveKeyword - 71))
-                                | (1 << (SolidityParser.PayableKeyword - 71))
-                                | (1 << (SolidityParser.TypeKeyword - 71))
-                                | (1 << (SolidityParser.GlobalKeyword - 71))
-                                | (1 << (SolidityParser.ConstructorKeyword - 71))
-                                | (1 << (SolidityParser.ReceiveKeyword - 71))
-                                | (1 << (SolidityParser.Identifier - 71))
-                                | (1 << (SolidityParser.StringLiteralFragment - 71))
-                            )
-                        )
-                        != 0
-                    ):
+                    if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                         self.state = 587
                         self.expression(0)
 
+
                     self.state = 590
-                    self.match(SolidityParser.T__42)
+                    self.match(SolidityParser.T__42) 
                 self.state = 595
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 60, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,60,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -5013,40 +4152,43 @@ class SolidityParser(Parser):
             self.unrollRecursionContexts(_parentctx)
         return localctx
 
+
     class UserDefinedTypeNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def identifier(self, i: int = None):
+        def identifier(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.IdentifierContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.IdentifierContext, i)
+                return self.getTypedRuleContext(SolidityParser.IdentifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_userDefinedTypeName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterUserDefinedTypeName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUserDefinedTypeName" ):
                 listener.enterUserDefinedTypeName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitUserDefinedTypeName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUserDefinedTypeName" ):
                 listener.exitUserDefinedTypeName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitUserDefinedTypeName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUserDefinedTypeName" ):
                 return visitor.visitUserDefinedTypeName(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def userDefinedTypeName(self):
-        localctx = SolidityParser.UserDefinedTypeNameContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.UserDefinedTypeNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 78, self.RULE_userDefinedTypeName)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -5054,16 +4196,16 @@ class SolidityParser(Parser):
             self.identifier()
             self.state = 601
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input, 61, self._ctx)
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
-                if _alt == 1:
+            _alt = self._interp.adaptivePredict(self._input,61,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
                     self.state = 597
                     self.match(SolidityParser.T__44)
                     self.state = 598
-                    self.identifier()
+                    self.identifier() 
                 self.state = 603
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 61, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,61,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -5073,45 +4215,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class MappingKeyContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def elementaryTypeName(self):
-            return self.getTypedRuleContext(SolidityParser.ElementaryTypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ElementaryTypeNameContext,0)
+
 
         def userDefinedTypeName(self):
-            return self.getTypedRuleContext(
-                SolidityParser.UserDefinedTypeNameContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.UserDefinedTypeNameContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_mappingKey
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterMappingKey"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMappingKey" ):
                 listener.enterMappingKey(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitMappingKey"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMappingKey" ):
                 listener.exitMappingKey(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitMappingKey"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMappingKey" ):
                 return visitor.visitMappingKey(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def mappingKey(self):
+
         localctx = SolidityParser.MappingKeyContext(self, self._ctx, self.state)
         self.enterRule(localctx, 80, self.RULE_mappingKey)
         try:
             self.state = 606
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 62, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,62,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 604
@@ -5124,6 +4270,7 @@ class SolidityParser(Parser):
                 self.userDefinedTypeName()
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -5132,46 +4279,54 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class MappingContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def mappingKey(self):
-            return self.getTypedRuleContext(SolidityParser.MappingKeyContext, 0)
+            return self.getTypedRuleContext(SolidityParser.MappingKeyContext,0)
+
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def mappingKeyName(self):
-            return self.getTypedRuleContext(SolidityParser.MappingKeyNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.MappingKeyNameContext,0)
+
 
         def mappingValueName(self):
-            return self.getTypedRuleContext(SolidityParser.MappingValueNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.MappingValueNameContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_mapping
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterMapping"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMapping" ):
                 listener.enterMapping(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitMapping"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMapping" ):
                 listener.exitMapping(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitMapping"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMapping" ):
                 return visitor.visitMapping(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def mapping(self):
+
         localctx = SolidityParser.MappingContext(self, self._ctx, self.state)
         self.enterRule(localctx, 82, self.RULE_mapping)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 608
@@ -5183,37 +4338,10 @@ class SolidityParser(Parser):
             self.state = 612
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 611
                 self.mappingKeyName()
+
 
             self.state = 614
             self.match(SolidityParser.T__46)
@@ -5222,37 +4350,10 @@ class SolidityParser(Parser):
             self.state = 617
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 616
                 self.mappingValueName()
+
 
             self.state = 619
             self.match(SolidityParser.T__23)
@@ -5264,34 +4365,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class MappingKeyNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_mappingKeyName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterMappingKeyName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMappingKeyName" ):
                 listener.enterMappingKeyName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitMappingKeyName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMappingKeyName" ):
                 listener.exitMappingKeyName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitMappingKeyName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMappingKeyName" ):
                 return visitor.visitMappingKeyName(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def mappingKeyName(self):
+
         localctx = SolidityParser.MappingKeyNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 84, self.RULE_mappingKeyName)
         try:
@@ -5306,34 +4412,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class MappingValueNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_mappingValueName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterMappingValueName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMappingValueName" ):
                 listener.enterMappingValueName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitMappingValueName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMappingValueName" ):
                 listener.exitMappingValueName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitMappingValueName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMappingValueName" ):
                 return visitor.visitMappingValueName(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def mappingValueName(self):
+
         localctx = SolidityParser.MappingValueNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 86, self.RULE_mappingValueName)
         try:
@@ -5348,61 +4459,61 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionTypeNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def functionTypeParameterList(self, i: int = None):
+        def functionTypeParameterList(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.FunctionTypeParameterListContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.FunctionTypeParameterListContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.FunctionTypeParameterListContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.FunctionTypeParameterListContext,i)
 
-        def InternalKeyword(self, i: int = None):
+
+        def InternalKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.InternalKeyword)
             else:
                 return self.getToken(SolidityParser.InternalKeyword, i)
 
-        def ExternalKeyword(self, i: int = None):
+        def ExternalKeyword(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.ExternalKeyword)
             else:
                 return self.getToken(SolidityParser.ExternalKeyword, i)
 
-        def stateMutability(self, i: int = None):
+        def stateMutability(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.StateMutabilityContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.StateMutabilityContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.StateMutabilityContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_functionTypeName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionTypeName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionTypeName" ):
                 listener.enterFunctionTypeName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionTypeName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionTypeName" ):
                 listener.exitFunctionTypeName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionTypeName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionTypeName" ):
                 return visitor.visitFunctionTypeName(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionTypeName(self):
+
         localctx = SolidityParser.FunctionTypeNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 88, self.RULE_functionTypeName)
         try:
@@ -5413,9 +4524,9 @@ class SolidityParser(Parser):
             self.functionTypeParameterList()
             self.state = 632
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input, 66, self._ctx)
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
-                if _alt == 1:
+            _alt = self._interp.adaptivePredict(self._input,66,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
                     self.state = 630
                     self._errHandler.sync(self)
                     token = self._input.LA(1)
@@ -5427,30 +4538,26 @@ class SolidityParser(Parser):
                         self.state = 628
                         self.match(SolidityParser.ExternalKeyword)
                         pass
-                    elif token in [
-                        SolidityParser.ConstantKeyword,
-                        SolidityParser.PayableKeyword,
-                        SolidityParser.PureKeyword,
-                        SolidityParser.ViewKeyword,
-                    ]:
+                    elif token in [SolidityParser.ConstantKeyword, SolidityParser.PayableKeyword, SolidityParser.PureKeyword, SolidityParser.ViewKeyword]:
                         self.state = 629
                         self.stateMutability()
                         pass
                     else:
                         raise NoViableAltException(self)
-
+             
                 self.state = 634
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 66, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,66,self._ctx)
 
             self.state = 637
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 67, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,67,self._ctx)
             if la_ == 1:
                 self.state = 635
                 self.match(SolidityParser.T__38)
                 self.state = 636
                 self.functionTypeParameterList()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -5460,52 +4567,44 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class StorageLocationContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_storageLocation
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterStorageLocation"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStorageLocation" ):
                 listener.enterStorageLocation(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitStorageLocation"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStorageLocation" ):
                 listener.exitStorageLocation(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitStorageLocation"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStorageLocation" ):
                 return visitor.visitStorageLocation(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def storageLocation(self):
+
         localctx = SolidityParser.StorageLocationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 90, self.RULE_storageLocation)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 639
             _la = self._input.LA(1)
-            if not (
-                (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__47)
-                            | (1 << SolidityParser.T__48)
-                            | (1 << SolidityParser.T__49)
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__47) | (1 << SolidityParser.T__48) | (1 << SolidityParser.T__49))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -5518,10 +4617,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class StateMutabilityContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -5540,43 +4639,33 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_stateMutability
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterStateMutability"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStateMutability" ):
                 listener.enterStateMutability(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitStateMutability"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStateMutability" ):
                 listener.exitStateMutability(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitStateMutability"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStateMutability" ):
                 return visitor.visitStateMutability(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def stateMutability(self):
+
         localctx = SolidityParser.StateMutabilityContext(self, self._ctx, self.state)
         self.enterRule(localctx, 92, self.RULE_stateMutability)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 641
             _la = self._input.LA(1)
-            if not (
-                (
-                    (((_la - 110)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 110))
-                        & (
-                            (1 << (SolidityParser.ConstantKeyword - 110))
-                            | (1 << (SolidityParser.PayableKeyword - 110))
-                            | (1 << (SolidityParser.PureKeyword - 110))
-                            | (1 << (SolidityParser.ViewKeyword - 110))
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not(((((_la - 110)) & ~0x3f) == 0 and ((1 << (_la - 110)) & ((1 << (SolidityParser.ConstantKeyword - 110)) | (1 << (SolidityParser.PayableKeyword - 110)) | (1 << (SolidityParser.PureKeyword - 110)) | (1 << (SolidityParser.ViewKeyword - 110)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -5589,40 +4678,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class BlockContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def statement(self, i: int = None):
+        def statement(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.StatementContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.StatementContext, i)
+                return self.getTypedRuleContext(SolidityParser.StatementContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_block
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterBlock"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterBlock" ):
                 listener.enterBlock(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitBlock"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitBlock" ):
                 listener.exitBlock(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitBlock"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBlock" ):
                 return visitor.visitBlock(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def block(self):
+
         localctx = SolidityParser.BlockContext(self, self._ctx, self.state)
         self.enterRule(localctx, 94, self.RULE_block)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 643
@@ -5630,75 +4724,7 @@ class SolidityParser(Parser):
             self.state = 647
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (
-                (((_la - 6)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 6))
-                    & (
-                        (1 << (SolidityParser.T__5 - 6))
-                        | (1 << (SolidityParser.T__13 - 6))
-                        | (1 << (SolidityParser.T__14 - 6))
-                        | (1 << (SolidityParser.T__22 - 6))
-                        | (1 << (SolidityParser.T__24 - 6))
-                        | (1 << (SolidityParser.T__26 - 6))
-                        | (1 << (SolidityParser.T__29 - 6))
-                        | (1 << (SolidityParser.T__30 - 6))
-                        | (1 << (SolidityParser.T__37 - 6))
-                        | (1 << (SolidityParser.T__41 - 6))
-                        | (1 << (SolidityParser.T__43 - 6))
-                        | (1 << (SolidityParser.T__45 - 6))
-                        | (1 << (SolidityParser.T__49 - 6))
-                        | (1 << (SolidityParser.T__50 - 6))
-                        | (1 << (SolidityParser.T__52 - 6))
-                        | (1 << (SolidityParser.T__54 - 6))
-                        | (1 << (SolidityParser.T__55 - 6))
-                        | (1 << (SolidityParser.T__56 - 6))
-                        | (1 << (SolidityParser.T__57 - 6))
-                        | (1 << (SolidityParser.T__58 - 6))
-                        | (1 << (SolidityParser.T__59 - 6))
-                        | (1 << (SolidityParser.T__60 - 6))
-                        | (1 << (SolidityParser.T__61 - 6))
-                        | (1 << (SolidityParser.T__62 - 6))
-                        | (1 << (SolidityParser.T__63 - 6))
-                        | (1 << (SolidityParser.T__64 - 6))
-                        | (1 << (SolidityParser.T__65 - 6))
-                        | (1 << (SolidityParser.T__66 - 6))
-                        | (1 << (SolidityParser.T__67 - 6))
-                        | (1 << (SolidityParser.T__68 - 6))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 71)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 71))
-                    & (
-                        (1 << (SolidityParser.T__70 - 71))
-                        | (1 << (SolidityParser.T__71 - 71))
-                        | (1 << (SolidityParser.T__94 - 71))
-                        | (1 << (SolidityParser.Int - 71))
-                        | (1 << (SolidityParser.Uint - 71))
-                        | (1 << (SolidityParser.Byte - 71))
-                        | (1 << (SolidityParser.Fixed - 71))
-                        | (1 << (SolidityParser.Ufixed - 71))
-                        | (1 << (SolidityParser.BooleanLiteral - 71))
-                        | (1 << (SolidityParser.DecimalNumber - 71))
-                        | (1 << (SolidityParser.HexNumber - 71))
-                        | (1 << (SolidityParser.HexLiteralFragment - 71))
-                        | (1 << (SolidityParser.BreakKeyword - 71))
-                        | (1 << (SolidityParser.ContinueKeyword - 71))
-                        | (1 << (SolidityParser.LeaveKeyword - 71))
-                        | (1 << (SolidityParser.PayableKeyword - 71))
-                        | (1 << (SolidityParser.TypeKeyword - 71))
-                        | (1 << (SolidityParser.GlobalKeyword - 71))
-                        | (1 << (SolidityParser.ConstructorKeyword - 71))
-                        | (1 << (SolidityParser.ReceiveKeyword - 71))
-                        | (1 << (SolidityParser.Identifier - 71))
-                        | (1 << (SolidityParser.StringLiteralFragment - 71))
-                    )
-                )
-                != 0
-            ):
+            while ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__14 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__26 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__50 - 6)) | (1 << (SolidityParser.T__52 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.BreakKeyword - 71)) | (1 << (SolidityParser.ContinueKeyword - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                 self.state = 644
                 self.statement()
                 self.state = 649
@@ -5715,84 +4741,101 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class StatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def ifStatement(self):
-            return self.getTypedRuleContext(SolidityParser.IfStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IfStatementContext,0)
+
 
         def tryStatement(self):
-            return self.getTypedRuleContext(SolidityParser.TryStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TryStatementContext,0)
+
 
         def whileStatement(self):
-            return self.getTypedRuleContext(SolidityParser.WhileStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.WhileStatementContext,0)
+
 
         def forStatement(self):
-            return self.getTypedRuleContext(SolidityParser.ForStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ForStatementContext,0)
+
 
         def block(self):
-            return self.getTypedRuleContext(SolidityParser.BlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BlockContext,0)
+
 
         def inlineAssemblyStatement(self):
-            return self.getTypedRuleContext(
-                SolidityParser.InlineAssemblyStatementContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.InlineAssemblyStatementContext,0)
+
 
         def doWhileStatement(self):
-            return self.getTypedRuleContext(SolidityParser.DoWhileStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.DoWhileStatementContext,0)
+
 
         def continueStatement(self):
-            return self.getTypedRuleContext(SolidityParser.ContinueStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ContinueStatementContext,0)
+
 
         def breakStatement(self):
-            return self.getTypedRuleContext(SolidityParser.BreakStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BreakStatementContext,0)
+
 
         def returnStatement(self):
-            return self.getTypedRuleContext(SolidityParser.ReturnStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ReturnStatementContext,0)
+
 
         def throwStatement(self):
-            return self.getTypedRuleContext(SolidityParser.ThrowStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ThrowStatementContext,0)
+
 
         def emitStatement(self):
-            return self.getTypedRuleContext(SolidityParser.EmitStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.EmitStatementContext,0)
+
 
         def simpleStatement(self):
-            return self.getTypedRuleContext(SolidityParser.SimpleStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.SimpleStatementContext,0)
+
 
         def uncheckedStatement(self):
-            return self.getTypedRuleContext(SolidityParser.UncheckedStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.UncheckedStatementContext,0)
+
 
         def revertStatement(self):
-            return self.getTypedRuleContext(SolidityParser.RevertStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.RevertStatementContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_statement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStatement" ):
                 listener.enterStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStatement" ):
                 listener.exitStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStatement" ):
                 return visitor.visitStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def statement(self):
+
         localctx = SolidityParser.StatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 96, self.RULE_statement)
         try:
             self.state = 667
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 69, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,69,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 652
@@ -5883,6 +4926,7 @@ class SolidityParser(Parser):
                 self.revertStatement()
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -5891,37 +4935,40 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ExpressionStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_expressionStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterExpressionStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionStatement" ):
                 listener.enterExpressionStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitExpressionStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionStatement" ):
                 listener.exitExpressionStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitExpressionStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionStatement" ):
                 return visitor.visitExpressionStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def expressionStatement(self):
-        localctx = SolidityParser.ExpressionStatementContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.ExpressionStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 98, self.RULE_expressionStatement)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -5937,40 +4984,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class IfStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
 
-        def statement(self, i: int = None):
+
+        def statement(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.StatementContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.StatementContext, i)
+                return self.getTypedRuleContext(SolidityParser.StatementContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_ifStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterIfStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIfStatement" ):
                 listener.enterIfStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitIfStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIfStatement" ):
                 listener.exitIfStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitIfStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIfStatement" ):
                 return visitor.visitIfStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def ifStatement(self):
+
         localctx = SolidityParser.IfStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 100, self.RULE_ifStatement)
         try:
@@ -5987,12 +5040,13 @@ class SolidityParser(Parser):
             self.statement()
             self.state = 679
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 70, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,70,self._ctx)
             if la_ == 1:
                 self.state = 677
                 self.match(SolidityParser.T__51)
                 self.state = 678
                 self.statement()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -6002,49 +5056,57 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class TryStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def block(self):
-            return self.getTypedRuleContext(SolidityParser.BlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BlockContext,0)
+
 
         def returnParameters(self):
-            return self.getTypedRuleContext(SolidityParser.ReturnParametersContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ReturnParametersContext,0)
 
-        def catchClause(self, i: int = None):
+
+        def catchClause(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.CatchClauseContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.CatchClauseContext, i)
+                return self.getTypedRuleContext(SolidityParser.CatchClauseContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_tryStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterTryStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTryStatement" ):
                 listener.enterTryStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitTryStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTryStatement" ):
                 listener.exitTryStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitTryStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTryStatement" ):
                 return visitor.visitTryStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def tryStatement(self):
+
         localctx = SolidityParser.TryStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 102, self.RULE_tryStatement)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 681
@@ -6054,22 +5116,23 @@ class SolidityParser(Parser):
             self.state = 684
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__38:
+            if _la==SolidityParser.T__38:
                 self.state = 683
                 self.returnParameters()
 
+
             self.state = 686
             self.block()
-            self.state = 688
+            self.state = 688 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
                 self.state = 687
                 self.catchClause()
-                self.state = 690
+                self.state = 690 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la == SolidityParser.T__53):
+                if not (_la==SolidityParser.T__53):
                     break
 
         except RecognitionException as re:
@@ -6080,43 +5143,50 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class CatchClauseContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def block(self):
-            return self.getTypedRuleContext(SolidityParser.BlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BlockContext,0)
+
 
         def parameterList(self):
-            return self.getTypedRuleContext(SolidityParser.ParameterListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ParameterListContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_catchClause
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterCatchClause"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCatchClause" ):
                 listener.enterCatchClause(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitCatchClause"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCatchClause" ):
                 listener.exitCatchClause(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitCatchClause"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCatchClause" ):
                 return visitor.visitCatchClause(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def catchClause(self):
+
         localctx = SolidityParser.CatchClauseContext(self, self._ctx, self.state)
         self.enterRule(localctx, 104, self.RULE_catchClause)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 692
@@ -6124,73 +5194,18 @@ class SolidityParser(Parser):
             self.state = 697
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__22)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__22) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 694
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__13)
-                            | (1 << SolidityParser.T__24)
-                            | (1 << SolidityParser.T__43)
-                            | (1 << SolidityParser.T__49)
-                            | (1 << SolidityParser.T__61)
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 95)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 95))
-                        & (
-                            (1 << (SolidityParser.T__94 - 95))
-                            | (1 << (SolidityParser.LeaveKeyword - 95))
-                            | (1 << (SolidityParser.PayableKeyword - 95))
-                            | (1 << (SolidityParser.GlobalKeyword - 95))
-                            | (1 << (SolidityParser.ConstructorKeyword - 95))
-                            | (1 << (SolidityParser.ReceiveKeyword - 95))
-                            | (1 << (SolidityParser.Identifier - 95))
-                        )
-                    )
-                    != 0
-                ):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                     self.state = 693
                     self.identifier()
 
+
                 self.state = 696
                 self.parameterList()
+
 
             self.state = 699
             self.block()
@@ -6202,37 +5217,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class WhileStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def statement(self):
-            return self.getTypedRuleContext(SolidityParser.StatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StatementContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_whileStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterWhileStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterWhileStatement" ):
                 listener.enterWhileStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitWhileStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitWhileStatement" ):
                 listener.exitWhileStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitWhileStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitWhileStatement" ):
                 return visitor.visitWhileStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def whileStatement(self):
+
         localctx = SolidityParser.WhileStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 106, self.RULE_whileStatement)
         try:
@@ -6255,48 +5276,50 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class SimpleStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def variableDeclarationStatement(self):
-            return self.getTypedRuleContext(
-                SolidityParser.VariableDeclarationStatementContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.VariableDeclarationStatementContext,0)
+
 
         def expressionStatement(self):
-            return self.getTypedRuleContext(
-                SolidityParser.ExpressionStatementContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.ExpressionStatementContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_simpleStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterSimpleStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterSimpleStatement" ):
                 listener.enterSimpleStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitSimpleStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitSimpleStatement" ):
                 listener.exitSimpleStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitSimpleStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSimpleStatement" ):
                 return visitor.visitSimpleStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def simpleStatement(self):
+
         localctx = SolidityParser.SimpleStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 108, self.RULE_simpleStatement)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 709
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 75, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,75,self._ctx)
             if la_ == 1:
                 self.state = 707
                 self.variableDeclarationStatement()
@@ -6307,6 +5330,7 @@ class SolidityParser(Parser):
                 self.expressionStatement()
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -6315,34 +5339,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class UncheckedStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def block(self):
-            return self.getTypedRuleContext(SolidityParser.BlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.BlockContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_uncheckedStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterUncheckedStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUncheckedStatement" ):
                 listener.enterUncheckedStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitUncheckedStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUncheckedStatement" ):
                 listener.exitUncheckedStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitUncheckedStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUncheckedStatement" ):
                 return visitor.visitUncheckedStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def uncheckedStatement(self):
+
         localctx = SolidityParser.UncheckedStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 110, self.RULE_uncheckedStatement)
         try:
@@ -6359,48 +5388,54 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ForStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def statement(self):
-            return self.getTypedRuleContext(SolidityParser.StatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StatementContext,0)
+
 
         def simpleStatement(self):
-            return self.getTypedRuleContext(SolidityParser.SimpleStatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.SimpleStatementContext,0)
+
 
         def expressionStatement(self):
-            return self.getTypedRuleContext(
-                SolidityParser.ExpressionStatementContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.ExpressionStatementContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_forStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterForStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterForStatement" ):
                 listener.enterForStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitForStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitForStatement" ):
                 listener.exitForStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitForStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitForStatement" ):
                 return visitor.visitForStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def forStatement(self):
+
         localctx = SolidityParser.ForStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 112, self.RULE_forStatement)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 714
@@ -6410,47 +5445,7 @@ class SolidityParser(Parser):
             self.state = 718
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [
-                SolidityParser.T__5,
-                SolidityParser.T__13,
-                SolidityParser.T__22,
-                SolidityParser.T__24,
-                SolidityParser.T__29,
-                SolidityParser.T__30,
-                SolidityParser.T__37,
-                SolidityParser.T__41,
-                SolidityParser.T__43,
-                SolidityParser.T__45,
-                SolidityParser.T__49,
-                SolidityParser.T__61,
-                SolidityParser.T__62,
-                SolidityParser.T__63,
-                SolidityParser.T__64,
-                SolidityParser.T__65,
-                SolidityParser.T__66,
-                SolidityParser.T__67,
-                SolidityParser.T__68,
-                SolidityParser.T__70,
-                SolidityParser.T__71,
-                SolidityParser.T__94,
-                SolidityParser.Int,
-                SolidityParser.Uint,
-                SolidityParser.Byte,
-                SolidityParser.Fixed,
-                SolidityParser.Ufixed,
-                SolidityParser.BooleanLiteral,
-                SolidityParser.DecimalNumber,
-                SolidityParser.HexNumber,
-                SolidityParser.HexLiteralFragment,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.TypeKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-                SolidityParser.StringLiteralFragment,
-            ]:
+            if token in [SolidityParser.T__5, SolidityParser.T__13, SolidityParser.T__22, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__30, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__43, SolidityParser.T__45, SolidityParser.T__49, SolidityParser.T__61, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__66, SolidityParser.T__67, SolidityParser.T__68, SolidityParser.T__70, SolidityParser.T__71, SolidityParser.T__94, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.TypeKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
                 self.state = 716
                 self.simpleStatement()
                 pass
@@ -6464,47 +5459,7 @@ class SolidityParser(Parser):
             self.state = 722
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [
-                SolidityParser.T__5,
-                SolidityParser.T__13,
-                SolidityParser.T__22,
-                SolidityParser.T__24,
-                SolidityParser.T__29,
-                SolidityParser.T__30,
-                SolidityParser.T__37,
-                SolidityParser.T__41,
-                SolidityParser.T__43,
-                SolidityParser.T__45,
-                SolidityParser.T__49,
-                SolidityParser.T__61,
-                SolidityParser.T__62,
-                SolidityParser.T__63,
-                SolidityParser.T__64,
-                SolidityParser.T__65,
-                SolidityParser.T__66,
-                SolidityParser.T__67,
-                SolidityParser.T__68,
-                SolidityParser.T__70,
-                SolidityParser.T__71,
-                SolidityParser.T__94,
-                SolidityParser.Int,
-                SolidityParser.Uint,
-                SolidityParser.Byte,
-                SolidityParser.Fixed,
-                SolidityParser.Ufixed,
-                SolidityParser.BooleanLiteral,
-                SolidityParser.DecimalNumber,
-                SolidityParser.HexNumber,
-                SolidityParser.HexLiteralFragment,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.TypeKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-                SolidityParser.StringLiteralFragment,
-            ]:
+            if token in [SolidityParser.T__5, SolidityParser.T__13, SolidityParser.T__22, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__30, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__43, SolidityParser.T__45, SolidityParser.T__49, SolidityParser.T__61, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__66, SolidityParser.T__67, SolidityParser.T__68, SolidityParser.T__70, SolidityParser.T__71, SolidityParser.T__94, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.TypeKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
                 self.state = 720
                 self.expressionStatement()
                 pass
@@ -6518,64 +5473,10 @@ class SolidityParser(Parser):
             self.state = 725
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 6)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 6))
-                    & (
-                        (1 << (SolidityParser.T__5 - 6))
-                        | (1 << (SolidityParser.T__13 - 6))
-                        | (1 << (SolidityParser.T__22 - 6))
-                        | (1 << (SolidityParser.T__24 - 6))
-                        | (1 << (SolidityParser.T__29 - 6))
-                        | (1 << (SolidityParser.T__30 - 6))
-                        | (1 << (SolidityParser.T__37 - 6))
-                        | (1 << (SolidityParser.T__41 - 6))
-                        | (1 << (SolidityParser.T__43 - 6))
-                        | (1 << (SolidityParser.T__45 - 6))
-                        | (1 << (SolidityParser.T__49 - 6))
-                        | (1 << (SolidityParser.T__61 - 6))
-                        | (1 << (SolidityParser.T__62 - 6))
-                        | (1 << (SolidityParser.T__63 - 6))
-                        | (1 << (SolidityParser.T__64 - 6))
-                        | (1 << (SolidityParser.T__65 - 6))
-                        | (1 << (SolidityParser.T__66 - 6))
-                        | (1 << (SolidityParser.T__67 - 6))
-                        | (1 << (SolidityParser.T__68 - 6))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 71)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 71))
-                    & (
-                        (1 << (SolidityParser.T__70 - 71))
-                        | (1 << (SolidityParser.T__71 - 71))
-                        | (1 << (SolidityParser.T__94 - 71))
-                        | (1 << (SolidityParser.Int - 71))
-                        | (1 << (SolidityParser.Uint - 71))
-                        | (1 << (SolidityParser.Byte - 71))
-                        | (1 << (SolidityParser.Fixed - 71))
-                        | (1 << (SolidityParser.Ufixed - 71))
-                        | (1 << (SolidityParser.BooleanLiteral - 71))
-                        | (1 << (SolidityParser.DecimalNumber - 71))
-                        | (1 << (SolidityParser.HexNumber - 71))
-                        | (1 << (SolidityParser.HexLiteralFragment - 71))
-                        | (1 << (SolidityParser.LeaveKeyword - 71))
-                        | (1 << (SolidityParser.PayableKeyword - 71))
-                        | (1 << (SolidityParser.TypeKeyword - 71))
-                        | (1 << (SolidityParser.GlobalKeyword - 71))
-                        | (1 << (SolidityParser.ConstructorKeyword - 71))
-                        | (1 << (SolidityParser.ReceiveKeyword - 71))
-                        | (1 << (SolidityParser.Identifier - 71))
-                        | (1 << (SolidityParser.StringLiteralFragment - 71))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                 self.state = 724
                 self.expression(0)
+
 
             self.state = 727
             self.match(SolidityParser.T__23)
@@ -6589,47 +5490,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class InlineAssemblyStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyBlock(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext,0)
+
 
         def StringLiteralFragment(self):
             return self.getToken(SolidityParser.StringLiteralFragment, 0)
 
         def inlineAssemblyStatementFlag(self):
-            return self.getTypedRuleContext(
-                SolidityParser.InlineAssemblyStatementFlagContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.InlineAssemblyStatementFlagContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_inlineAssemblyStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterInlineAssemblyStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInlineAssemblyStatement" ):
                 listener.enterInlineAssemblyStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitInlineAssemblyStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInlineAssemblyStatement" ):
                 listener.exitInlineAssemblyStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitInlineAssemblyStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitInlineAssemblyStatement" ):
                 return visitor.visitInlineAssemblyStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def inlineAssemblyStatement(self):
-        localctx = SolidityParser.InlineAssemblyStatementContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.InlineAssemblyStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 114, self.RULE_inlineAssemblyStatement)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 730
@@ -6637,20 +5540,22 @@ class SolidityParser(Parser):
             self.state = 732
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.StringLiteralFragment:
+            if _la==SolidityParser.StringLiteralFragment:
                 self.state = 731
                 self.match(SolidityParser.StringLiteralFragment)
+
 
             self.state = 738
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__22:
+            if _la==SolidityParser.T__22:
                 self.state = 734
                 self.match(SolidityParser.T__22)
                 self.state = 735
                 self.inlineAssemblyStatementFlag()
                 self.state = 736
                 self.match(SolidityParser.T__23)
+
 
             self.state = 740
             self.assemblyBlock()
@@ -6662,37 +5567,40 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class InlineAssemblyStatementFlagContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def stringLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.StringLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StringLiteralContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_inlineAssemblyStatementFlag
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterInlineAssemblyStatementFlag"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInlineAssemblyStatementFlag" ):
                 listener.enterInlineAssemblyStatementFlag(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitInlineAssemblyStatementFlag"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInlineAssemblyStatementFlag" ):
                 listener.exitInlineAssemblyStatementFlag(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitInlineAssemblyStatementFlag"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitInlineAssemblyStatementFlag" ):
                 return visitor.visitInlineAssemblyStatementFlag(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def inlineAssemblyStatementFlag(self):
-        localctx = SolidityParser.InlineAssemblyStatementFlagContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.InlineAssemblyStatementFlagContext(self, self._ctx, self.state)
         self.enterRule(localctx, 116, self.RULE_inlineAssemblyStatementFlag)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -6706,37 +5614,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class DoWhileStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def statement(self):
-            return self.getTypedRuleContext(SolidityParser.StatementContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StatementContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_doWhileStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterDoWhileStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDoWhileStatement" ):
                 listener.enterDoWhileStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitDoWhileStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDoWhileStatement" ):
                 listener.exitDoWhileStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitDoWhileStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDoWhileStatement" ):
                 return visitor.visitDoWhileStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def doWhileStatement(self):
+
         localctx = SolidityParser.DoWhileStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 118, self.RULE_doWhileStatement)
         try:
@@ -6763,10 +5677,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ContinueStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -6776,21 +5690,25 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_continueStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterContinueStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterContinueStatement" ):
                 listener.enterContinueStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitContinueStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitContinueStatement" ):
                 listener.exitContinueStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitContinueStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitContinueStatement" ):
                 return visitor.visitContinueStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def continueStatement(self):
+
         localctx = SolidityParser.ContinueStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 120, self.RULE_continueStatement)
         try:
@@ -6807,10 +5725,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class BreakStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -6820,21 +5738,25 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_breakStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterBreakStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterBreakStatement" ):
                 listener.enterBreakStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitBreakStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitBreakStatement" ):
                 listener.exitBreakStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitBreakStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBreakStatement" ):
                 return visitor.visitBreakStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def breakStatement(self):
+
         localctx = SolidityParser.BreakStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 122, self.RULE_breakStatement)
         try:
@@ -6851,37 +5773,42 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ReturnStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_returnStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterReturnStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterReturnStatement" ):
                 listener.enterReturnStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitReturnStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitReturnStatement" ):
                 listener.exitReturnStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitReturnStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitReturnStatement" ):
                 return visitor.visitReturnStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def returnStatement(self):
+
         localctx = SolidityParser.ReturnStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 124, self.RULE_returnStatement)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 758
@@ -6889,64 +5816,10 @@ class SolidityParser(Parser):
             self.state = 760
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 6)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 6))
-                    & (
-                        (1 << (SolidityParser.T__5 - 6))
-                        | (1 << (SolidityParser.T__13 - 6))
-                        | (1 << (SolidityParser.T__22 - 6))
-                        | (1 << (SolidityParser.T__24 - 6))
-                        | (1 << (SolidityParser.T__29 - 6))
-                        | (1 << (SolidityParser.T__30 - 6))
-                        | (1 << (SolidityParser.T__37 - 6))
-                        | (1 << (SolidityParser.T__41 - 6))
-                        | (1 << (SolidityParser.T__43 - 6))
-                        | (1 << (SolidityParser.T__45 - 6))
-                        | (1 << (SolidityParser.T__49 - 6))
-                        | (1 << (SolidityParser.T__61 - 6))
-                        | (1 << (SolidityParser.T__62 - 6))
-                        | (1 << (SolidityParser.T__63 - 6))
-                        | (1 << (SolidityParser.T__64 - 6))
-                        | (1 << (SolidityParser.T__65 - 6))
-                        | (1 << (SolidityParser.T__66 - 6))
-                        | (1 << (SolidityParser.T__67 - 6))
-                        | (1 << (SolidityParser.T__68 - 6))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 71)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 71))
-                    & (
-                        (1 << (SolidityParser.T__70 - 71))
-                        | (1 << (SolidityParser.T__71 - 71))
-                        | (1 << (SolidityParser.T__94 - 71))
-                        | (1 << (SolidityParser.Int - 71))
-                        | (1 << (SolidityParser.Uint - 71))
-                        | (1 << (SolidityParser.Byte - 71))
-                        | (1 << (SolidityParser.Fixed - 71))
-                        | (1 << (SolidityParser.Ufixed - 71))
-                        | (1 << (SolidityParser.BooleanLiteral - 71))
-                        | (1 << (SolidityParser.DecimalNumber - 71))
-                        | (1 << (SolidityParser.HexNumber - 71))
-                        | (1 << (SolidityParser.HexLiteralFragment - 71))
-                        | (1 << (SolidityParser.LeaveKeyword - 71))
-                        | (1 << (SolidityParser.PayableKeyword - 71))
-                        | (1 << (SolidityParser.TypeKeyword - 71))
-                        | (1 << (SolidityParser.GlobalKeyword - 71))
-                        | (1 << (SolidityParser.ConstructorKeyword - 71))
-                        | (1 << (SolidityParser.ReceiveKeyword - 71))
-                        | (1 << (SolidityParser.Identifier - 71))
-                        | (1 << (SolidityParser.StringLiteralFragment - 71))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                 self.state = 759
                 self.expression(0)
+
 
             self.state = 762
             self.match(SolidityParser.T__1)
@@ -6958,31 +5831,36 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ThrowStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_throwStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterThrowStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterThrowStatement" ):
                 listener.enterThrowStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitThrowStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitThrowStatement" ):
                 listener.exitThrowStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitThrowStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitThrowStatement" ):
                 return visitor.visitThrowStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def throwStatement(self):
+
         localctx = SolidityParser.ThrowStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 126, self.RULE_throwStatement)
         try:
@@ -6999,34 +5877,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class EmitStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def functionCall(self):
-            return self.getTypedRuleContext(SolidityParser.FunctionCallContext, 0)
+            return self.getTypedRuleContext(SolidityParser.FunctionCallContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_emitStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterEmitStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEmitStatement" ):
                 listener.enterEmitStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitEmitStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEmitStatement" ):
                 listener.exitEmitStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitEmitStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEmitStatement" ):
                 return visitor.visitEmitStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def emitStatement(self):
+
         localctx = SolidityParser.EmitStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 128, self.RULE_emitStatement)
         try:
@@ -7045,34 +5928,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class RevertStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def functionCall(self):
-            return self.getTypedRuleContext(SolidityParser.FunctionCallContext, 0)
+            return self.getTypedRuleContext(SolidityParser.FunctionCallContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_revertStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterRevertStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterRevertStatement" ):
                 listener.enterRevertStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitRevertStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitRevertStatement" ):
                 listener.exitRevertStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitRevertStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRevertStatement" ):
                 return visitor.visitRevertStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def revertStatement(self):
+
         localctx = SolidityParser.RevertStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 130, self.RULE_revertStatement)
         try:
@@ -7091,57 +5979,59 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class VariableDeclarationStatementContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifierList(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierListContext,0)
+
 
         def variableDeclaration(self):
-            return self.getTypedRuleContext(
-                SolidityParser.VariableDeclarationContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.VariableDeclarationContext,0)
+
 
         def variableDeclarationList(self):
-            return self.getTypedRuleContext(
-                SolidityParser.VariableDeclarationListContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.VariableDeclarationListContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_variableDeclarationStatement
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterVariableDeclarationStatement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVariableDeclarationStatement" ):
                 listener.enterVariableDeclarationStatement(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitVariableDeclarationStatement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVariableDeclarationStatement" ):
                 listener.exitVariableDeclarationStatement(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitVariableDeclarationStatement"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVariableDeclarationStatement" ):
                 return visitor.visitVariableDeclarationStatement(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def variableDeclarationStatement(self):
-        localctx = SolidityParser.VariableDeclarationStatementContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.VariableDeclarationStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 132, self.RULE_variableDeclarationStatement)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 782
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 82, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,82,self._ctx)
             if la_ == 1:
                 self.state = 775
                 self.match(SolidityParser.T__62)
@@ -7163,14 +6053,16 @@ class SolidityParser(Parser):
                 self.match(SolidityParser.T__23)
                 pass
 
+
             self.state = 786
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__10:
+            if _la==SolidityParser.T__10:
                 self.state = 784
                 self.match(SolidityParser.T__10)
                 self.state = 785
                 self.expression(0)
+
 
             self.state = 788
             self.match(SolidityParser.T__1)
@@ -7182,145 +6074,68 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class VariableDeclarationListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def variableDeclaration(self, i: int = None):
+        def variableDeclaration(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.VariableDeclarationContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.VariableDeclarationContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.VariableDeclarationContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.VariableDeclarationContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_variableDeclarationList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterVariableDeclarationList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVariableDeclarationList" ):
                 listener.enterVariableDeclarationList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitVariableDeclarationList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVariableDeclarationList" ):
                 listener.exitVariableDeclarationList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitVariableDeclarationList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVariableDeclarationList" ):
                 return visitor.visitVariableDeclarationList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def variableDeclarationList(self):
-        localctx = SolidityParser.VariableDeclarationListContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.VariableDeclarationListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 134, self.RULE_variableDeclarationList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 791
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                (((_la - 14)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 14))
-                    & (
-                        (1 << (SolidityParser.T__13 - 14))
-                        | (1 << (SolidityParser.T__24 - 14))
-                        | (1 << (SolidityParser.T__37 - 14))
-                        | (1 << (SolidityParser.T__43 - 14))
-                        | (1 << (SolidityParser.T__45 - 14))
-                        | (1 << (SolidityParser.T__49 - 14))
-                        | (1 << (SolidityParser.T__61 - 14))
-                        | (1 << (SolidityParser.T__62 - 14))
-                        | (1 << (SolidityParser.T__63 - 14))
-                        | (1 << (SolidityParser.T__64 - 14))
-                        | (1 << (SolidityParser.T__65 - 14))
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.Int - 95))
-                        | (1 << (SolidityParser.Uint - 95))
-                        | (1 << (SolidityParser.Byte - 95))
-                        | (1 << (SolidityParser.Fixed - 95))
-                        | (1 << (SolidityParser.Ufixed - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 790
                 self.variableDeclaration()
+
 
             self.state = 799
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la == SolidityParser.T__15:
+            while _la==SolidityParser.T__15:
                 self.state = 793
                 self.match(SolidityParser.T__15)
                 self.state = 795
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    (((_la - 14)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 14))
-                        & (
-                            (1 << (SolidityParser.T__13 - 14))
-                            | (1 << (SolidityParser.T__24 - 14))
-                            | (1 << (SolidityParser.T__37 - 14))
-                            | (1 << (SolidityParser.T__43 - 14))
-                            | (1 << (SolidityParser.T__45 - 14))
-                            | (1 << (SolidityParser.T__49 - 14))
-                            | (1 << (SolidityParser.T__61 - 14))
-                            | (1 << (SolidityParser.T__62 - 14))
-                            | (1 << (SolidityParser.T__63 - 14))
-                            | (1 << (SolidityParser.T__64 - 14))
-                            | (1 << (SolidityParser.T__65 - 14))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 95)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 95))
-                        & (
-                            (1 << (SolidityParser.T__94 - 95))
-                            | (1 << (SolidityParser.Int - 95))
-                            | (1 << (SolidityParser.Uint - 95))
-                            | (1 << (SolidityParser.Byte - 95))
-                            | (1 << (SolidityParser.Fixed - 95))
-                            | (1 << (SolidityParser.Ufixed - 95))
-                            | (1 << (SolidityParser.LeaveKeyword - 95))
-                            | (1 << (SolidityParser.PayableKeyword - 95))
-                            | (1 << (SolidityParser.GlobalKeyword - 95))
-                            | (1 << (SolidityParser.ConstructorKeyword - 95))
-                            | (1 << (SolidityParser.ReceiveKeyword - 95))
-                            | (1 << (SolidityParser.Identifier - 95))
-                        )
-                    )
-                    != 0
-                ):
+                if ((((_la - 14)) & ~0x3f) == 0 and ((1 << (_la - 14)) & ((1 << (SolidityParser.T__13 - 14)) | (1 << (SolidityParser.T__24 - 14)) | (1 << (SolidityParser.T__37 - 14)) | (1 << (SolidityParser.T__43 - 14)) | (1 << (SolidityParser.T__45 - 14)) | (1 << (SolidityParser.T__49 - 14)) | (1 << (SolidityParser.T__61 - 14)) | (1 << (SolidityParser.T__62 - 14)) | (1 << (SolidityParser.T__63 - 14)) | (1 << (SolidityParser.T__64 - 14)) | (1 << (SolidityParser.T__65 - 14)))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.Int - 95)) | (1 << (SolidityParser.Uint - 95)) | (1 << (SolidityParser.Byte - 95)) | (1 << (SolidityParser.Fixed - 95)) | (1 << (SolidityParser.Ufixed - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                     self.state = 794
                     self.variableDeclaration()
+
 
                 self.state = 801
                 self._errHandler.sync(self)
@@ -7334,124 +6149,75 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class IdentifierListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def identifier(self, i: int = None):
+        def identifier(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.IdentifierContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.IdentifierContext, i)
+                return self.getTypedRuleContext(SolidityParser.IdentifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_identifierList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterIdentifierList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIdentifierList" ):
                 listener.enterIdentifierList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitIdentifierList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIdentifierList" ):
                 listener.exitIdentifierList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitIdentifierList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIdentifierList" ):
                 return visitor.visitIdentifierList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def identifierList(self):
+
         localctx = SolidityParser.IdentifierListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 136, self.RULE_identifierList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 802
             self.match(SolidityParser.T__22)
             self.state = 809
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input, 88, self._ctx)
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
-                if _alt == 1:
+            _alt = self._interp.adaptivePredict(self._input,88,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
                     self.state = 804
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if (
-                        ((_la) & ~0x3F) == 0
-                        and (
-                            (1 << _la)
-                            & (
-                                (1 << SolidityParser.T__13)
-                                | (1 << SolidityParser.T__24)
-                                | (1 << SolidityParser.T__43)
-                                | (1 << SolidityParser.T__49)
-                                | (1 << SolidityParser.T__61)
-                            )
-                        )
-                        != 0
-                    ) or (
-                        (((_la - 95)) & ~0x3F) == 0
-                        and (
-                            (1 << (_la - 95))
-                            & (
-                                (1 << (SolidityParser.T__94 - 95))
-                                | (1 << (SolidityParser.LeaveKeyword - 95))
-                                | (1 << (SolidityParser.PayableKeyword - 95))
-                                | (1 << (SolidityParser.GlobalKeyword - 95))
-                                | (1 << (SolidityParser.ConstructorKeyword - 95))
-                                | (1 << (SolidityParser.ReceiveKeyword - 95))
-                                | (1 << (SolidityParser.Identifier - 95))
-                            )
-                        )
-                        != 0
-                    ):
+                    if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                         self.state = 803
                         self.identifier()
 
+
                     self.state = 806
-                    self.match(SolidityParser.T__15)
+                    self.match(SolidityParser.T__15) 
                 self.state = 811
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 88, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,88,self._ctx)
 
             self.state = 813
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 812
                 self.identifier()
+
 
             self.state = 815
             self.match(SolidityParser.T__23)
@@ -7463,10 +6229,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ElementaryTypeNameContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -7488,49 +6254,33 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_elementaryTypeName
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterElementaryTypeName"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterElementaryTypeName" ):
                 listener.enterElementaryTypeName(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitElementaryTypeName"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitElementaryTypeName" ):
                 listener.exitElementaryTypeName(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitElementaryTypeName"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitElementaryTypeName" ):
                 return visitor.visitElementaryTypeName(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def elementaryTypeName(self):
+
         localctx = SolidityParser.ElementaryTypeNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 138, self.RULE_elementaryTypeName)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 817
             _la = self._input.LA(1)
-            if not (
-                (
-                    (((_la - 44)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 44))
-                        & (
-                            (1 << (SolidityParser.T__43 - 44))
-                            | (1 << (SolidityParser.T__62 - 44))
-                            | (1 << (SolidityParser.T__63 - 44))
-                            | (1 << (SolidityParser.T__64 - 44))
-                            | (1 << (SolidityParser.T__65 - 44))
-                            | (1 << (SolidityParser.Int - 44))
-                            | (1 << (SolidityParser.Uint - 44))
-                            | (1 << (SolidityParser.Byte - 44))
-                            | (1 << (SolidityParser.Fixed - 44))
-                            | (1 << (SolidityParser.Ufixed - 44))
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not(((((_la - 44)) & ~0x3f) == 0 and ((1 << (_la - 44)) & ((1 << (SolidityParser.T__43 - 44)) | (1 << (SolidityParser.T__62 - 44)) | (1 << (SolidityParser.T__63 - 44)) | (1 << (SolidityParser.T__64 - 44)) | (1 << (SolidityParser.T__65 - 44)) | (1 << (SolidityParser.Int - 44)) | (1 << (SolidityParser.Uint - 44)) | (1 << (SolidityParser.Byte - 44)) | (1 << (SolidityParser.Fixed - 44)) | (1 << (SolidityParser.Ufixed - 44)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -7543,66 +6293,72 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ExpressionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
 
-        def expression(self, i: int = None):
+
+        def expression(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.ExpressionContext, i)
+                return self.getTypedRuleContext(SolidityParser.ExpressionContext,i)
+
 
         def primaryExpression(self):
-            return self.getTypedRuleContext(SolidityParser.PrimaryExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.PrimaryExpressionContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def nameValueList(self):
-            return self.getTypedRuleContext(SolidityParser.NameValueListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.NameValueListContext,0)
+
 
         def functionCallArguments(self):
-            return self.getTypedRuleContext(
-                SolidityParser.FunctionCallArgumentsContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.FunctionCallArgumentsContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_expression
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterExpression"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpression" ):
                 listener.enterExpression(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitExpression"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpression" ):
                 listener.exitExpression(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitExpression"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpression" ):
                 return visitor.visitExpression(self)
             else:
                 return visitor.visitChildren(self)
 
-    def expression(self, _p: int = 0):
+
+
+    def expression(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
         localctx = SolidityParser.ExpressionContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 140
         self.enterRecursionRule(localctx, 140, self.RULE_expression, _p)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 837
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 90, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,90,self._ctx)
             if la_ == 1:
                 self.state = 820
                 self.match(SolidityParser.T__68)
@@ -7622,7 +6378,7 @@ class SolidityParser(Parser):
             elif la_ == 3:
                 self.state = 826
                 _la = self._input.LA(1)
-                if not (_la == SolidityParser.T__66 or _la == SolidityParser.T__67):
+                if not(_la==SolidityParser.T__66 or _la==SolidityParser.T__67):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -7634,7 +6390,7 @@ class SolidityParser(Parser):
             elif la_ == 4:
                 self.state = 828
                 _la = self._input.LA(1)
-                if not (_la == SolidityParser.T__29 or _la == SolidityParser.T__30):
+                if not(_la==SolidityParser.T__29 or _la==SolidityParser.T__30):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -7669,32 +6425,26 @@ class SolidityParser(Parser):
                 self.primaryExpression()
                 pass
 
+
             self._ctx.stop = self._input.LT(-1)
             self.state = 913
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input, 94, self._ctx)
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
-                if _alt == 1:
+            _alt = self._interp.adaptivePredict(self._input,94,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
                     self.state = 911
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input, 93, self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,93,self._ctx)
                     if la_ == 1:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 839
                         if not self.precpred(self._ctx, 14):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 14)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 14)")
                         self.state = 840
                         self.match(SolidityParser.T__72)
                         self.state = 841
@@ -7702,35 +6452,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 2:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 842
                         if not self.precpred(self._ctx, 13):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 13)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 13)")
                         self.state = 843
                         _la = self._input.LA(1)
-                        if not (
-                            (
-                                ((_la) & ~0x3F) == 0
-                                and (
-                                    (1 << _la)
-                                    & (
-                                        (1 << SolidityParser.T__2)
-                                        | (1 << SolidityParser.T__31)
-                                        | (1 << SolidityParser.T__32)
-                                    )
-                                )
-                                != 0
-                            )
-                        ):
+                        if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__2) | (1 << SolidityParser.T__31) | (1 << SolidityParser.T__32))) != 0)):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -7740,24 +6470,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 3:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 845
                         if not self.precpred(self._ctx, 12):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 12)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 12)")
                         self.state = 846
                         _la = self._input.LA(1)
-                        if not (
-                            _la == SolidityParser.T__29 or _la == SolidityParser.T__30
-                        ):
+                        if not(_la==SolidityParser.T__29 or _la==SolidityParser.T__30):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -7767,24 +6488,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 4:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 848
                         if not self.precpred(self._ctx, 11):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 11)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 11)")
                         self.state = 849
                         _la = self._input.LA(1)
-                        if not (
-                            _la == SolidityParser.T__73 or _la == SolidityParser.T__74
-                        ):
+                        if not(_la==SolidityParser.T__73 or _la==SolidityParser.T__74):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -7794,19 +6506,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 5:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 851
                         if not self.precpred(self._ctx, 10):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 10)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
                         self.state = 852
                         self.match(SolidityParser.T__28)
                         self.state = 853
@@ -7814,19 +6519,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 6:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 854
                         if not self.precpred(self._ctx, 9):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 9)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 9)")
                         self.state = 855
                         self.match(SolidityParser.T__4)
                         self.state = 856
@@ -7834,19 +6532,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 7:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 857
                         if not self.precpred(self._ctx, 8):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 8)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
                         self.state = 858
                         self.match(SolidityParser.T__27)
                         self.state = 859
@@ -7854,36 +6545,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 8:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 860
                         if not self.precpred(self._ctx, 7):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 7)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
                         self.state = 861
                         _la = self._input.LA(1)
-                        if not (
-                            (
-                                ((_la) & ~0x3F) == 0
-                                and (
-                                    (1 << _la)
-                                    & (
-                                        (1 << SolidityParser.T__6)
-                                        | (1 << SolidityParser.T__7)
-                                        | (1 << SolidityParser.T__8)
-                                        | (1 << SolidityParser.T__9)
-                                    )
-                                )
-                                != 0
-                            )
-                        ):
+                        if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9))) != 0)):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -7893,24 +6563,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 9:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 863
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 6)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
                         self.state = 864
                         _la = self._input.LA(1)
-                        if not (
-                            _la == SolidityParser.T__33 or _la == SolidityParser.T__34
-                        ):
+                        if not(_la==SolidityParser.T__33 or _la==SolidityParser.T__34):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -7920,19 +6581,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 10:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 866
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 5)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
                         self.state = 867
                         self.match(SolidityParser.T__75)
                         self.state = 868
@@ -7940,19 +6594,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 11:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 869
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 4)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
                         self.state = 870
                         self.match(SolidityParser.T__3)
                         self.state = 871
@@ -7960,19 +6607,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 12:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 872
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 3)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
                         self.state = 873
                         self.match(SolidityParser.T__76)
                         self.state = 874
@@ -7984,43 +6624,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 13:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 878
                         if not self.precpred(self._ctx, 2):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 2)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
                         self.state = 879
                         _la = self._input.LA(1)
-                        if not (
-                            _la == SolidityParser.T__10
-                            or (
-                                (((_la - 78)) & ~0x3F) == 0
-                                and (
-                                    (1 << (_la - 78))
-                                    & (
-                                        (1 << (SolidityParser.T__77 - 78))
-                                        | (1 << (SolidityParser.T__78 - 78))
-                                        | (1 << (SolidityParser.T__79 - 78))
-                                        | (1 << (SolidityParser.T__80 - 78))
-                                        | (1 << (SolidityParser.T__81 - 78))
-                                        | (1 << (SolidityParser.T__82 - 78))
-                                        | (1 << (SolidityParser.T__83 - 78))
-                                        | (1 << (SolidityParser.T__84 - 78))
-                                        | (1 << (SolidityParser.T__85 - 78))
-                                        | (1 << (SolidityParser.T__86 - 78))
-                                    )
-                                )
-                                != 0
-                            )
-                        ):
+                        if not(_la==SolidityParser.T__10 or ((((_la - 78)) & ~0x3f) == 0 and ((1 << (_la - 78)) & ((1 << (SolidityParser.T__77 - 78)) | (1 << (SolidityParser.T__78 - 78)) | (1 << (SolidityParser.T__79 - 78)) | (1 << (SolidityParser.T__80 - 78)) | (1 << (SolidityParser.T__81 - 78)) | (1 << (SolidityParser.T__82 - 78)) | (1 << (SolidityParser.T__83 - 78)) | (1 << (SolidityParser.T__84 - 78)) | (1 << (SolidityParser.T__85 - 78)) | (1 << (SolidityParser.T__86 - 78)))) != 0)):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -8030,24 +6642,15 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 14:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 881
                         if not self.precpred(self._ctx, 27):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 27)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 27)")
                         self.state = 882
                         _la = self._input.LA(1)
-                        if not (
-                            _la == SolidityParser.T__66 or _la == SolidityParser.T__67
-                        ):
+                        if not(_la==SolidityParser.T__66 or _la==SolidityParser.T__67):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -8055,19 +6658,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 15:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 883
                         if not self.precpred(self._ctx, 25):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 25)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 25)")
                         self.state = 884
                         self.match(SolidityParser.T__41)
                         self.state = 885
@@ -8077,165 +6673,43 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 16:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 888
                         if not self.precpred(self._ctx, 24):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 24)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 24)")
                         self.state = 889
                         self.match(SolidityParser.T__41)
                         self.state = 891
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
-                        if (
-                            (((_la - 6)) & ~0x3F) == 0
-                            and (
-                                (1 << (_la - 6))
-                                & (
-                                    (1 << (SolidityParser.T__5 - 6))
-                                    | (1 << (SolidityParser.T__13 - 6))
-                                    | (1 << (SolidityParser.T__22 - 6))
-                                    | (1 << (SolidityParser.T__24 - 6))
-                                    | (1 << (SolidityParser.T__29 - 6))
-                                    | (1 << (SolidityParser.T__30 - 6))
-                                    | (1 << (SolidityParser.T__37 - 6))
-                                    | (1 << (SolidityParser.T__41 - 6))
-                                    | (1 << (SolidityParser.T__43 - 6))
-                                    | (1 << (SolidityParser.T__45 - 6))
-                                    | (1 << (SolidityParser.T__49 - 6))
-                                    | (1 << (SolidityParser.T__61 - 6))
-                                    | (1 << (SolidityParser.T__62 - 6))
-                                    | (1 << (SolidityParser.T__63 - 6))
-                                    | (1 << (SolidityParser.T__64 - 6))
-                                    | (1 << (SolidityParser.T__65 - 6))
-                                    | (1 << (SolidityParser.T__66 - 6))
-                                    | (1 << (SolidityParser.T__67 - 6))
-                                    | (1 << (SolidityParser.T__68 - 6))
-                                )
-                            )
-                            != 0
-                        ) or (
-                            (((_la - 71)) & ~0x3F) == 0
-                            and (
-                                (1 << (_la - 71))
-                                & (
-                                    (1 << (SolidityParser.T__70 - 71))
-                                    | (1 << (SolidityParser.T__71 - 71))
-                                    | (1 << (SolidityParser.T__94 - 71))
-                                    | (1 << (SolidityParser.Int - 71))
-                                    | (1 << (SolidityParser.Uint - 71))
-                                    | (1 << (SolidityParser.Byte - 71))
-                                    | (1 << (SolidityParser.Fixed - 71))
-                                    | (1 << (SolidityParser.Ufixed - 71))
-                                    | (1 << (SolidityParser.BooleanLiteral - 71))
-                                    | (1 << (SolidityParser.DecimalNumber - 71))
-                                    | (1 << (SolidityParser.HexNumber - 71))
-                                    | (1 << (SolidityParser.HexLiteralFragment - 71))
-                                    | (1 << (SolidityParser.LeaveKeyword - 71))
-                                    | (1 << (SolidityParser.PayableKeyword - 71))
-                                    | (1 << (SolidityParser.TypeKeyword - 71))
-                                    | (1 << (SolidityParser.GlobalKeyword - 71))
-                                    | (1 << (SolidityParser.ConstructorKeyword - 71))
-                                    | (1 << (SolidityParser.ReceiveKeyword - 71))
-                                    | (1 << (SolidityParser.Identifier - 71))
-                                    | (1 << (SolidityParser.StringLiteralFragment - 71))
-                                )
-                            )
-                            != 0
-                        ):
+                        if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                             self.state = 890
                             self.expression(0)
+
 
                         self.state = 893
                         self.match(SolidityParser.T__69)
                         self.state = 895
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
-                        if (
-                            (((_la - 6)) & ~0x3F) == 0
-                            and (
-                                (1 << (_la - 6))
-                                & (
-                                    (1 << (SolidityParser.T__5 - 6))
-                                    | (1 << (SolidityParser.T__13 - 6))
-                                    | (1 << (SolidityParser.T__22 - 6))
-                                    | (1 << (SolidityParser.T__24 - 6))
-                                    | (1 << (SolidityParser.T__29 - 6))
-                                    | (1 << (SolidityParser.T__30 - 6))
-                                    | (1 << (SolidityParser.T__37 - 6))
-                                    | (1 << (SolidityParser.T__41 - 6))
-                                    | (1 << (SolidityParser.T__43 - 6))
-                                    | (1 << (SolidityParser.T__45 - 6))
-                                    | (1 << (SolidityParser.T__49 - 6))
-                                    | (1 << (SolidityParser.T__61 - 6))
-                                    | (1 << (SolidityParser.T__62 - 6))
-                                    | (1 << (SolidityParser.T__63 - 6))
-                                    | (1 << (SolidityParser.T__64 - 6))
-                                    | (1 << (SolidityParser.T__65 - 6))
-                                    | (1 << (SolidityParser.T__66 - 6))
-                                    | (1 << (SolidityParser.T__67 - 6))
-                                    | (1 << (SolidityParser.T__68 - 6))
-                                )
-                            )
-                            != 0
-                        ) or (
-                            (((_la - 71)) & ~0x3F) == 0
-                            and (
-                                (1 << (_la - 71))
-                                & (
-                                    (1 << (SolidityParser.T__70 - 71))
-                                    | (1 << (SolidityParser.T__71 - 71))
-                                    | (1 << (SolidityParser.T__94 - 71))
-                                    | (1 << (SolidityParser.Int - 71))
-                                    | (1 << (SolidityParser.Uint - 71))
-                                    | (1 << (SolidityParser.Byte - 71))
-                                    | (1 << (SolidityParser.Fixed - 71))
-                                    | (1 << (SolidityParser.Ufixed - 71))
-                                    | (1 << (SolidityParser.BooleanLiteral - 71))
-                                    | (1 << (SolidityParser.DecimalNumber - 71))
-                                    | (1 << (SolidityParser.HexNumber - 71))
-                                    | (1 << (SolidityParser.HexLiteralFragment - 71))
-                                    | (1 << (SolidityParser.LeaveKeyword - 71))
-                                    | (1 << (SolidityParser.PayableKeyword - 71))
-                                    | (1 << (SolidityParser.TypeKeyword - 71))
-                                    | (1 << (SolidityParser.GlobalKeyword - 71))
-                                    | (1 << (SolidityParser.ConstructorKeyword - 71))
-                                    | (1 << (SolidityParser.ReceiveKeyword - 71))
-                                    | (1 << (SolidityParser.Identifier - 71))
-                                    | (1 << (SolidityParser.StringLiteralFragment - 71))
-                                )
-                            )
-                            != 0
-                        ):
+                        if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                             self.state = 894
                             self.expression(0)
+
 
                         self.state = 897
                         self.match(SolidityParser.T__42)
                         pass
 
                     elif la_ == 17:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 898
                         if not self.precpred(self._ctx, 23):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 23)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 23)")
                         self.state = 899
                         self.match(SolidityParser.T__44)
                         self.state = 900
@@ -8243,19 +6717,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 18:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 901
                         if not self.precpred(self._ctx, 22):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 22)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 22)")
                         self.state = 902
                         self.match(SolidityParser.T__14)
                         self.state = 903
@@ -8265,19 +6732,12 @@ class SolidityParser(Parser):
                         pass
 
                     elif la_ == 19:
-                        localctx = SolidityParser.ExpressionContext(
-                            self, _parentctx, _parentState
-                        )
-                        self.pushNewRecursionContext(
-                            localctx, _startState, self.RULE_expression
-                        )
+                        localctx = SolidityParser.ExpressionContext(self, _parentctx, _parentState)
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 906
                         if not self.precpred(self._ctx, 21):
                             from antlr4.error.Errors import FailedPredicateException
-
-                            raise FailedPredicateException(
-                                self, "self.precpred(self._ctx, 21)"
-                            )
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 21)")
                         self.state = 907
                         self.match(SolidityParser.T__22)
                         self.state = 908
@@ -8286,9 +6746,10 @@ class SolidityParser(Parser):
                         self.match(SolidityParser.T__23)
                         pass
 
+             
                 self.state = 915
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 94, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,94,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -8298,10 +6759,10 @@ class SolidityParser(Parser):
             self.unrollRecursionContexts(_parentctx)
         return localctx
 
+
     class PrimaryExpressionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -8309,16 +6770,20 @@ class SolidityParser(Parser):
             return self.getToken(SolidityParser.BooleanLiteral, 0)
 
         def numberLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.NumberLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.NumberLiteralContext,0)
+
 
         def hexLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.HexLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.HexLiteralContext,0)
+
 
         def stringLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.StringLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StringLiteralContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def TypeKeyword(self):
             return self.getToken(SolidityParser.TypeKeyword, 0)
@@ -8327,35 +6792,41 @@ class SolidityParser(Parser):
             return self.getToken(SolidityParser.PayableKeyword, 0)
 
         def tupleExpression(self):
-            return self.getTypedRuleContext(SolidityParser.TupleExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TupleExpressionContext,0)
+
 
         def typeName(self):
-            return self.getTypedRuleContext(SolidityParser.TypeNameContext, 0)
+            return self.getTypedRuleContext(SolidityParser.TypeNameContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_primaryExpression
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterPrimaryExpression"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPrimaryExpression" ):
                 listener.enterPrimaryExpression(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitPrimaryExpression"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPrimaryExpression" ):
                 listener.exitPrimaryExpression(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitPrimaryExpression"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPrimaryExpression" ):
                 return visitor.visitPrimaryExpression(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def primaryExpression(self):
+
         localctx = SolidityParser.PrimaryExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 142, self.RULE_primaryExpression)
         try:
             self.state = 925
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 95, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,95,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 916
@@ -8410,6 +6881,7 @@ class SolidityParser(Parser):
                 self.typeName(0)
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -8418,40 +6890,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class ExpressionListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def expression(self, i: int = None):
+        def expression(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.ExpressionContext, i)
+                return self.getTypedRuleContext(SolidityParser.ExpressionContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_expressionList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterExpressionList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionList" ):
                 listener.enterExpressionList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitExpressionList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionList" ):
                 listener.exitExpressionList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitExpressionList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressionList" ):
                 return visitor.visitExpressionList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def expressionList(self):
+
         localctx = SolidityParser.ExpressionListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 144, self.RULE_expressionList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 927
@@ -8459,7 +6936,7 @@ class SolidityParser(Parser):
             self.state = 932
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la == SolidityParser.T__15:
+            while _la==SolidityParser.T__15:
                 self.state = 928
                 self.match(SolidityParser.T__15)
                 self.state = 929
@@ -8476,63 +6953,69 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class NameValueListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def nameValue(self, i: int = None):
+        def nameValue(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.NameValueContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.NameValueContext, i)
+                return self.getTypedRuleContext(SolidityParser.NameValueContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_nameValueList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterNameValueList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNameValueList" ):
                 listener.enterNameValueList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitNameValueList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNameValueList" ):
                 listener.exitNameValueList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitNameValueList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNameValueList" ):
                 return visitor.visitNameValueList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def nameValueList(self):
+
         localctx = SolidityParser.NameValueListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 146, self.RULE_nameValueList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 935
             self.nameValue()
             self.state = 940
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input, 97, self._ctx)
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
-                if _alt == 1:
+            _alt = self._interp.adaptivePredict(self._input,97,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
                     self.state = 936
                     self.match(SolidityParser.T__15)
                     self.state = 937
-                    self.nameValue()
+                    self.nameValue() 
                 self.state = 942
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 97, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,97,self._ctx)
 
             self.state = 944
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__15:
+            if _la==SolidityParser.T__15:
                 self.state = 943
                 self.match(SolidityParser.T__15)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -8542,37 +7025,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class NameValueContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_nameValue
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterNameValue"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNameValue" ):
                 listener.enterNameValue(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitNameValue"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNameValue" ):
                 listener.exitNameValue(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitNameValue"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNameValue" ):
                 return visitor.visitNameValue(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def nameValue(self):
+
         localctx = SolidityParser.NameValueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 148, self.RULE_nameValue)
         try:
@@ -8591,42 +7080,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionCallArgumentsContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def nameValueList(self):
-            return self.getTypedRuleContext(SolidityParser.NameValueListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.NameValueListContext,0)
+
 
         def expressionList(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionListContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_functionCallArguments
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionCallArguments"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCallArguments" ):
                 listener.enterFunctionCallArguments(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionCallArguments"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCallArguments" ):
                 listener.exitFunctionCallArguments(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionCallArguments"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionCallArguments" ):
                 return visitor.visitFunctionCallArguments(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionCallArguments(self):
-        localctx = SolidityParser.FunctionCallArgumentsContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.FunctionCallArgumentsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 150, self.RULE_functionCallArguments)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.state = 958
             self._errHandler.sync(self)
@@ -8638,145 +7131,23 @@ class SolidityParser(Parser):
                 self.state = 952
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__13)
-                            | (1 << SolidityParser.T__24)
-                            | (1 << SolidityParser.T__43)
-                            | (1 << SolidityParser.T__49)
-                            | (1 << SolidityParser.T__61)
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 95)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 95))
-                        & (
-                            (1 << (SolidityParser.T__94 - 95))
-                            | (1 << (SolidityParser.LeaveKeyword - 95))
-                            | (1 << (SolidityParser.PayableKeyword - 95))
-                            | (1 << (SolidityParser.GlobalKeyword - 95))
-                            | (1 << (SolidityParser.ConstructorKeyword - 95))
-                            | (1 << (SolidityParser.ReceiveKeyword - 95))
-                            | (1 << (SolidityParser.Identifier - 95))
-                        )
-                    )
-                    != 0
-                ):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                     self.state = 951
                     self.nameValueList()
+
 
                 self.state = 954
                 self.match(SolidityParser.T__16)
                 pass
-            elif token in [
-                SolidityParser.T__5,
-                SolidityParser.T__13,
-                SolidityParser.T__22,
-                SolidityParser.T__23,
-                SolidityParser.T__24,
-                SolidityParser.T__29,
-                SolidityParser.T__30,
-                SolidityParser.T__37,
-                SolidityParser.T__41,
-                SolidityParser.T__43,
-                SolidityParser.T__45,
-                SolidityParser.T__49,
-                SolidityParser.T__61,
-                SolidityParser.T__62,
-                SolidityParser.T__63,
-                SolidityParser.T__64,
-                SolidityParser.T__65,
-                SolidityParser.T__66,
-                SolidityParser.T__67,
-                SolidityParser.T__68,
-                SolidityParser.T__70,
-                SolidityParser.T__71,
-                SolidityParser.T__94,
-                SolidityParser.Int,
-                SolidityParser.Uint,
-                SolidityParser.Byte,
-                SolidityParser.Fixed,
-                SolidityParser.Ufixed,
-                SolidityParser.BooleanLiteral,
-                SolidityParser.DecimalNumber,
-                SolidityParser.HexNumber,
-                SolidityParser.HexLiteralFragment,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.TypeKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-                SolidityParser.StringLiteralFragment,
-            ]:
+            elif token in [SolidityParser.T__5, SolidityParser.T__13, SolidityParser.T__22, SolidityParser.T__23, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__30, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__43, SolidityParser.T__45, SolidityParser.T__49, SolidityParser.T__61, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__66, SolidityParser.T__67, SolidityParser.T__68, SolidityParser.T__70, SolidityParser.T__71, SolidityParser.T__94, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.TypeKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 956
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    (((_la - 6)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 6))
-                        & (
-                            (1 << (SolidityParser.T__5 - 6))
-                            | (1 << (SolidityParser.T__13 - 6))
-                            | (1 << (SolidityParser.T__22 - 6))
-                            | (1 << (SolidityParser.T__24 - 6))
-                            | (1 << (SolidityParser.T__29 - 6))
-                            | (1 << (SolidityParser.T__30 - 6))
-                            | (1 << (SolidityParser.T__37 - 6))
-                            | (1 << (SolidityParser.T__41 - 6))
-                            | (1 << (SolidityParser.T__43 - 6))
-                            | (1 << (SolidityParser.T__45 - 6))
-                            | (1 << (SolidityParser.T__49 - 6))
-                            | (1 << (SolidityParser.T__61 - 6))
-                            | (1 << (SolidityParser.T__62 - 6))
-                            | (1 << (SolidityParser.T__63 - 6))
-                            | (1 << (SolidityParser.T__64 - 6))
-                            | (1 << (SolidityParser.T__65 - 6))
-                            | (1 << (SolidityParser.T__66 - 6))
-                            | (1 << (SolidityParser.T__67 - 6))
-                            | (1 << (SolidityParser.T__68 - 6))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 71)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 71))
-                        & (
-                            (1 << (SolidityParser.T__70 - 71))
-                            | (1 << (SolidityParser.T__71 - 71))
-                            | (1 << (SolidityParser.T__94 - 71))
-                            | (1 << (SolidityParser.Int - 71))
-                            | (1 << (SolidityParser.Uint - 71))
-                            | (1 << (SolidityParser.Byte - 71))
-                            | (1 << (SolidityParser.Fixed - 71))
-                            | (1 << (SolidityParser.Ufixed - 71))
-                            | (1 << (SolidityParser.BooleanLiteral - 71))
-                            | (1 << (SolidityParser.DecimalNumber - 71))
-                            | (1 << (SolidityParser.HexNumber - 71))
-                            | (1 << (SolidityParser.HexLiteralFragment - 71))
-                            | (1 << (SolidityParser.LeaveKeyword - 71))
-                            | (1 << (SolidityParser.PayableKeyword - 71))
-                            | (1 << (SolidityParser.TypeKeyword - 71))
-                            | (1 << (SolidityParser.GlobalKeyword - 71))
-                            | (1 << (SolidityParser.ConstructorKeyword - 71))
-                            | (1 << (SolidityParser.ReceiveKeyword - 71))
-                            | (1 << (SolidityParser.Identifier - 71))
-                            | (1 << (SolidityParser.StringLiteralFragment - 71))
-                        )
-                    )
-                    != 0
-                ):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                     self.state = 955
                     self.expressionList()
+
 
                 pass
             else:
@@ -8790,39 +7161,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class FunctionCallContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SolidityParser.ExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.ExpressionContext,0)
+
 
         def functionCallArguments(self):
-            return self.getTypedRuleContext(
-                SolidityParser.FunctionCallArgumentsContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.FunctionCallArgumentsContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_functionCall
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterFunctionCall"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCall" ):
                 listener.enterFunctionCall(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitFunctionCall"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCall" ):
                 listener.exitFunctionCall(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitFunctionCall"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionCall" ):
                 return visitor.visitFunctionCall(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def functionCall(self):
+
         localctx = SolidityParser.FunctionCallContext(self, self._ctx, self.state)
         self.enterRule(localctx, 152, self.RULE_functionCall)
         try:
@@ -8843,40 +7218,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyBlockContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def assemblyItem(self, i: int = None):
+        def assemblyItem(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.AssemblyItemContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.AssemblyItemContext, i)
+                return self.getTypedRuleContext(SolidityParser.AssemblyItemContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyBlock
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyBlock"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyBlock" ):
                 listener.enterAssemblyBlock(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyBlock"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyBlock" ):
                 listener.exitAssemblyBlock(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyBlock"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyBlock" ):
                 return visitor.visitAssemblyBlock(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyBlock(self):
+
         localctx = SolidityParser.AssemblyBlockContext(self, self._ctx, self.state)
         self.enterRule(localctx, 154, self.RULE_assemblyBlock)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 965
@@ -8884,51 +7264,7 @@ class SolidityParser(Parser):
             self.state = 969
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__14)
-                        | (1 << SolidityParser.T__22)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__26)
-                        | (1 << SolidityParser.T__37)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__50)
-                        | (1 << SolidityParser.T__58)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 66)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 66))
-                    & (
-                        (1 << (SolidityParser.T__65 - 66))
-                        | (1 << (SolidityParser.T__87 - 66))
-                        | (1 << (SolidityParser.T__90 - 66))
-                        | (1 << (SolidityParser.T__94 - 66))
-                        | (1 << (SolidityParser.BooleanLiteral - 66))
-                        | (1 << (SolidityParser.DecimalNumber - 66))
-                        | (1 << (SolidityParser.HexNumber - 66))
-                        | (1 << (SolidityParser.HexLiteralFragment - 66))
-                        | (1 << (SolidityParser.BreakKeyword - 66))
-                        | (1 << (SolidityParser.ContinueKeyword - 66))
-                        | (1 << (SolidityParser.LeaveKeyword - 66))
-                        | (1 << (SolidityParser.PayableKeyword - 66))
-                        | (1 << (SolidityParser.GlobalKeyword - 66))
-                        | (1 << (SolidityParser.ConstructorKeyword - 66))
-                        | (1 << (SolidityParser.ReceiveKeyword - 66))
-                        | (1 << (SolidityParser.Identifier - 66))
-                        | (1 << (SolidityParser.StringLiteralFragment - 66))
-                    )
-                )
-                != 0
-            ):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__14) | (1 << SolidityParser.T__22) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__26) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__50) | (1 << SolidityParser.T__58) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 66)) & ~0x3f) == 0 and ((1 << (_la - 66)) & ((1 << (SolidityParser.T__65 - 66)) | (1 << (SolidityParser.T__87 - 66)) | (1 << (SolidityParser.T__90 - 66)) | (1 << (SolidityParser.T__94 - 66)) | (1 << (SolidityParser.BooleanLiteral - 66)) | (1 << (SolidityParser.DecimalNumber - 66)) | (1 << (SolidityParser.HexNumber - 66)) | (1 << (SolidityParser.HexLiteralFragment - 66)) | (1 << (SolidityParser.BreakKeyword - 66)) | (1 << (SolidityParser.ContinueKeyword - 66)) | (1 << (SolidityParser.LeaveKeyword - 66)) | (1 << (SolidityParser.PayableKeyword - 66)) | (1 << (SolidityParser.GlobalKeyword - 66)) | (1 << (SolidityParser.ConstructorKeyword - 66)) | (1 << (SolidityParser.ReceiveKeyword - 66)) | (1 << (SolidityParser.Identifier - 66)) | (1 << (SolidityParser.StringLiteralFragment - 66)))) != 0):
                 self.state = 966
                 self.assemblyItem()
                 self.state = 971
@@ -8945,51 +7281,56 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyItemContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def assemblyBlock(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext,0)
+
 
         def assemblyExpression(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,0)
+
 
         def assemblyLocalDefinition(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyLocalDefinitionContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyLocalDefinitionContext,0)
+
 
         def assemblyAssignment(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyAssignmentContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyAssignmentContext,0)
+
 
         def assemblyStackAssignment(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyStackAssignmentContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyStackAssignmentContext,0)
+
 
         def labelDefinition(self):
-            return self.getTypedRuleContext(SolidityParser.LabelDefinitionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.LabelDefinitionContext,0)
+
 
         def assemblySwitch(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblySwitchContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblySwitchContext,0)
+
 
         def assemblyFunctionDefinition(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyFunctionDefinitionContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyFunctionDefinitionContext,0)
+
 
         def assemblyFor(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyForContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyForContext,0)
+
 
         def assemblyIf(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyIfContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyIfContext,0)
+
 
         def BreakKeyword(self):
             return self.getToken(SolidityParser.BreakKeyword, 0)
@@ -9001,38 +7342,45 @@ class SolidityParser(Parser):
             return self.getToken(SolidityParser.LeaveKeyword, 0)
 
         def numberLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.NumberLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.NumberLiteralContext,0)
+
 
         def stringLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.StringLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StringLiteralContext,0)
+
 
         def hexLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.HexLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.HexLiteralContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyItem
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyItem"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyItem" ):
                 listener.enterAssemblyItem(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyItem"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyItem" ):
                 listener.exitAssemblyItem(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyItem"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyItem" ):
                 return visitor.visitAssemblyItem(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyItem(self):
+
         localctx = SolidityParser.AssemblyItemContext(self, self._ctx, self.state)
         self.enterRule(localctx, 156, self.RULE_assemblyItem)
         try:
             self.state = 991
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 103, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,103,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 974
@@ -9135,6 +7483,7 @@ class SolidityParser(Parser):
                 self.hexLiteral()
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -9143,46 +7492,53 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyExpressionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyCall(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyCallContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyCallContext,0)
+
 
         def assemblyLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyLiteralContext,0)
+
 
         def assemblyMember(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyMemberContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyMemberContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyExpression
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyExpression"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyExpression" ):
                 listener.enterAssemblyExpression(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyExpression"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyExpression" ):
                 listener.exitAssemblyExpression(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyExpression"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyExpression" ):
                 return visitor.visitAssemblyExpression(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyExpression(self):
+
         localctx = SolidityParser.AssemblyExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 158, self.RULE_assemblyExpression)
         try:
             self.state = 996
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 104, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,104,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 993
@@ -9201,6 +7557,7 @@ class SolidityParser(Parser):
                 self.assemblyMember()
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -9209,37 +7566,42 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyMemberContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def identifier(self, i: int = None):
+        def identifier(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.IdentifierContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.IdentifierContext, i)
+                return self.getTypedRuleContext(SolidityParser.IdentifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyMember
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyMember"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyMember" ):
                 listener.enterAssemblyMember(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyMember"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyMember" ):
                 listener.exitAssemblyMember(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyMember"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyMember" ):
                 return visitor.visitAssemblyMember(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyMember(self):
+
         localctx = SolidityParser.AssemblyMemberContext(self, self._ctx, self.state)
         self.enterRule(localctx, 160, self.RULE_assemblyMember)
         try:
@@ -9258,52 +7620,54 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyCallContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
 
-        def assemblyExpression(self, i: int = None):
+
+        def assemblyExpression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.AssemblyExpressionContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.AssemblyExpressionContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.AssemblyExpressionContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyCall
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyCall"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyCall" ):
                 listener.enterAssemblyCall(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyCall"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyCall" ):
                 listener.exitAssemblyCall(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyCall"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyCall" ):
                 return visitor.visitAssemblyCall(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyCall(self):
+
         localctx = SolidityParser.AssemblyCallContext(self, self._ctx, self.state)
         self.enterRule(localctx, 162, self.RULE_assemblyCall)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1006
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 105, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,105,self._ctx)
             if la_ == 1:
                 self.state = 1002
                 self.match(SolidityParser.T__58)
@@ -9324,58 +7688,25 @@ class SolidityParser(Parser):
                 self.identifier()
                 pass
 
+
             self.state = 1020
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 108, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,108,self._ctx)
             if la_ == 1:
                 self.state = 1008
                 self.match(SolidityParser.T__22)
                 self.state = 1010
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__13)
-                            | (1 << SolidityParser.T__24)
-                            | (1 << SolidityParser.T__43)
-                            | (1 << SolidityParser.T__49)
-                            | (1 << SolidityParser.T__58)
-                            | (1 << SolidityParser.T__61)
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 66)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 66))
-                        & (
-                            (1 << (SolidityParser.T__65 - 66))
-                            | (1 << (SolidityParser.T__94 - 66))
-                            | (1 << (SolidityParser.BooleanLiteral - 66))
-                            | (1 << (SolidityParser.DecimalNumber - 66))
-                            | (1 << (SolidityParser.HexNumber - 66))
-                            | (1 << (SolidityParser.HexLiteralFragment - 66))
-                            | (1 << (SolidityParser.LeaveKeyword - 66))
-                            | (1 << (SolidityParser.PayableKeyword - 66))
-                            | (1 << (SolidityParser.GlobalKeyword - 66))
-                            | (1 << (SolidityParser.ConstructorKeyword - 66))
-                            | (1 << (SolidityParser.ReceiveKeyword - 66))
-                            | (1 << (SolidityParser.Identifier - 66))
-                            | (1 << (SolidityParser.StringLiteralFragment - 66))
-                        )
-                    )
-                    != 0
-                ):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__58) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 66)) & ~0x3f) == 0 and ((1 << (_la - 66)) & ((1 << (SolidityParser.T__65 - 66)) | (1 << (SolidityParser.T__94 - 66)) | (1 << (SolidityParser.BooleanLiteral - 66)) | (1 << (SolidityParser.DecimalNumber - 66)) | (1 << (SolidityParser.HexNumber - 66)) | (1 << (SolidityParser.HexLiteralFragment - 66)) | (1 << (SolidityParser.LeaveKeyword - 66)) | (1 << (SolidityParser.PayableKeyword - 66)) | (1 << (SolidityParser.GlobalKeyword - 66)) | (1 << (SolidityParser.ConstructorKeyword - 66)) | (1 << (SolidityParser.ReceiveKeyword - 66)) | (1 << (SolidityParser.Identifier - 66)) | (1 << (SolidityParser.StringLiteralFragment - 66)))) != 0):
                     self.state = 1009
                     self.assemblyExpression()
+
 
                 self.state = 1016
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 1012
                     self.match(SolidityParser.T__15)
                     self.state = 1013
@@ -9387,6 +7718,7 @@ class SolidityParser(Parser):
                 self.state = 1019
                 self.match(SolidityParser.T__23)
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -9395,44 +7727,46 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyLocalDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyIdentifierOrList(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyIdentifierOrListContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyIdentifierOrListContext,0)
+
 
         def assemblyExpression(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyLocalDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyLocalDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyLocalDefinition" ):
                 listener.enterAssemblyLocalDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyLocalDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyLocalDefinition" ):
                 listener.exitAssemblyLocalDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyLocalDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyLocalDefinition" ):
                 return visitor.visitAssemblyLocalDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyLocalDefinition(self):
-        localctx = SolidityParser.AssemblyLocalDefinitionContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.AssemblyLocalDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 164, self.RULE_assemblyLocalDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1022
@@ -9442,11 +7776,12 @@ class SolidityParser(Parser):
             self.state = 1026
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__88:
+            if _la==SolidityParser.T__88:
                 self.state = 1024
                 self.match(SolidityParser.T__88)
                 self.state = 1025
                 self.assemblyExpression()
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -9456,39 +7791,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyAssignmentContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyIdentifierOrList(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyIdentifierOrListContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyIdentifierOrListContext,0)
+
 
         def assemblyExpression(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyAssignment
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyAssignment"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyAssignment" ):
                 listener.enterAssemblyAssignment(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyAssignment"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyAssignment" ):
                 listener.exitAssemblyAssignment(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyAssignment"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyAssignment" ):
                 return visitor.visitAssemblyAssignment(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyAssignment(self):
+
         localctx = SolidityParser.AssemblyAssignmentContext(self, self._ctx, self.state)
         self.enterRule(localctx, 166, self.RULE_assemblyAssignment)
         try:
@@ -9507,50 +7846,53 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyIdentifierOrListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def assemblyMember(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyMemberContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyMemberContext,0)
+
 
         def assemblyIdentifierList(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyIdentifierListContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyIdentifierListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyIdentifierOrList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyIdentifierOrList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyIdentifierOrList" ):
                 listener.enterAssemblyIdentifierOrList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyIdentifierOrList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyIdentifierOrList" ):
                 listener.exitAssemblyIdentifierOrList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyIdentifierOrList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyIdentifierOrList" ):
                 return visitor.visitAssemblyIdentifierOrList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyIdentifierOrList(self):
-        localctx = SolidityParser.AssemblyIdentifierOrListContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.AssemblyIdentifierOrListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 168, self.RULE_assemblyIdentifierOrList)
         try:
             self.state = 1039
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 110, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,110,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 1032
@@ -9579,6 +7921,7 @@ class SolidityParser(Parser):
                 self.match(SolidityParser.T__23)
                 pass
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -9587,42 +7930,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyIdentifierListContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def identifier(self, i: int = None):
+        def identifier(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.IdentifierContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.IdentifierContext, i)
+                return self.getTypedRuleContext(SolidityParser.IdentifierContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyIdentifierList
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyIdentifierList"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyIdentifierList" ):
                 listener.enterAssemblyIdentifierList(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyIdentifierList"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyIdentifierList" ):
                 listener.exitAssemblyIdentifierList(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyIdentifierList"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyIdentifierList" ):
                 return visitor.visitAssemblyIdentifierList(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyIdentifierList(self):
-        localctx = SolidityParser.AssemblyIdentifierListContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.AssemblyIdentifierListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 170, self.RULE_assemblyIdentifierList)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1041
@@ -9630,7 +7976,7 @@ class SolidityParser(Parser):
             self.state = 1046
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la == SolidityParser.T__15:
+            while _la==SolidityParser.T__15:
                 self.state = 1042
                 self.match(SolidityParser.T__15)
                 self.state = 1043
@@ -9647,40 +7993,44 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyStackAssignmentContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyExpression(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,0)
+
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyStackAssignment
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyStackAssignment"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyStackAssignment" ):
                 listener.enterAssemblyStackAssignment(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyStackAssignment"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyStackAssignment" ):
                 listener.exitAssemblyStackAssignment(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyStackAssignment"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyStackAssignment" ):
                 return visitor.visitAssemblyStackAssignment(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyStackAssignment(self):
-        localctx = SolidityParser.AssemblyStackAssignmentContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.AssemblyStackAssignmentContext(self, self._ctx, self.state)
         self.enterRule(localctx, 172, self.RULE_assemblyStackAssignment)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -9698,34 +8048,39 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class LabelDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_labelDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterLabelDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterLabelDefinition" ):
                 listener.enterLabelDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitLabelDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitLabelDefinition" ):
                 listener.exitLabelDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitLabelDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLabelDefinition" ):
                 return visitor.visitLabelDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def labelDefinition(self):
+
         localctx = SolidityParser.LabelDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 174, self.RULE_labelDefinition)
         try:
@@ -9742,43 +8097,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblySwitchContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyExpression(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,0)
 
-        def assemblyCase(self, i: int = None):
+
+        def assemblyCase(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.AssemblyCaseContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.AssemblyCaseContext, i)
+                return self.getTypedRuleContext(SolidityParser.AssemblyCaseContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblySwitch
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblySwitch"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblySwitch" ):
                 listener.enterAssemblySwitch(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblySwitch"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblySwitch" ):
                 listener.exitAssemblySwitch(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblySwitch"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblySwitch" ):
                 return visitor.visitAssemblySwitch(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblySwitch(self):
+
         localctx = SolidityParser.AssemblySwitchContext(self, self._ctx, self.state)
         self.enterRule(localctx, 176, self.RULE_assemblySwitch)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1056
@@ -9788,7 +8149,7 @@ class SolidityParser(Parser):
             self.state = 1061
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la == SolidityParser.T__91 or _la == SolidityParser.T__92:
+            while _la==SolidityParser.T__91 or _la==SolidityParser.T__92:
                 self.state = 1058
                 self.assemblyCase()
                 self.state = 1063
@@ -9803,37 +8164,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyCaseContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyLiteralContext,0)
+
 
         def assemblyBlock(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyCase
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyCase"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyCase" ):
                 listener.enterAssemblyCase(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyCase"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyCase" ):
                 listener.exitAssemblyCase(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyCase"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyCase" ):
                 return visitor.visitAssemblyCase(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyCase(self):
+
         localctx = SolidityParser.AssemblyCaseContext(self, self._ctx, self.state)
         self.enterRule(localctx, 178, self.RULE_assemblyCase)
         try:
@@ -9867,52 +8234,54 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyFunctionDefinitionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def identifier(self):
-            return self.getTypedRuleContext(SolidityParser.IdentifierContext, 0)
+            return self.getTypedRuleContext(SolidityParser.IdentifierContext,0)
+
 
         def assemblyBlock(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext,0)
+
 
         def assemblyIdentifierList(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyIdentifierListContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyIdentifierListContext,0)
+
 
         def assemblyFunctionReturns(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyFunctionReturnsContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyFunctionReturnsContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyFunctionDefinition
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyFunctionDefinition"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyFunctionDefinition" ):
                 listener.enterAssemblyFunctionDefinition(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyFunctionDefinition"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyFunctionDefinition" ):
                 listener.exitAssemblyFunctionDefinition(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyFunctionDefinition"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyFunctionDefinition" ):
                 return visitor.visitAssemblyFunctionDefinition(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyFunctionDefinition(self):
-        localctx = SolidityParser.AssemblyFunctionDefinitionContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.AssemblyFunctionDefinitionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 180, self.RULE_assemblyFunctionDefinition)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1072
@@ -9924,46 +8293,20 @@ class SolidityParser(Parser):
             self.state = 1076
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (
-                ((_la) & ~0x3F) == 0
-                and (
-                    (1 << _la)
-                    & (
-                        (1 << SolidityParser.T__13)
-                        | (1 << SolidityParser.T__24)
-                        | (1 << SolidityParser.T__43)
-                        | (1 << SolidityParser.T__49)
-                        | (1 << SolidityParser.T__61)
-                    )
-                )
-                != 0
-            ) or (
-                (((_la - 95)) & ~0x3F) == 0
-                and (
-                    (1 << (_la - 95))
-                    & (
-                        (1 << (SolidityParser.T__94 - 95))
-                        | (1 << (SolidityParser.LeaveKeyword - 95))
-                        | (1 << (SolidityParser.PayableKeyword - 95))
-                        | (1 << (SolidityParser.GlobalKeyword - 95))
-                        | (1 << (SolidityParser.ConstructorKeyword - 95))
-                        | (1 << (SolidityParser.ReceiveKeyword - 95))
-                        | (1 << (SolidityParser.Identifier - 95))
-                    )
-                )
-                != 0
-            ):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0):
                 self.state = 1075
                 self.assemblyIdentifierList()
+
 
             self.state = 1078
             self.match(SolidityParser.T__23)
             self.state = 1080
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__93:
+            if _la==SolidityParser.T__93:
                 self.state = 1079
                 self.assemblyFunctionReturns()
+
 
             self.state = 1082
             self.assemblyBlock()
@@ -9975,39 +8318,40 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyFunctionReturnsContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyIdentifierList(self):
-            return self.getTypedRuleContext(
-                SolidityParser.AssemblyIdentifierListContext, 0
-            )
+            return self.getTypedRuleContext(SolidityParser.AssemblyIdentifierListContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyFunctionReturns
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyFunctionReturns"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyFunctionReturns" ):
                 listener.enterAssemblyFunctionReturns(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyFunctionReturns"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyFunctionReturns" ):
                 listener.exitAssemblyFunctionReturns(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyFunctionReturns"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyFunctionReturns" ):
                 return visitor.visitAssemblyFunctionReturns(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyFunctionReturns(self):
-        localctx = SolidityParser.AssemblyFunctionReturnsContext(
-            self, self._ctx, self.state
-        )
+
+        localctx = SolidityParser.AssemblyFunctionReturnsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 182, self.RULE_assemblyFunctionReturns)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -10023,47 +8367,49 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyForContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def assemblyExpression(self, i: int = None):
+        def assemblyExpression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.AssemblyExpressionContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.AssemblyExpressionContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.AssemblyExpressionContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,i)
 
-        def assemblyBlock(self, i: int = None):
+
+        def assemblyBlock(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.AssemblyBlockContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext, i)
+                return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyFor
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyFor"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyFor" ):
                 listener.enterAssemblyFor(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyFor"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyFor" ):
                 listener.exitAssemblyFor(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyFor"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyFor" ):
                 return visitor.visitAssemblyFor(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyFor(self):
+
         localctx = SolidityParser.AssemblyForContext(self, self._ctx, self.state)
         self.enterRule(localctx, 184, self.RULE_assemblyFor)
         try:
@@ -10077,27 +8423,7 @@ class SolidityParser(Parser):
                 self.state = 1088
                 self.assemblyBlock()
                 pass
-            elif token in [
-                SolidityParser.T__13,
-                SolidityParser.T__24,
-                SolidityParser.T__43,
-                SolidityParser.T__49,
-                SolidityParser.T__58,
-                SolidityParser.T__61,
-                SolidityParser.T__65,
-                SolidityParser.T__94,
-                SolidityParser.BooleanLiteral,
-                SolidityParser.DecimalNumber,
-                SolidityParser.HexNumber,
-                SolidityParser.HexLiteralFragment,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-                SolidityParser.StringLiteralFragment,
-            ]:
+            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__43, SolidityParser.T__49, SolidityParser.T__58, SolidityParser.T__61, SolidityParser.T__65, SolidityParser.T__94, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
                 self.state = 1089
                 self.assemblyExpression()
                 pass
@@ -10113,27 +8439,7 @@ class SolidityParser(Parser):
                 self.state = 1093
                 self.assemblyBlock()
                 pass
-            elif token in [
-                SolidityParser.T__13,
-                SolidityParser.T__24,
-                SolidityParser.T__43,
-                SolidityParser.T__49,
-                SolidityParser.T__58,
-                SolidityParser.T__61,
-                SolidityParser.T__65,
-                SolidityParser.T__94,
-                SolidityParser.BooleanLiteral,
-                SolidityParser.DecimalNumber,
-                SolidityParser.HexNumber,
-                SolidityParser.HexLiteralFragment,
-                SolidityParser.LeaveKeyword,
-                SolidityParser.PayableKeyword,
-                SolidityParser.GlobalKeyword,
-                SolidityParser.ConstructorKeyword,
-                SolidityParser.ReceiveKeyword,
-                SolidityParser.Identifier,
-                SolidityParser.StringLiteralFragment,
-            ]:
+            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__43, SolidityParser.T__49, SolidityParser.T__58, SolidityParser.T__61, SolidityParser.T__65, SolidityParser.T__94, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.GlobalKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
                 self.state = 1094
                 self.assemblyExpression()
                 pass
@@ -10150,37 +8456,43 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyIfContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def assemblyExpression(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyExpressionContext,0)
+
 
         def assemblyBlock(self):
-            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext, 0)
+            return self.getTypedRuleContext(SolidityParser.AssemblyBlockContext,0)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyIf
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyIf"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyIf" ):
                 listener.enterAssemblyIf(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyIf"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyIf" ):
                 listener.exitAssemblyIf(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyIf"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyIf" ):
                 return visitor.visitAssemblyIf(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyIf(self):
+
         localctx = SolidityParser.AssemblyIfContext(self, self._ctx, self.state)
         self.enterRule(localctx, 186, self.RULE_assemblyIf)
         try:
@@ -10199,15 +8511,16 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class AssemblyLiteralContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
         def stringLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.StringLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.StringLiteralContext,0)
+
 
         def DecimalNumber(self):
             return self.getToken(SolidityParser.DecimalNumber, 0)
@@ -10216,7 +8529,8 @@ class SolidityParser(Parser):
             return self.getToken(SolidityParser.HexNumber, 0)
 
         def hexLiteral(self):
-            return self.getTypedRuleContext(SolidityParser.HexLiteralContext, 0)
+            return self.getTypedRuleContext(SolidityParser.HexLiteralContext,0)
+
 
         def BooleanLiteral(self):
             return self.getToken(SolidityParser.BooleanLiteral, 0)
@@ -10224,21 +8538,25 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_assemblyLiteral
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterAssemblyLiteral"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssemblyLiteral" ):
                 listener.enterAssemblyLiteral(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitAssemblyLiteral"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssemblyLiteral" ):
                 listener.exitAssemblyLiteral(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitAssemblyLiteral"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssemblyLiteral" ):
                 return visitor.visitAssemblyLiteral(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def assemblyLiteral(self):
+
         localctx = SolidityParser.AssemblyLiteralContext(self, self._ctx, self.state)
         self.enterRule(localctx, 188, self.RULE_assemblyLiteral)
         try:
@@ -10281,40 +8599,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class TupleExpressionContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def expression(self, i: int = None):
+        def expression(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(SolidityParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SolidityParser.ExpressionContext, i)
+                return self.getTypedRuleContext(SolidityParser.ExpressionContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_tupleExpression
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterTupleExpression"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTupleExpression" ):
                 listener.enterTupleExpression(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitTupleExpression"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTupleExpression" ):
                 listener.exitTupleExpression(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitTupleExpression"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTupleExpression" ):
                 return visitor.visitTupleExpression(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def tupleExpression(self):
+
         localctx = SolidityParser.TupleExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 190, self.RULE_tupleExpression)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.state = 1136
             self._errHandler.sync(self)
@@ -10327,132 +8650,24 @@ class SolidityParser(Parser):
                 self.state = 1112
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    (((_la - 6)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 6))
-                        & (
-                            (1 << (SolidityParser.T__5 - 6))
-                            | (1 << (SolidityParser.T__13 - 6))
-                            | (1 << (SolidityParser.T__22 - 6))
-                            | (1 << (SolidityParser.T__24 - 6))
-                            | (1 << (SolidityParser.T__29 - 6))
-                            | (1 << (SolidityParser.T__30 - 6))
-                            | (1 << (SolidityParser.T__37 - 6))
-                            | (1 << (SolidityParser.T__41 - 6))
-                            | (1 << (SolidityParser.T__43 - 6))
-                            | (1 << (SolidityParser.T__45 - 6))
-                            | (1 << (SolidityParser.T__49 - 6))
-                            | (1 << (SolidityParser.T__61 - 6))
-                            | (1 << (SolidityParser.T__62 - 6))
-                            | (1 << (SolidityParser.T__63 - 6))
-                            | (1 << (SolidityParser.T__64 - 6))
-                            | (1 << (SolidityParser.T__65 - 6))
-                            | (1 << (SolidityParser.T__66 - 6))
-                            | (1 << (SolidityParser.T__67 - 6))
-                            | (1 << (SolidityParser.T__68 - 6))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 71)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 71))
-                        & (
-                            (1 << (SolidityParser.T__70 - 71))
-                            | (1 << (SolidityParser.T__71 - 71))
-                            | (1 << (SolidityParser.T__94 - 71))
-                            | (1 << (SolidityParser.Int - 71))
-                            | (1 << (SolidityParser.Uint - 71))
-                            | (1 << (SolidityParser.Byte - 71))
-                            | (1 << (SolidityParser.Fixed - 71))
-                            | (1 << (SolidityParser.Ufixed - 71))
-                            | (1 << (SolidityParser.BooleanLiteral - 71))
-                            | (1 << (SolidityParser.DecimalNumber - 71))
-                            | (1 << (SolidityParser.HexNumber - 71))
-                            | (1 << (SolidityParser.HexLiteralFragment - 71))
-                            | (1 << (SolidityParser.LeaveKeyword - 71))
-                            | (1 << (SolidityParser.PayableKeyword - 71))
-                            | (1 << (SolidityParser.TypeKeyword - 71))
-                            | (1 << (SolidityParser.GlobalKeyword - 71))
-                            | (1 << (SolidityParser.ConstructorKeyword - 71))
-                            | (1 << (SolidityParser.ReceiveKeyword - 71))
-                            | (1 << (SolidityParser.Identifier - 71))
-                            | (1 << (SolidityParser.StringLiteralFragment - 71))
-                        )
-                    )
-                    != 0
-                ):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                     self.state = 1111
                     self.expression(0)
+
 
                 self.state = 1120
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 1114
                     self.match(SolidityParser.T__15)
                     self.state = 1116
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if (
-                        (((_la - 6)) & ~0x3F) == 0
-                        and (
-                            (1 << (_la - 6))
-                            & (
-                                (1 << (SolidityParser.T__5 - 6))
-                                | (1 << (SolidityParser.T__13 - 6))
-                                | (1 << (SolidityParser.T__22 - 6))
-                                | (1 << (SolidityParser.T__24 - 6))
-                                | (1 << (SolidityParser.T__29 - 6))
-                                | (1 << (SolidityParser.T__30 - 6))
-                                | (1 << (SolidityParser.T__37 - 6))
-                                | (1 << (SolidityParser.T__41 - 6))
-                                | (1 << (SolidityParser.T__43 - 6))
-                                | (1 << (SolidityParser.T__45 - 6))
-                                | (1 << (SolidityParser.T__49 - 6))
-                                | (1 << (SolidityParser.T__61 - 6))
-                                | (1 << (SolidityParser.T__62 - 6))
-                                | (1 << (SolidityParser.T__63 - 6))
-                                | (1 << (SolidityParser.T__64 - 6))
-                                | (1 << (SolidityParser.T__65 - 6))
-                                | (1 << (SolidityParser.T__66 - 6))
-                                | (1 << (SolidityParser.T__67 - 6))
-                                | (1 << (SolidityParser.T__68 - 6))
-                            )
-                        )
-                        != 0
-                    ) or (
-                        (((_la - 71)) & ~0x3F) == 0
-                        and (
-                            (1 << (_la - 71))
-                            & (
-                                (1 << (SolidityParser.T__70 - 71))
-                                | (1 << (SolidityParser.T__71 - 71))
-                                | (1 << (SolidityParser.T__94 - 71))
-                                | (1 << (SolidityParser.Int - 71))
-                                | (1 << (SolidityParser.Uint - 71))
-                                | (1 << (SolidityParser.Byte - 71))
-                                | (1 << (SolidityParser.Fixed - 71))
-                                | (1 << (SolidityParser.Ufixed - 71))
-                                | (1 << (SolidityParser.BooleanLiteral - 71))
-                                | (1 << (SolidityParser.DecimalNumber - 71))
-                                | (1 << (SolidityParser.HexNumber - 71))
-                                | (1 << (SolidityParser.HexLiteralFragment - 71))
-                                | (1 << (SolidityParser.LeaveKeyword - 71))
-                                | (1 << (SolidityParser.PayableKeyword - 71))
-                                | (1 << (SolidityParser.TypeKeyword - 71))
-                                | (1 << (SolidityParser.GlobalKeyword - 71))
-                                | (1 << (SolidityParser.ConstructorKeyword - 71))
-                                | (1 << (SolidityParser.ReceiveKeyword - 71))
-                                | (1 << (SolidityParser.Identifier - 71))
-                                | (1 << (SolidityParser.StringLiteralFragment - 71))
-                            )
-                        )
-                        != 0
-                    ):
+                    if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                         self.state = 1115
                         self.expression(0)
+
 
                     self.state = 1122
                     self._errHandler.sync(self)
@@ -10468,68 +8683,13 @@ class SolidityParser(Parser):
                 self.state = 1133
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (
-                    (((_la - 6)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 6))
-                        & (
-                            (1 << (SolidityParser.T__5 - 6))
-                            | (1 << (SolidityParser.T__13 - 6))
-                            | (1 << (SolidityParser.T__22 - 6))
-                            | (1 << (SolidityParser.T__24 - 6))
-                            | (1 << (SolidityParser.T__29 - 6))
-                            | (1 << (SolidityParser.T__30 - 6))
-                            | (1 << (SolidityParser.T__37 - 6))
-                            | (1 << (SolidityParser.T__41 - 6))
-                            | (1 << (SolidityParser.T__43 - 6))
-                            | (1 << (SolidityParser.T__45 - 6))
-                            | (1 << (SolidityParser.T__49 - 6))
-                            | (1 << (SolidityParser.T__61 - 6))
-                            | (1 << (SolidityParser.T__62 - 6))
-                            | (1 << (SolidityParser.T__63 - 6))
-                            | (1 << (SolidityParser.T__64 - 6))
-                            | (1 << (SolidityParser.T__65 - 6))
-                            | (1 << (SolidityParser.T__66 - 6))
-                            | (1 << (SolidityParser.T__67 - 6))
-                            | (1 << (SolidityParser.T__68 - 6))
-                        )
-                    )
-                    != 0
-                ) or (
-                    (((_la - 71)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 71))
-                        & (
-                            (1 << (SolidityParser.T__70 - 71))
-                            | (1 << (SolidityParser.T__71 - 71))
-                            | (1 << (SolidityParser.T__94 - 71))
-                            | (1 << (SolidityParser.Int - 71))
-                            | (1 << (SolidityParser.Uint - 71))
-                            | (1 << (SolidityParser.Byte - 71))
-                            | (1 << (SolidityParser.Fixed - 71))
-                            | (1 << (SolidityParser.Ufixed - 71))
-                            | (1 << (SolidityParser.BooleanLiteral - 71))
-                            | (1 << (SolidityParser.DecimalNumber - 71))
-                            | (1 << (SolidityParser.HexNumber - 71))
-                            | (1 << (SolidityParser.HexLiteralFragment - 71))
-                            | (1 << (SolidityParser.LeaveKeyword - 71))
-                            | (1 << (SolidityParser.PayableKeyword - 71))
-                            | (1 << (SolidityParser.TypeKeyword - 71))
-                            | (1 << (SolidityParser.GlobalKeyword - 71))
-                            | (1 << (SolidityParser.ConstructorKeyword - 71))
-                            | (1 << (SolidityParser.ReceiveKeyword - 71))
-                            | (1 << (SolidityParser.Identifier - 71))
-                            | (1 << (SolidityParser.StringLiteralFragment - 71))
-                        )
-                    )
-                    != 0
-                ):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__30 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__43 - 6)) | (1 << (SolidityParser.T__45 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__61 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)) | (1 << (SolidityParser.T__67 - 6)) | (1 << (SolidityParser.T__68 - 6)))) != 0) or ((((_la - 71)) & ~0x3f) == 0 and ((1 << (_la - 71)) & ((1 << (SolidityParser.T__70 - 71)) | (1 << (SolidityParser.T__71 - 71)) | (1 << (SolidityParser.T__94 - 71)) | (1 << (SolidityParser.Int - 71)) | (1 << (SolidityParser.Uint - 71)) | (1 << (SolidityParser.Byte - 71)) | (1 << (SolidityParser.Fixed - 71)) | (1 << (SolidityParser.Ufixed - 71)) | (1 << (SolidityParser.BooleanLiteral - 71)) | (1 << (SolidityParser.DecimalNumber - 71)) | (1 << (SolidityParser.HexNumber - 71)) | (1 << (SolidityParser.HexLiteralFragment - 71)) | (1 << (SolidityParser.LeaveKeyword - 71)) | (1 << (SolidityParser.PayableKeyword - 71)) | (1 << (SolidityParser.TypeKeyword - 71)) | (1 << (SolidityParser.GlobalKeyword - 71)) | (1 << (SolidityParser.ConstructorKeyword - 71)) | (1 << (SolidityParser.ReceiveKeyword - 71)) | (1 << (SolidityParser.Identifier - 71)) | (1 << (SolidityParser.StringLiteralFragment - 71)))) != 0):
                     self.state = 1125
                     self.expression(0)
                     self.state = 1130
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    while _la == SolidityParser.T__15:
+                    while _la==SolidityParser.T__15:
                         self.state = 1126
                         self.match(SolidityParser.T__15)
                         self.state = 1127
@@ -10537,6 +8697,8 @@ class SolidityParser(Parser):
                         self.state = 1132
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
+
+
 
                 self.state = 1135
                 self.match(SolidityParser.T__42)
@@ -10552,10 +8714,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class NumberLiteralContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -10571,41 +8733,44 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_numberLiteral
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterNumberLiteral"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNumberLiteral" ):
                 listener.enterNumberLiteral(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitNumberLiteral"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNumberLiteral" ):
                 listener.exitNumberLiteral(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitNumberLiteral"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNumberLiteral" ):
                 return visitor.visitNumberLiteral(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def numberLiteral(self):
+
         localctx = SolidityParser.NumberLiteralContext(self, self._ctx, self.state)
         self.enterRule(localctx, 192, self.RULE_numberLiteral)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1138
             _la = self._input.LA(1)
-            if not (
-                _la == SolidityParser.DecimalNumber or _la == SolidityParser.HexNumber
-            ):
+            if not(_la==SolidityParser.DecimalNumber or _la==SolidityParser.HexNumber):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
             self.state = 1140
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input, 125, self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,125,self._ctx)
             if la_ == 1:
                 self.state = 1139
                 self.match(SolidityParser.NumberUnit)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -10615,10 +8780,10 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class IdentifierContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
@@ -10643,60 +8808,33 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_identifier
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterIdentifier"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIdentifier" ):
                 listener.enterIdentifier(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitIdentifier"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIdentifier" ):
                 listener.exitIdentifier(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitIdentifier"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIdentifier" ):
                 return visitor.visitIdentifier(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def identifier(self):
+
         localctx = SolidityParser.IdentifierContext(self, self._ctx, self.state)
         self.enterRule(localctx, 194, self.RULE_identifier)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1142
             _la = self._input.LA(1)
-            if not (
-                (
-                    ((_la) & ~0x3F) == 0
-                    and (
-                        (1 << _la)
-                        & (
-                            (1 << SolidityParser.T__13)
-                            | (1 << SolidityParser.T__24)
-                            | (1 << SolidityParser.T__43)
-                            | (1 << SolidityParser.T__49)
-                            | (1 << SolidityParser.T__61)
-                        )
-                    )
-                    != 0
-                )
-                or (
-                    (((_la - 95)) & ~0x3F) == 0
-                    and (
-                        (1 << (_la - 95))
-                        & (
-                            (1 << (SolidityParser.T__94 - 95))
-                            | (1 << (SolidityParser.LeaveKeyword - 95))
-                            | (1 << (SolidityParser.PayableKeyword - 95))
-                            | (1 << (SolidityParser.GlobalKeyword - 95))
-                            | (1 << (SolidityParser.ConstructorKeyword - 95))
-                            | (1 << (SolidityParser.ReceiveKeyword - 95))
-                            | (1 << (SolidityParser.Identifier - 95))
-                        )
-                    )
-                    != 0
-                )
-            ):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__43) | (1 << SolidityParser.T__49) | (1 << SolidityParser.T__61))) != 0) or ((((_la - 95)) & ~0x3f) == 0 and ((1 << (_la - 95)) & ((1 << (SolidityParser.T__94 - 95)) | (1 << (SolidityParser.LeaveKeyword - 95)) | (1 << (SolidityParser.PayableKeyword - 95)) | (1 << (SolidityParser.GlobalKeyword - 95)) | (1 << (SolidityParser.ConstructorKeyword - 95)) | (1 << (SolidityParser.ReceiveKeyword - 95)) | (1 << (SolidityParser.Identifier - 95)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -10709,14 +8847,14 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class HexLiteralContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def HexLiteralFragment(self, i: int = None):
+        def HexLiteralFragment(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.HexLiteralFragment)
             else:
@@ -10725,38 +8863,42 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_hexLiteral
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterHexLiteral"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterHexLiteral" ):
                 listener.enterHexLiteral(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitHexLiteral"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitHexLiteral" ):
                 listener.exitHexLiteral(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitHexLiteral"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitHexLiteral" ):
                 return visitor.visitHexLiteral(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def hexLiteral(self):
+
         localctx = SolidityParser.HexLiteralContext(self, self._ctx, self.state)
         self.enterRule(localctx, 196, self.RULE_hexLiteral)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 1145
+            self.state = 1145 
             self._errHandler.sync(self)
             _alt = 1
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt == 1:
                     self.state = 1144
                     self.match(SolidityParser.HexLiteralFragment)
 
                 else:
                     raise NoViableAltException(self)
-                self.state = 1147
+                self.state = 1147 
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 126, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,126,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -10766,44 +8908,45 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class OverrideSpecifierContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def userDefinedTypeName(self, i: int = None):
+        def userDefinedTypeName(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(
-                    SolidityParser.UserDefinedTypeNameContext
-                )
+                return self.getTypedRuleContexts(SolidityParser.UserDefinedTypeNameContext)
             else:
-                return self.getTypedRuleContext(
-                    SolidityParser.UserDefinedTypeNameContext, i
-                )
+                return self.getTypedRuleContext(SolidityParser.UserDefinedTypeNameContext,i)
+
 
         def getRuleIndex(self):
             return SolidityParser.RULE_overrideSpecifier
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterOverrideSpecifier"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterOverrideSpecifier" ):
                 listener.enterOverrideSpecifier(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitOverrideSpecifier"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitOverrideSpecifier" ):
                 listener.exitOverrideSpecifier(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitOverrideSpecifier"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOverrideSpecifier" ):
                 return visitor.visitOverrideSpecifier(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def overrideSpecifier(self):
+
         localctx = SolidityParser.OverrideSpecifierContext(self, self._ctx, self.state)
         self.enterRule(localctx, 198, self.RULE_overrideSpecifier)
-        self._la = 0  # Token type
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1149
@@ -10811,7 +8954,7 @@ class SolidityParser(Parser):
             self.state = 1161
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la == SolidityParser.T__22:
+            if _la==SolidityParser.T__22:
                 self.state = 1150
                 self.match(SolidityParser.T__22)
                 self.state = 1151
@@ -10819,7 +8962,7 @@ class SolidityParser(Parser):
                 self.state = 1156
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la == SolidityParser.T__15:
+                while _la==SolidityParser.T__15:
                     self.state = 1152
                     self.match(SolidityParser.T__15)
                     self.state = 1153
@@ -10831,6 +8974,7 @@ class SolidityParser(Parser):
                 self.state = 1159
                 self.match(SolidityParser.T__23)
 
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -10839,14 +8983,14 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
+
     class StringLiteralContext(ParserRuleContext):
-        def __init__(
-            self, parser, parent: ParserRuleContext = None, invokingState: int = -1
-        ):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def StringLiteralFragment(self, i: int = None):
+        def StringLiteralFragment(self, i:int=None):
             if i is None:
                 return self.getTokens(SolidityParser.StringLiteralFragment)
             else:
@@ -10855,38 +8999,42 @@ class SolidityParser(Parser):
         def getRuleIndex(self):
             return SolidityParser.RULE_stringLiteral
 
-        def enterRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "enterStringLiteral"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStringLiteral" ):
                 listener.enterStringLiteral(self)
 
-        def exitRule(self, listener: ParseTreeListener):
-            if hasattr(listener, "exitStringLiteral"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStringLiteral" ):
                 listener.exitStringLiteral(self)
 
-        def accept(self, visitor: ParseTreeVisitor):
-            if hasattr(visitor, "visitStringLiteral"):
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStringLiteral" ):
                 return visitor.visitStringLiteral(self)
             else:
                 return visitor.visitChildren(self)
 
+
+
+
     def stringLiteral(self):
+
         localctx = SolidityParser.StringLiteralContext(self, self._ctx, self.state)
         self.enterRule(localctx, 200, self.RULE_stringLiteral)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 1164
+            self.state = 1164 
             self._errHandler.sync(self)
             _alt = 1
-            while _alt != 2 and _alt != ATN.INVALID_ALT_NUMBER:
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt == 1:
                     self.state = 1163
                     self.match(SolidityParser.StringLiteralFragment)
 
                 else:
                     raise NoViableAltException(self)
-                self.state = 1166
+                self.state = 1166 
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input, 129, self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,129,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -10896,7 +9044,9 @@ class SolidityParser(Parser):
             self.exitRule()
         return localctx
 
-    def sempred(self, localctx: RuleContext, ruleIndex: int, predIndex: int):
+
+
+    def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
         if self._predicates == None:
             self._predicates = dict()
         self._predicates[38] = self.typeName_sempred
@@ -10907,64 +9057,88 @@ class SolidityParser(Parser):
         else:
             return pred(localctx, predIndex)
 
-    def typeName_sempred(self, localctx: TypeNameContext, predIndex: int):
-        if predIndex == 0:
-            return self.precpred(self._ctx, 3)
+    def typeName_sempred(self, localctx:TypeNameContext, predIndex:int):
+            if predIndex == 0:
+                return self.precpred(self._ctx, 3)
+         
 
-    def expression_sempred(self, localctx: ExpressionContext, predIndex: int):
-        if predIndex == 1:
-            return self.precpred(self._ctx, 14)
+    def expression_sempred(self, localctx:ExpressionContext, predIndex:int):
+            if predIndex == 1:
+                return self.precpred(self._ctx, 14)
+         
 
-        if predIndex == 2:
-            return self.precpred(self._ctx, 13)
+            if predIndex == 2:
+                return self.precpred(self._ctx, 13)
+         
 
-        if predIndex == 3:
-            return self.precpred(self._ctx, 12)
+            if predIndex == 3:
+                return self.precpred(self._ctx, 12)
+         
 
-        if predIndex == 4:
-            return self.precpred(self._ctx, 11)
+            if predIndex == 4:
+                return self.precpred(self._ctx, 11)
+         
 
-        if predIndex == 5:
-            return self.precpred(self._ctx, 10)
+            if predIndex == 5:
+                return self.precpred(self._ctx, 10)
+         
 
-        if predIndex == 6:
-            return self.precpred(self._ctx, 9)
+            if predIndex == 6:
+                return self.precpred(self._ctx, 9)
+         
 
-        if predIndex == 7:
-            return self.precpred(self._ctx, 8)
+            if predIndex == 7:
+                return self.precpred(self._ctx, 8)
+         
 
-        if predIndex == 8:
-            return self.precpred(self._ctx, 7)
+            if predIndex == 8:
+                return self.precpred(self._ctx, 7)
+         
 
-        if predIndex == 9:
-            return self.precpred(self._ctx, 6)
+            if predIndex == 9:
+                return self.precpred(self._ctx, 6)
+         
 
-        if predIndex == 10:
-            return self.precpred(self._ctx, 5)
+            if predIndex == 10:
+                return self.precpred(self._ctx, 5)
+         
 
-        if predIndex == 11:
-            return self.precpred(self._ctx, 4)
+            if predIndex == 11:
+                return self.precpred(self._ctx, 4)
+         
 
-        if predIndex == 12:
-            return self.precpred(self._ctx, 3)
+            if predIndex == 12:
+                return self.precpred(self._ctx, 3)
+         
 
-        if predIndex == 13:
-            return self.precpred(self._ctx, 2)
+            if predIndex == 13:
+                return self.precpred(self._ctx, 2)
+         
 
-        if predIndex == 14:
-            return self.precpred(self._ctx, 27)
+            if predIndex == 14:
+                return self.precpred(self._ctx, 27)
+         
 
-        if predIndex == 15:
-            return self.precpred(self._ctx, 25)
+            if predIndex == 15:
+                return self.precpred(self._ctx, 25)
+         
 
-        if predIndex == 16:
-            return self.precpred(self._ctx, 24)
+            if predIndex == 16:
+                return self.precpred(self._ctx, 24)
+         
 
-        if predIndex == 17:
-            return self.precpred(self._ctx, 23)
+            if predIndex == 17:
+                return self.precpred(self._ctx, 23)
+         
 
-        if predIndex == 18:
-            return self.precpred(self._ctx, 22)
+            if predIndex == 18:
+                return self.precpred(self._ctx, 22)
+         
 
-        if predIndex == 19:
-            return self.precpred(self._ctx, 21)
+            if predIndex == 19:
+                return self.precpred(self._ctx, 21)
+         
+
+
+
+

@@ -19,7 +19,7 @@ def read(fname):
 
 
 version = "0.1.3"
-name = "solidity-parser"
+name = "python-solidity-parser"
 
 setup(
     name=name,
@@ -32,8 +32,8 @@ setup(
     ),
     license="MIT",
     keywords=["solidity", "parser", "antlr"],
-    url="https://github.com/manifoldfinance/python-%s/" % name,
-    download_url="https://github.com/manifoldfinance/python-%s/tarball/v%s" % (name, version),
+    url="https://github.com/consensys/python-%s/" % name,
+    download_url="https://github.com/consensys/python-%s/tarball/v%s" % (name, version),
     long_description=read("README.md") if os.path.isfile("README.md") else "",
     long_description_content_type="text/markdown",
     # python setup.py register -r https://testpypi.python.org/pypi
