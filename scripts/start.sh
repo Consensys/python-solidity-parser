@@ -6,7 +6,8 @@ git submodule foreach --recursive git clean -ffdx
 git submodule update --remote --rebase solidity-antlr4
 sleep 1
 
-[ ! -f ./scripts/build.sh ] && { echo "Solidity Antlr4 does not exist."; exit 1; }
+# Sanity Check that Submodules was successful 
+[ ! -f ./solidity-antlr4/scripts/build.sh ] && { echo "Solidity Antlr4 does not exist."; exit 1; }
 
 cp scripts/build.sh solidity-antlr4/setup.sh
 bash solidity-antlr4/setup.sh
